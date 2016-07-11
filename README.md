@@ -2,16 +2,21 @@
 
 For Preix Challenge
 
-Linux/Mac/Windows Command Line:
+=======
 
-Install node.js
+Running
+-------
+ 
+*Linux/Mac/Windows Command Line:*
 
-Install the Node.js http-server module:
+1. Install [node.js](http://nodejs.org)
 
-npm install -g http-server
+2. Install the Node.js http-server module:
 
-After installing http-server, we can serve out the content in the local directory.
+    npm install -g http-server
 
-http-server
+3. After installing http-server, we can serve out the content in the local directory.
 
-The default configuration of http-server will serve the exampes on http://localhost:8080.
+    http-server
+
+The default configuration of http-server will serve the exampes on [http://localhost:8080](http://localhost:8080).
