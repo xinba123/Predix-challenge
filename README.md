@@ -2,6 +2,23 @@
 
 For Preix Challenge
 
+
+=======
+
+Clone a specific Git branch
+-------
+1. Clone the repository
+
+git clone <repository_url>
+
+2. List all branches
+
+git branch -a 
+
+3. Checkout the branch that you want
+
+git checkout <name_of_branch>
+
 =======
 
 Running
@@ -20,3 +37,4 @@ Running
     http-server
 
 The default configuration of http-server will serve the exampes on [http://localhost:8080](http://localhost:8080).
+
