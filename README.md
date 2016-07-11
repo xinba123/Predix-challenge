@@ -9,15 +9,15 @@ Clone a specific Git branch
 -------
 1. Clone the repository
 
-git clone <repository_url>
+    git clone <repository_url>
 
 2. List all branches
 
-git branch -a 
+    git branch -a 
 
 3. Checkout the branch that you want
 
-git checkout <name_of_branch>
+    git checkout <name_of_branch>
 
 =======
 
