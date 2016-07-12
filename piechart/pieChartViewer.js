@@ -1,37 +1,36 @@
 
 
 
-var pieChartViewer = function(containerDiv, data, column, type, catergories) {
+var pieChartViewer = function(containerDiv, canvas, data, column, type, catergories) {
     "use strict";
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Constants
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	this.canvas = {
-        width:1000,
-        height:1000
-    };
+ 	this.canvas = canvas || { width:500, height:500};
     
 	this.color = d3.scale.category20();
 
 	this.radius = Math.min(this.canvas.width, this.canvas.height) / 2;
+
     var that = this;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Properties
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	try{
-    	this.domContainerDiv = containerDiv || function(){throw "container is not set."}();
-    	this.rawData = data || function(){throw "data is not set."}();
-    	this.column = column || function(){throw "column is not set."}();
+		this.domContainerDiv = containerDiv || function(){throw "container is not set."}();
+		this.rawData = data || function(){throw "data is not set."}();
+		this.column = column || function(){throw "column is not set."}();
 	}catch(err){
 		console.log(err);
 	}
 
     this.containerDiv = d3.select(containerDiv);    //User-provided DOM element that contains the DigViewer interface
     this.subContainerDiv = this.containerDiv.append("div");     //To remove all content without removing the main DIV
+    this.tooltip = this.containerDiv.append('div').attr('class', 'pietooltip');
 
-
+    this.tooltip.total = 0;
 
     this.type = type || {};
     this.catergories = catergories || {};
@@ -45,7 +44,7 @@ var pieChartViewer = function(containerDiv, data, column, type, catergories) {
 
 	this.arc = d3.svg.arc()
 	    .outerRadius(this.radius - 10)
-	    .innerRadius(0);
+	    .innerRadius(this.radius - 100);
 
 	this.labelArc = d3.svg.arc()
 	    .outerRadius(this.radius - 40)
@@ -54,8 +53,8 @@ var pieChartViewer = function(containerDiv, data, column, type, catergories) {
 	this.pie = d3.layout.pie()
 	    .sort(null)
 	    .value(function(d) {return d.value; });
+        
 
-	
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Methods
@@ -144,10 +143,10 @@ var pieChartViewer = function(containerDiv, data, column, type, catergories) {
 				}
 			});
 		}else{
-			//
 			that.precessedData["inf"] = [];
 			that.pieChartTitle.forEach(function(type){
 				that.precessedData["inf"].push({"type":type,"value":that.precessedData[type]["objs"].length});
+				that.tooltip.total += that.precessedData[type]["objs"].length;
 			});
 		}
 	}
@@ -230,15 +229,25 @@ var pieChartViewer = function(containerDiv, data, column, type, catergories) {
 		    .attr("id", "arc")
 		    .style("fill", function(d,i) {return that.color(i); })
 		    .each(function(d) { this._current = d; })//store the initial angles
-		    .on("mouseover",that._onHoverPie);
+		    .on("mouseover", that._onMouseOver)
+          	.on("mouseout", that._onMouseOut);
 
 		that.label = g.append("text")
 	      .attr("transform", function(d) { return "translate(" + that.labelArc.centroid(d) + ")"; })
 	      .attr("dy", ".35em")
 	      .text(function(d) {if(d.data.value>0) {
-	      	console.log(d)
 	      	return d.data.level;} })
 	      .each(function(d) { this._current = d; });//store the initial label position
+
+
+		that.tooltip.append('div')                        
+		  .attr('class', 'pie_label');                   
+
+		that.tooltip.append('div')                        
+		  .attr('class', 'pie_count');         
+
+		that.tooltip.append('div')                        
+		  .attr('class', 'pie_percent');                 
 	}
 
     /**
@@ -282,8 +291,19 @@ var pieChartViewer = function(containerDiv, data, column, type, catergories) {
 	}
 
 
-	this._onHoverPie = function(d,i) {
-		console.log(d.data);
+	this._onMouseOver = function(d,i) {
+		$(this).attr("class","onHover");
+		var percent = Math.round(1000 * d.data.value / that.tooltip.total) / 10;
+		that.tooltip.select('.pie_label').html(d.data.type);
+		that.tooltip.select('.pie_count').html(d.data.value); 
+		that.tooltip.select('.pie_percent').html(percent + '%'); 
+		that.tooltip.style('display', 'block');
+
+	}
+
+	this._onMouseOut = function(){
+		$(this).attr("class","");
+		that.tooltip.style('display', 'none');
 	}
 
 

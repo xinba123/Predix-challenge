@@ -41,11 +41,13 @@
 
     var column = "Cause Description";
 
+    var canvas = { width:500, height:500};
+
     d3.tsv("Outage_data.tsv", function(error, data) {
         console.log(data);
         if (error) throw error;
 
-        var pieChart = new pieChartViewer($("#pieChartContainer")[0], data , column, null, null);
+        var pieChart = new pieChartViewer($("#pieChartContainer")[0], canvas ,data , column, null, null);
 
 
         pieChart.drawPieChart();
