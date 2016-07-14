@@ -25,11 +25,35 @@
     var selectedLGAColors = ["#7cb5ec","#868686","#ff0000"];
     var selectedLGAButtonIndex = 1;
 
+    //add markers(the location of each substation)
+
+    addMarkers(map);
+
     
+
     // init the lga layer and add to layer
     var lgaVicLayer = new L.TopoJSON();
     $.getJSON('resources/data/lga_victoria.topo.json').done(lgaVicData); 
     
+
+
+    function addMarkers(map) {
+        var myLatLngArray = [];
+        d3.tsv("resources/data/Outage_data.tsv", function(error, data) {
+            data.forEach(function(d,i){
+                myLatLngArray.push({lat: Number(d.Latitude), lng: Number(d.Longitude)});
+            });
+
+            myLatLngArray.forEach(function(d,i){
+                if(i < 100){
+                    L.marker([d.lat, d.lng]).addTo(map);
+                    console.log("working...");
+                }
+            });
+        });
+    }
+
+
     // method to add topojson data 
     // and add to map 
     // and add handle layer event
