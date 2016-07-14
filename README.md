@@ -9,7 +9,7 @@ Clone a specific Git branch
 -------
 1. Clone the repository
 
-    git clone https://github.com/xinba123/Predix-challenge.git
+    git clone -b (branch name) https://github.com/xinba123/Predix-challenge.git
 
 2. List all branches
 
