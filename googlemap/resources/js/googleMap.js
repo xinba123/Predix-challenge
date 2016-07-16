@@ -27,7 +27,7 @@
 
     //add markers(the location of each substation)
 
-    addMarkers(map);
+    
 
     
 
@@ -35,10 +35,22 @@
     var lgaVicLayer = new L.TopoJSON();
     $.getJSON('resources/data/lga_victoria.topo.json').done(lgaVicData); 
     
+    var locationsArray = [];
+    locationsArray.push({lat:-37.8427282,lng:147.5631855});
+    locationsArray.push({lat:-36.806028 ,lng:147.2255771});
+    locationsArray.push({lat:-36.7383584,lng:147.1584559});
+    locationsArray.push({lat:-38.063061,lng:142.6657159});
+    locationsArray.push({lat:-38.3965819,lng:144.1909678});
+    locationsArray.push({lat:-37.3271541,lng:145.8583385});
+    locationsArray.push({lat:-38.1696948,lng:146.328107});
+    locationsArray.push({lat:-38.2719211,lng:146.3918838});
+    locationsArray.push({lat:-38.2552009,lng:146.6116729});
+    locationsArray.push({lat:-37.8272504,lng:144.9461886});
 
+    addMarkers(locationsArray,map);
 
-    function addMarkers(map) {
-        var myLatLngArray = [];
+    function addMarkers(locationsArray,map) {
+/*        var myLatLngArray = [];
         d3.tsv("resources/data/Outage_data.tsv", function(error, data) {
             data.forEach(function(d,i){
                 myLatLngArray.push({lat: Number(d.Latitude), lng: Number(d.Longitude)});
@@ -50,8 +62,16 @@
                     console.log("working...");
                 }
             });
+        });*/
+
+        locationsArray.forEach(function(d,i){
+              L.marker([d.lat, d.lng]).addTo(map);          
         });
+
     }
+
+
+
 
 
     // method to add topojson data 
