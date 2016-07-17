@@ -1,0 +1,16 @@
+applications:
+- name: xinba-googlemap-app
+  memory: 128M
+  buildpack: nodejs_buildpack
+  #command:  DEBUG=express:* node app.js
+  command:  node app.js
+services:
+ - My-service
+env:
+    node_env: cloud
+    uaa_service_label : predix-uaa
+    clientId: xinba
+    base64ClientCredential: eGluYmE6eGluYmE=
+    # Following properties configured only for Timeseries WindData service Integration
+    assetMachine: <The asset name pushed to Asset service>
+    tagname: <The asset tag pushed to Asset service>
