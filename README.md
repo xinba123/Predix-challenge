@@ -11,13 +11,13 @@ Clone a specific Git branch
 
     git clone -b (branch name) https://github.com/xinba123/Predix-challenge.git
 
-2. List all branches
 
-    git branch -a 
 
-3. Checkout the branch that you want
+=======
 
-    git checkout (name_of_branch)
+Or you can Fork this project
+-------
+More information can be seen [here](https://gist.github.com/Chaser324/ce0505fbed06b947d962).
 
 =======
 
