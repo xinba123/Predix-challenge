@@ -1,7 +1,7 @@
 
 
 
-var pieChartViewer = function(containerDiv, canvas, data, column, type, catergories) {
+var pieChartViewer = function(containerDiv, canvas, data, column, name, catergories) {
     "use strict";
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -32,7 +32,7 @@ var pieChartViewer = function(containerDiv, canvas, data, column, type, catergor
 
     this.tooltip.total = 0;
 
-    this.type = type || {};
+    this.name = name || {};
     this.catergories = catergories || {};
 
     this.hasCatergories = !jQuery.isEmptyObject(that.catergories);
@@ -43,8 +43,8 @@ var pieChartViewer = function(containerDiv, canvas, data, column, type, catergor
     this.numOfTitle = 0;
 
 	this.arc = d3.svg.arc()
-	    .outerRadius(this.radius - 10)
-	    .innerRadius(this.radius - 100);
+	    .outerRadius(this.radius - 10);
+
 
 	this.labelArc = d3.svg.arc()
 	    .outerRadius(this.radius - 40)
@@ -77,24 +77,12 @@ var pieChartViewer = function(containerDiv, canvas, data, column, type, catergor
 
     /**
      * 
-     * pie chart animation. Display different pie charts for 5s each
+     * pie chart animation. Display different Pie
      * @private
      */
- 	this.animatePieChart = function() {
+ 	this.animatePieChart = function(name) {
 
-        var timer = {};
-        var i = 0;
-        d3.timer(function(_elapsed){
-        	if (timer['starttime'] == undefined)
-				timer['starttime'] = _elapsed;
-
-        	if(_elapsed - timer['starttime'] >= 5000){
-
-        		//change to another species after 5s
-        		that._change(that.pieChartTitle[i++%that.numOfTitle]);
-        		timer['starttime'] = _elapsed;
-        	}
-        });
+		that._change(name);
         
  	}
 
@@ -144,11 +132,18 @@ var pieChartViewer = function(containerDiv, canvas, data, column, type, catergor
 			});
 		}else{
 			that.precessedData["inf"] = [];
-			that.pieChartTitle.forEach(function(type){
-				that.precessedData["inf"].push({"type":type,"value":that.precessedData[type]["objs"].length});
-				that.tooltip.total += that.precessedData[type]["objs"].length;
+			that.pieChartTitle.forEach(function(name){
+				that.precessedData["inf"].push({"name":name,"value":that.precessedData[name]["objs"].length});
+				that.tooltip.total += that.precessedData[name]["objs"].length;
 			});
 		}
+
+		that.pieChartTitle.forEach(function(name){
+			that.precessedData[name]["inf"].forEach(function(d){
+				if(d.value==undefined)
+					d.value = 0;
+			});
+		})
 	}
 
     /**
@@ -185,10 +180,10 @@ var pieChartViewer = function(containerDiv, canvas, data, column, type, catergor
 			 	}
 
 			});*/
-			category = row[that.catergories["property"]]
-			if(that.precessedData[row[that.column]][category]!=undefined)
+			var category = row[that.catergories["property"]];
+			if(that.precessedData[row[that.column]][category]==undefined)
 			{
-				that.precessedData[row[that.column]][category] = 0;
+				that.precessedData[row[that.column]][category] = 1;
 			}else{
 				that.precessedData[row[that.column]][category] += 1;
 			}
@@ -220,18 +215,18 @@ var pieChartViewer = function(containerDiv, canvas, data, column, type, catergor
 	this._drawPieChart = function(){
 
 		var g = that.svg.selectAll(".arc")
-		      		.data(that.pie(this.hasCatergories?that.precessedData[that.type].inf:that.precessedData.inf))
+		      		.data(that.pie(this.hasCatergories?that.precessedData[that.name].inf:that.precessedData.inf))
 		    	 .enter().append("g")
 		      		.attr("class", "arc");
 
 		//draw the title on pie chart
-		if(that.hasCatergories){
+/*		if(that.hasCatergories){
 			that.title = that.svg.append("text")
-				.text(that.type) 
+				.text(that.name) 
 				.attr("text-anchor", "middle")
 	            .attr("dominant-baseline", "central")
 	            .attr('style', "font-size: 10em;");
-		}
+		}*/
 
 		that.path = g.append("path")
 		    .attr("d", that.arc)
@@ -264,17 +259,17 @@ var pieChartViewer = function(containerDiv, canvas, data, column, type, catergor
      * change the pie chart from one to another
      * @private
      */
-	this._change =  function (type) {
+	this._change =  function (name) {
 
-		that.title.text(type);
+		//that.title.text(name);
 
-	    that.path = that.path.data(that.pie(that.precessedData[type].inf)); // compute the new angles
+	    that.path = that.path.data(that.pie(that.precessedData[name].inf)); // compute the new angles
 	    that.path.transition().duration(750).attrTween("d", arcTween); // redraw the arcs
 
-	    that.label.data(that.pie(that.precessedData[type].inf))
+/*	    that.label.data(that.pie(that.precessedData[name].inf))
 	    	.text(function(d) {if(d.data.value>0) return d.data.level; });
 	    that.label.transition().duration(750).attrTween("transform",labelTween);
-
+*/
 		// Store the displayed angles in _current.
 		// Then, interpolate from _current to the new angles.
 		// During the transition, _current is updated in-place by d3.interpolate.
@@ -301,11 +296,12 @@ var pieChartViewer = function(containerDiv, canvas, data, column, type, catergor
 
 
 	this._onMouseOver = function(d,i) {
-		$(this).attr("class","onHover");
+		$(this).attr("class","onHover_pieChart");
+		console.log(d);
 		var percent = Math.round(1000 * d.data.value / that.tooltip.total) / 10;
-		that.tooltip.select('.pie_label').html(d.data.type);
+		that.tooltip.select('.pie_label').html(d.data.cause);
 		that.tooltip.select('.pie_count').html(d.data.value); 
-		that.tooltip.select('.pie_percent').html(percent + '%'); 
+		//that.tooltip.select('.pie_percent').html(percent + '%'); 
 		that.tooltip.style('display', 'block');
 
 	}
@@ -314,6 +310,4 @@ var pieChartViewer = function(containerDiv, canvas, data, column, type, catergor
 		$(this).attr("class","");
 		that.tooltip.style('display', 'none');
 	}
-
-
 }

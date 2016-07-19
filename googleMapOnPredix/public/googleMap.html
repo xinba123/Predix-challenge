@@ -1,15 +1,28 @@
-<link rel="stylesheet" href="../stylesheets/leaflet.css" />
 
+<link rel="stylesheet" href="../stylesheets/leaflet.css" />
+<link rel="stylesheet" href="../stylesheets/style.css" />
+<link rel="stylesheet" href="../stylesheets/predix.css" />
+<link rel="stylesheet" href="../stylesheets/piechartviewer.css" />
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Google Map</title>
 </head>
-<body>
-	<div id="map" class="map" style="width: 800;height: 800px;"></div>
-</body>
+	<body>
+
+		<center><div class="loader"></div></center>
+
+		<div>
+
+			<div id="map" class="map hidden" ></div>
+			<div id="pieChartContainer"></div>
+
+
+		</div>
+	</body>
 </html>
+
 
 
 
@@ -19,6 +32,50 @@
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://maps.google.com/maps/api/js?language=en"></script>
 <script type="text/javascript" src="../scripts/googleMapApi.js"></script>
-<script type="text/javascript" src="../scripts/googleMap.js"></script>
+
+<script type="text/javascript" src="../scripts/pieChartViewer.js"></script>
 
 
+
+<script charset="utf-8">
+
+
+    var column = "name";
+
+    var canvas = { width:500, height:500};
+
+    var catrgories = {property:"cause",type: [
+		"Condition Deterioration",
+		"Electrical Overload",
+		"Wind",
+		"Cable Fault",
+		"Vehicle",
+		"Rain/Flooding",
+		"Programmed Outage",
+		"Human error",
+		"Other Miscellaneous"
+    ]};
+
+
+    var name = "Altona Power Station";
+
+    var pieChart;
+    d3.tsv("../resources/data/data.tsv", function(error, data) {
+
+        if (error) throw error;
+
+        randDataGenerated = [];
+		data.forEach(function(d,i){
+			for(var i =0; i < 30; i++){
+				randDataGenerated.push({"name":d.name,"lat":d.lat,"lng":d.lng,"cause":catrgories.type[Math.round(Math.random()*8)]});
+			}
+		});
+
+        pieChart = new pieChartViewer($("#pieChartContainer")[0], canvas ,randDataGenerated , column, name, catrgories);
+
+
+    });
+
+</script>
+
+<script type="text/javascript" src="../scripts/googleMap.js"></script> 

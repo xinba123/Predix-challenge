@@ -1,0 +1,98 @@
+.background {
+    fill: #fff;
+}
+
+.cell_border {
+    stroke:#aaa;
+    stroke-width:1;
+    stroke-opacity:1;
+}
+
+text.active {
+  fill: red;
+}
+
+.column text {
+	fill: black;
+}
+.column text.active {
+	fill: red;
+}
+
+.cell {
+  cursor: pointer;
+}
+
+
+.cell.active rect {
+  fill: #002EB8 !important;
+}
+
+.cell.active text {
+  font-weight: bold;
+  fill: white;
+}
+
+.ctext {
+  cursor: pointer;
+    x: 5;
+}
+
+.rtext {
+  cursor: pointer;
+}
+
+.column_category {
+  cursor: pointer;
+}
+
+#noDatasetsMessageDiv {
+	text-align: center;
+	background-color: white;
+	display: table;
+	width: 50%;
+  margin: 0 auto;
+}
+
+#noDatasetsMessageSpan {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.header-fixed-top {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+}
+
+.onHover_pieChart {
+  border:1px;
+  opacity: 0.5;
+}
+
+.pietooltip {
+  background: #eee;
+  box-shadow: 0 0 5px #999999;
+  color: #333;
+  display: none;
+  font-size: 20px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  z-index: 10;
+}
+
+#pieChartContainer {
+    display:inline-block;
+    float: right;
+    background-color: white;
+    border: 1px solid #cccccc;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    height: auto;
+    overflow: auto;
+    text-align: center;
+    width: auto;
+    position: relative;
+    margin-top: :-400px;
+}

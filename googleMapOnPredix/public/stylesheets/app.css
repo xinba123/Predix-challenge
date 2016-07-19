@@ -1,0 +1,70 @@
+html { 
+  background: url("../images/bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.login-btn{
+	background-color: transparent;
+	border-radius: 3px;
+	border-color: white;
+	border-image-width: 1px;
+	min-width: 120px;
+	text-align: center;
+	height: 40px;
+    line-height: 40px;
+    color: white;
+
+	box-sizing: border-box;
+    display: inline-block;
+    padding: 0 20px;
+    vertical-align: top;
+    font-family: Proxima Nova,helvetica neue,helvetica,arial,sans-serif !important;
+    font-weight: 600;
+    font-size: 16px !important;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s ease-in-out;
+    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px #fff;
+}
+
+.secure-point{
+	background-image: url('../images/secure.png');
+	display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    margin: 50px auto;
+    background-color: #212727;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-family: Proxima Nova,helvetica neue,helvetica,arial,sans-serif;
+}
+
+h1{
+	display: block;
+	font-weight: 600;
+    font-size: 42px;
+    margin-bottom: 18px;
+    text-shadow: 0 0 50px rgba(0,0,0,.4);
+    text-align: center;
+}
+h4{
+	text-align: center;
+}
