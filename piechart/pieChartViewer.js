@@ -241,6 +241,11 @@ var pieChartViewer = function(containerDiv, canvas, data, column, type, catergor
 		    .on("mouseover", that._onMouseOver)
           	.on("mouseout", that._onMouseOut);
 
+        that.path.on('mousemove', function(d) {
+			  tooltip.style('top', (d3.event.layerY + 10) + 'px')
+			    .style('left', (d3.event.layerX + 10) + 'px');
+			});
+        
 		that.label = g.append("text")
 	      .attr("transform", function(d) { return "translate(" + that.labelArc.centroid(d) + ")"; })
 	      .attr("dy", ".35em")
