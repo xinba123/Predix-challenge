@@ -149,6 +149,7 @@
     function onClick(e){
         var name = mapArray[e.target.options.id].name
         pieChart.animatePieChart(name);
+        lineChart.animateLineChart(name);
 
     }
 
@@ -157,9 +158,11 @@
     function OnfinloadingGeoData(topoData){
         lgaVicData(topoData);
         pieChart.drawPieChart();
-        tabViewer.drawTable();
+        lineChart.drawLineChart();
+        //tabViewer.drawTable();
         $(".loader").remove();
-        $("#map").attr("class","map leaflet-container leaflet-fade-anim");
+       //$("#map").attr("class","map leaflet-container leaflet-fade-anim");
+        $(".myhidden").removeClass("myhidden");
     }
 
 

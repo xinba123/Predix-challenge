@@ -15,6 +15,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../stylesheets/tabviewer.css">
+    <link rel="stylesheet" href="../stylesheets/lineChart.css">
 
 </head>
 <body>
@@ -37,7 +38,7 @@
   		</div>
 	</nav>
 	
-	<div class="mybackgroundHeader"></div>
+	<div class="mybackgroundHeader myhidden"></div>
 	<center><div class="loader"></div></center>
 	
 
@@ -53,22 +54,22 @@
 			</div>
 		</div>
 
-		<div id="tableContainer" style="position: relative;"></div>
-
+		<!-- <div id="tableContainer" style="position: relative;"></div> -->
+		<div id="lineChartContainer" style="position: relative;"></div>
 </body>
 </html>
 
 
 <script src="../scripts/leaflet.js"></script>
-<script src="../scripts/tableViewer.js" charset="utf-8"></script>
-
+<!-- <script src="../scripts/tableViewer.js" charset="utf-8"></script>
+ -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://d3js.org/topojson.v1.min.js"></script>
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://maps.google.com/maps/api/js?language=en"></script>
 <script type="text/javascript" src="../scripts/googleMapApi.js"></script>
 <script type="text/javascript" src="../scripts/pieChartViewer.js"></script>
-
+<script type="text/javascript" src="../scripts/simpleLineChart.js"></script>
 <script type="text/javascript" src="../scripts/googleMap.js"></script>
 
 <script charset="utf-8">
@@ -90,9 +91,12 @@
     ]};
 
 
-    var name = "Altona Power Station";
+    var stationName = "Altona Power Station";
+
+    var timeRange = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
     var pieChart;
+    var lineChart;
     d3.tsv("../resources/data/data.tsv", function(error, data) {
 
         if (error) throw error;
@@ -100,16 +104,15 @@
         randDataGenerated = [];
 		data.forEach(function(d,i){
 			for(var i =0; i < 30; i++){
-				randDataGenerated.push({"name":d.name,"lat":d.lat,"lng":d.lng,"cause":catrgories.type[Math.round(Math.random()*8)]});
+				randDataGenerated.push({"name":d.name,"lat":d.lat,"lng":d.lng,"cause":catrgories.type[Math.round(Math.random()*8)],"month":timeRange[Math.round(Math.random()*11)],"numOfCustomerAffected":Math.round(Math.random()*20)});
 			}
 		});
 
-        pieChart = new pieChartViewer($("#pieChartContainer")[0], canvas ,randDataGenerated , column, name, catrgories);
+        pieChart = new pieChartViewer($("#pieChartContainer")[0], canvas ,randDataGenerated , column, stationName, catrgories);
 
+        //tabViewer = new TABViewer($("tableContainer")[0], {}, randDataGenerated, name);
 
-        tabViewer = new TABViewer($("tableContainer")[0], {}, randDataGenerated, name);
-
-        
+        lineChart = new simpleLineChart($("#lineChartContainer")[0], randDataGenerated, stationName);
 
     });
 
