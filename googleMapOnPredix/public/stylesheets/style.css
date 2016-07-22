@@ -1,0 +1,132 @@
+body {
+  /*padding: 50px;*/
+  font: 14px Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.map {
+  width: 800;
+  height: 800px;
+  margin-top: -350px;
+  display:inline-block
+}
+
+a {
+  color: #00B7FF;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+td {
+  vertical-align: top;
+  padding-right: 20px;
+}
+
+.header {
+  color: #ffffff;
+/*   background-image: url('/images/banner-dark.png'); */
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.container {
+  margin-top: 10%;
+  padding: 0 20px;
+  min-height: 200px;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: -99;
+}
+
+.footer-logo-container {
+  position: relative;
+}
+
+.footer-logo {
+  height: 30px;
+  padding: 20px;
+  float: right;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.tag-multiple{
+  font-size:15px;
+  text-indent:-1.5px;
+  padding-left:2.5px;
+  height: 100%;
+  min-height: 200px;
+}
+
+.timeseries_button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor:pointer;
+    margin-top: 20px;
+}
+
+.start-time{
+  font-size:15px;
+  text-indent:-1.5px;
+  padding-left:2.5px;
+}
+
+.windyservice_chart_div{
+  display: inline-block;
+}
+
+.windyservice_chart_canvas{
+  height:500px;
+  width:400px;
+}
+
+.hidden{
+   visibility: hidden;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin-top: 200px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
