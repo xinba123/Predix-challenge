@@ -1,5 +1,5 @@
 
-var simpleLineChart = function(container,data,stationName){
+var simpleLineChart = function(container,data,stationName, setting){
 
 
   this.container = d3.select(container);
@@ -12,8 +12,9 @@ var simpleLineChart = function(container,data,stationName){
   this.stationsSummary = [];
   this.dataSet = [];
 
-  this.width;
-  this.height;
+  this.width = setting.width;
+  this.height = setting.height;
+  
   this.stationName = stationName;
 
   this.timeRange = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -71,8 +72,8 @@ var simpleLineChart = function(container,data,stationName){
 
   this.drawSvg = function(){
       var margin = {top: 20, right: 20, bottom: 30, left: 50};
-      that.width = 900 - margin.left - margin.right;
-      that.height = 300 - margin.top - margin.bottom;
+      that.width = that.width - margin.left - margin.right;
+      that.height = that.height - margin.top - margin.bottom;
 
 
       that.svg = that.container.append("svg")

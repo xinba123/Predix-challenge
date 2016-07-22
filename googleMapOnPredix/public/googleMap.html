@@ -39,7 +39,7 @@
 	</nav>
 	
 	<div class="mybackgroundHeader myhidden"></div>
-	<center><div class="loader"></div></center>
+	<!-- <center><div class="loader"></div></center> -->
 	
 
 		<div class="container_2">
@@ -49,6 +49,8 @@
 					<div id="map" class="myhidden"></div>
 				</div>
 		  		<div class="col-md-4" >
+
+
 					<div id="pieChartContainer"></div>
 				</div>
 			</div>
@@ -112,7 +114,9 @@
 
         //tabViewer = new TABViewer($("tableContainer")[0], {}, randDataGenerated, name);
 
-        lineChart = new simpleLineChart($("#lineChartContainer")[0], randDataGenerated, stationName);
+        var setting = {"width":800,"height":400} ;
+
+        lineChart = new simpleLineChart($("#lineChartContainer")[0], randDataGenerated, stationName, setting);
 
     });
 
