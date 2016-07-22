@@ -60,7 +60,7 @@ h4 {
 }
 
 
-.header_ {
+.header {
   color: #ffffff;
 /*   background-image: url('/images/banner-dark.png'); */
 
@@ -71,25 +71,25 @@ h4 {
   margin-top: 10%;
 }
 
-.container_ {
+.container {
   margin-top: 10%;
   padding: 0 20px;
   min-height: 200px;
   text-align: center;
 }
 
-.footer_ {
+.footer {
   width: 100%;
   position: fixed;
   bottom: 0;
   z-index: -99;
 }
 
-.footer-logo-container_ {
+.footer-logo-container {
   position: relative;
 }
 
-.footer-logo_ {
+.footer-logo {
   padding: 20px;
   float: right;
 }
@@ -128,7 +128,7 @@ h4 {
 }
 
 .container_2 {
-    margin-top: 200px;
+    margin-top: 50px;
 
 }
 
@@ -168,4 +168,13 @@ h4 {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.mybackgroundHeader{
+  background-image: url('../images/bgHeader.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  height: 400px;
+  width: 100%
 }
