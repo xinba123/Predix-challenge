@@ -1,21 +1,21 @@
-	// Topojson method use to parse topojson file
-	L.TopoJSON = L.GeoJSON.extend({
-	    addData: function(jsonData) {
-	      if (jsonData.type === "Topology") {
-	        for (key in jsonData.objects) {
-	          geojson = topojson.feature(jsonData, jsonData.objects[key]);
-	          L.GeoJSON.prototype.addData.call(this, geojson);
-	        }
-	      }
-	      else {
-	        L.GeoJSON.prototype.addData.call(this, jsonData);
-	      }
-	    }
-  	});
-	
+    // Topojson method use to parse topojson file
+    L.TopoJSON = L.GeoJSON.extend({
+        addData: function(jsonData) {
+          if (jsonData.type === "Topology") {
+            for (key in jsonData.objects) {
+              geojson = topojson.feature(jsonData, jsonData.objects[key]);
+              L.GeoJSON.prototype.addData.call(this, geojson);
+            }
+          }
+          else {
+            L.GeoJSON.prototype.addData.call(this, jsonData);
+          }
+        }
+    });
+    
 
-	// init map and add google map as layer
-	var map = L.map('map').setView([-37.8131869,144.9629796], 8);
+    // init map and add google map as layer
+    var map = L.map('map').setView([-37.8131869,144.9629796], 8);
     map.scrollWheelZoom.enable(); 
     map.doubleClickZoom.enable();
     new L.Control.Zoom({position: 'bottomright'}).addTo(map);
@@ -147,10 +147,10 @@
     }
 
     function onClick(e){
-        var name = mapArray[e.target.options.id].name;
-        console.log(pieChart.precessedData[name]);
         var name = mapArray[e.target.options.id].name
         pieChart.animatePieChart(name);
+        lineChart.animateLineChart(name);
+
     }
 
     $.getJSON('resources/data/lga_victoria.topo.json').done(OnfinloadingGeoData); 
@@ -158,8 +158,11 @@
     function OnfinloadingGeoData(topoData){
         lgaVicData(topoData);
         pieChart.drawPieChart();
-        $(".loader").css("visibility","hidden");
-        $("#map").attr("class","map leaflet-container leaflet-fade-anim");
+        lineChart.drawLineChart();
+        //tabViewer.drawTable();
+        $(".loader").remove();
+       //$("#map").attr("class","map leaflet-container leaflet-fade-anim");
+        $(".myhidden").removeClass("myhidden");
     }
 
 
@@ -179,9 +182,9 @@
     
     $("#lga-map-tooltip").hide();
     
- 	// handle lga layer event
+    // handle lga layer event
     function handleLgaVicLayer(layer){
-    	layer.setStyle({
+        layer.setStyle({
             fillColor : '#ffffff',
             fillOpacity: 0,
             color:'#555',
@@ -190,14 +193,14 @@
             className: 'leaflet-clickable masterTooltip',
             dashArray: layer.feature.properties.gaz_lga.replace("SHIRE", "").replace("CITY", "").replace("RURAL", "").trim()
           });
-    	layer.on({
-    		mouseover : mouseoverLga,
+        layer.on({
+            mouseover : mouseoverLga,
             mouseout: mouseoutLga,
             mousemove: mousemoveLga,
             click : selectLGA
           });
     }
- 	
+    
     function mouseoverLga(e){
         this.bringToFront();
         var x = e.originalEvent.layerX + 30;

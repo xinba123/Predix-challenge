@@ -13,8 +13,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="../stylesheets/tabviewer.css">
+    <link rel="stylesheet" href="../stylesheets/lineChart.css">
 </head>
+
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
@@ -44,11 +46,20 @@
 		</div>
   		<div class="col-sm-4" style="padding: 0; margin: 0;">
 			<div id="pieChartContainer"></div>
+			
+		</div>
+	</div>
+	</div>
+
+	<div class="container_3">
+	<div class="row" style="padding: 0; margin: 0;">
+  		<div class="col-sm-12" style="padding: 0; margin: 0;">
+			<div id="lineChartContainer"></div>
 		</div>
 	</div>
 	</div>
       	
-	<div>
+	<!--<div>
 		<table id="dt">
 			<thead>
 				<tr>
@@ -73,6 +84,12 @@
 				</tr>
 			</tbody>
 		</table>
+	</div>-->
+
+	<div class="footer_2">
+		<div class="footer-logo-container_">
+			<img class="footer-logo_" src="/images/monogram-wdmk.png"></img>
+		</div>
 	</div>
 </body>
 </html>
@@ -84,12 +101,14 @@
 <script src="https://maps.google.com/maps/api/js?language=en"></script>
 <script type="text/javascript" src="../scripts/googleMapApi.js"></script>
 <script type="text/javascript" src="../scripts/pieChartViewer.js"></script>
+<script type="text/javascript" src="../scripts/simpleLineChart.js"></script>
+<script type="text/javascript" src="../scripts/googleMap.js"></script>
 
 <script charset="utf-8">
 
     var column = "name";
 
-    var canvas = { width: 360, height: 360};
+    //var canvas = { width: 360, height: 360};
 
     var catrgories = {property:"cause",type: [
 		"Condition Deterioration",
@@ -104,9 +123,12 @@
     ]};
 
 
-    var name = "Altona Power Station";
+    var stationName = "Altona Power Station";
+
+    var timeRange = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
     var pieChart;
+    var lineChart;
     d3.tsv("../resources/data/data.tsv", function(error, data) {
 
         if (error) throw error;
@@ -114,12 +136,23 @@
         randDataGenerated = [];
 		data.forEach(function(d,i){
 			for(var i =0; i < 30; i++){
-				randDataGenerated.push({"name":d.name,"lat":d.lat,"lng":d.lng,"cause":catrgories.type[Math.round(Math.random()*8)]});
+				randDataGenerated.push({"name":d.name,"lat":d.lat,"lng":d.lng,"cause":catrgories.type[Math.round(Math.random()*8)],"month":timeRange[Math.round(Math.random()*11)],"numOfCustomerAffected":Math.round(Math.random()*20)});
 			}
 		});
 
-        pieChart = new pieChartViewer($("#pieChartContainer")[0], canvas ,randDataGenerated , column, name, catrgories);
+        pieChart = new pieChartViewer($("#pieChartContainer")[0], null ,randDataGenerated , column, stationName, catrgories);
 
+        //tabViewer = new TABViewer($("tableContainer")[0], {}, randDataGenerated, name);
+
+        //var setting = {"width":720,"height":240} ;
+
+        lineChart = new simpleLineChart($("#lineChartContainer")[0], randDataGenerated, stationName);
+		
+		d3.select(window)
+    		.on("resize", function() {
+    			pieChart.onSizeChange();
+    			lineChart.onSizeChange();
+    	});
 
     });
 

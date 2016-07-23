@@ -5,19 +5,21 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
     "use strict";
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Constants
+// Properties
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 	this.canvas = canvas || { width:500, height:500};
-    
+	this.containerDiv = d3.select(containerDiv); 
+
+ 	this.canvas = canvas || { width:this.containerDiv.node().getBoundingClientRect().width,
+ 							 height:this.containerDiv.node().getBoundingClientRect().width};
+
+    this.aspect = this.canvas.width / this.canvas.height;
+
 	this.color = d3.scale.category20();
 
 	this.radius = Math.min(this.canvas.width, this.canvas.height) / 2;
 
     var that = this;
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Properties
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	try{
 		this.domContainerDiv = containerDiv || function(){throw "container is not set."}();
 		this.rawData = data || function(){throw "data is not set."}();
@@ -26,7 +28,7 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		console.log(err);
 	}
 
-    this.containerDiv = d3.select(containerDiv);    //User-provided DOM element that contains the DigViewer interface
+       //User-provided DOM element that contains the pieViewer interface
     this.subContainerDiv = this.containerDiv.append("div");     //To remove all content without removing the main DIV
     this.tooltip = this.containerDiv.append('div').attr('class', 'pietooltip');
 
@@ -43,7 +45,8 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
     this.numOfTitle = 0;
 
 	this.arc = d3.svg.arc()
-	    .outerRadius(this.radius - 10);
+	    .outerRadius(this.radius - 10)
+	    .innerRadius(this.radius - 70);
 
 
 	this.labelArc = d3.svg.arc()
@@ -54,7 +57,8 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 	    .sort(null)
 	    .value(function(d) {return d.value; });
         
-
+	this.legendRectSize = 18;
+	this.legendSpacing = 4;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Methods
@@ -85,6 +89,30 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		that._change(name);
         
  	}
+
+ 	this.onSizeChange = function(){
+		var targetWidth = that.containerDiv.node().getBoundingClientRect().width;
+		that.containerDiv.attr("width", targetWidth);
+		that.containerDiv.attr("height", targetWidth / that.aspect);
+
+		that.radius = Math.min(targetWidth, this.canvas.height) / 2;
+
+		that.subContainerDiv.remove();
+		that.tooltip.remove();
+        that.subContainerDiv = that.containerDiv.append("div");
+        
+        this.arc = d3.svg.arc()
+		    .outerRadius(this.radius - 10)
+		    .innerRadius(this.radius - 70);
+
+
+		this.labelArc = d3.svg.arc()
+		    .outerRadius(this.radius - 40)
+		    .innerRadius(this.radius - 40);
+
+		that._drawSvg();
+		that._drawPieChart();
+	}
 
 
 //******************************************************************************
@@ -236,6 +264,11 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		    .on("mouseover", that._onMouseOver)
           	.on("mouseout", that._onMouseOut);
 
+        that.path.on('mousemove', function(d) {
+			  that.tooltip.style('top', (d3.event.layerY+10) + 'px')
+			    .style('left', (d3.event.layerX+10) + 'px');
+			});
+
 		that.label = g.append("text")
 	      .attr("transform", function(d) { return "translate(" + that.labelArc.centroid(d) + ")"; })
 	      .attr("dy", ".35em")
@@ -251,7 +284,32 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		  .attr('class', 'pie_count');         
 
 		that.tooltip.append('div')                        
-		  .attr('class', 'pie_percent');                 
+		  .attr('class', 'pie_percent');   
+
+
+		var legend = that.svg.selectAll('.legend')
+		  .data(that.catergories.type)
+		  .enter()
+		  .append('g')
+		  .attr('class', 'legend')
+		  .attr('transform', function(d, i) {
+		    var height = that.legendRectSize + that.legendSpacing;
+		    var offset =  height * that.catergories.type.length / 2;
+		    var horz = -2 * that.legendRectSize;
+		    var vert = i * height - offset;
+		    return 'translate(' + horz + ',' + vert + ')';
+		  });    
+
+		legend.append('text')
+			  .attr('x', that.legendRectSize + that.legendSpacing)
+			  .attr('y', that.legendRectSize - that.legendSpacing)
+			  .text(function(d) { return d; });
+
+		legend.append('rect')
+			  .attr('width', that.legendRectSize)
+			  .attr('height', that.legendRectSize)
+			  .style('fill', function(d,i){return that.color(i)})
+			  .style('stroke', function(d,i){return that.color(i)});
 	}
 
     /**
@@ -310,4 +368,6 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		$(this).attr("class","");
 		that.tooltip.style('display', 'none');
 	}
+
+
 }
