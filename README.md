@@ -3,25 +3,6 @@
 For Preix Challenge
 
 
-
-=======
-
-Clone a specific Git branch
--------
-1. Clone the repository
-
-    git clone -b (branch name) https://github.com/xinba123/Predix-challenge.git
-
-
-
-=======
-
-Or you can Fork this project
--------
-More information can be seen [here](https://gist.github.com/Chaser324/ce0505fbed06b947d962).
-
-=======
-
 =======
 
 Running
