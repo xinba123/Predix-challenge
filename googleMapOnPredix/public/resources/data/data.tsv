@@ -1,78 +1,2311 @@
-name	lat	lng
-Altona Power Station	-37.838848	144.789381
-Anglesea Power Station	-38.38548	144.183686
-Ararat Power Station	-37.268728	142.92417
-Ballarat Power Station	-38.3542411	145.0996057
-Banimboola Power Station	-37.3588934	143.8368069
-Basslink-Loy Yang Power Station	-38.262303	146.608085
-Bendigo Power Station	-36.784024	144.25359
-Berwick Power Plant	-38.0322511	145.33851
-Bogong Power Station	-37.1800165	146.4068933
-Broadmeadows Power Station	-37.688697	144.9593026
-Brooklyn Power Station	-37.825967	144.861786
-Brunswick Power Station	-37.77267	144.984334
-Cape Bridgewater Wind Farm	-38.372159	141.379442
-Cape Nelson North Wind Farm	-38.365999	141.547998
-Cape Nelson South Wind Farm	-38.412	141.543
-Challicum Hills Wind Farm	-37.359352	143.152386
-Clayton Power Station	-37.9080452	145.0952506
-Clover Power Station	-36.785784	147.219446
-Codrington Wind Farm	-38.6439407	143.8287613
-Cranbourne Power Station	-38.085635	145.266432
-Dartmouth Power Station	-37.1863239	144.8341746
-Dederang Power Station	-36.454287	146.990813
-East Rowville Power Station	-37.940959	145.236341
-Eildon Power Station	-37.223708	145.92092
-Fishermans Bend Power Station	-37.825191	144.929431
-Fosterville Power Station	-36.738229	144.510621
-Geelong Power Station	-38.082624	144.338498
-Glenrowan Power Station	-36.493503	146.131973
-Hazelwood Power Station	-38.281172	146.428342
-Heatherton Power Station	-37.941128	145.078232
-Horsham Power Station	-36.722205	142.247589
-Heywood Power Station	-38.180773	141.639092
-Jeeralang Power Station	-38.276921	146.424482
-Keilor Power Station	-37.738239	144.846177
-Kerang Power Station	-35.771467	143.933995
-Snowy Hydro Laverton Power Station	-37.8329643	144.7864833
-Loy Yang A Power Station	-38.254875	146.571266
-Loy Yang B Power Station	-38.256497	146.573862
-Keilor Power Station	-37.738239	144.846177
-Macarthur Wind Farm	-38.064804	142.18436
-Malvern Power Station	-37.877829	-37.877829
-Mckay Creek Power Station	-36.7853472	147.2196667
-Mildura Solar Farm	-34.1899229	142.1676801
-Moorabool Power Station	-38.037	144.296809
-Mortlake Power Station	-38.062219	142.670381
-Mortons Lane Wind Farm	-37.835157	142.46628
-Morwell Power Station	-38.258828	146.419898
-Mount Beauty	-36.743887	147.165862
-Newport Power Station	-37.8438215	144.8934531
-Oakland Hills Wind Farm	-37.681472	142.55226
-Point Henry	-38.135029	144.422283
-Portland Aluminium	-38.135029	144.422283
-Queen Victoria Market Solar Array	-37.8062549	144.9563326
-Red Cliffs Power Station	-34.291843	142.239323
-Richmond Power Station	-37.831136	145.001581
-Ringwood Power Station	-37.820834	145.215577
-Rowville Power Station	-37.92928	145.227283
-Rubicon Power Station	-37.3271498	145.8583438
-Shepparton Power Station	-36.342813	145.414578
-Somerton Power Station	-37.622474	144.948635
-South Morang Power Station	-37.644482	145.078436
-Springvale Power Station	-37.928182	145.146101
-Stawell Power Station	-37.058339	142.752474
-Sydenham Power Station	-37.676163	144.747213
-Tarrone Power Station	-38.17917	142.181073
-Templestowe Power Station	-37.74807	145.170536
-Terang Power Station	-38.232971	142.932312
-Thomastown Power Station	-37.693699	145.009929
-Toora Wind Farm	-38.6534396	146.3380408
-Tyabb Power Station	-38.267861	145.201553
-Waubra Power Station	-37.355982	143.605915
-Wemen Power Station	-34.784857	142.521461
-West Melbourne Power Station	-37.80034	144.934854
-Western Port Power Station	-38.281938	145.208307
-Wodonga Power Station	-36.154815	146.950149
-Yallourn Power Station	-38.174138	146.349914
-Yarrawonga Weir Power Station	-36.0096134	145.9971817
+name	lat	lng	cause	month	numOfCustomerAffected
+Altona Power Station	-37.838848	144.789381	Condition Deterioration	Feb	13
+Altona Power Station	-37.838848	144.789381	Wind	Apr	12
+Altona Power Station	-37.838848	144.789381	Electrical Overload	Feb	16
+Altona Power Station	-37.838848	144.789381	Other Miscellaneous	Jul	15
+Altona Power Station	-37.838848	144.789381	Human error	Jun	2
+Altona Power Station	-37.838848	144.789381	Rain/Flooding	Feb	4
+Altona Power Station	-37.838848	144.789381	Vehicle	Feb	5
+Altona Power Station	-37.838848	144.789381	Rain/Flooding	Jul	10
+Altona Power Station	-37.838848	144.789381	Cable Fault	Oct	6
+Altona Power Station	-37.838848	144.789381	Electrical Overload	Dec	18
+Altona Power Station	-37.838848	144.789381	Vehicle	Nov	4
+Altona Power Station	-37.838848	144.789381	Programmed Outage	Nov	2
+Altona Power Station	-37.838848	144.789381	Human error	Mar	2
+Altona Power Station	-37.838848	144.789381	Human error	Oct	17
+Altona Power Station	-37.838848	144.789381	Condition Deterioration	Aug	16
+Altona Power Station	-37.838848	144.789381	Human error	Apr	20
+Altona Power Station	-37.838848	144.789381	Vehicle	May	12
+Altona Power Station	-37.838848	144.789381	Wind	Sep	13
+Altona Power Station	-37.838848	144.789381	Wind	Dec	6
+Altona Power Station	-37.838848	144.789381	Programmed Outage	Oct	17
+Altona Power Station	-37.838848	144.789381	Wind	Apr	16
+Altona Power Station	-37.838848	144.789381	Condition Deterioration	Apr	8
+Altona Power Station	-37.838848	144.789381	Electrical Overload	Apr	19
+Altona Power Station	-37.838848	144.789381	Condition Deterioration	Jun	6
+Altona Power Station	-37.838848	144.789381	Rain/Flooding	Apr	9
+Altona Power Station	-37.838848	144.789381	Vehicle	Oct	7
+Altona Power Station	-37.838848	144.789381	Rain/Flooding	Feb	3
+Altona Power Station	-37.838848	144.789381	Cable Fault	Sep	6
+Altona Power Station	-37.838848	144.789381	Other Miscellaneous	Nov	8
+Altona Power Station	-37.838848	144.789381	Human error	Feb	16
+Anglesea Power Station	-38.38548	144.183686	Other Miscellaneous	Jun	6
+Anglesea Power Station	-38.38548	144.183686	Other Miscellaneous	Feb	19
+Anglesea Power Station	-38.38548	144.183686	Wind	Feb	8
+Anglesea Power Station	-38.38548	144.183686	Rain/Flooding	Feb	13
+Anglesea Power Station	-38.38548	144.183686	Other Miscellaneous	May	7
+Anglesea Power Station	-38.38548	144.183686	Condition Deterioration	Nov	15
+Anglesea Power Station	-38.38548	144.183686	Cable Fault	Apr	16
+Anglesea Power Station	-38.38548	144.183686	Electrical Overload	Aug	2
+Anglesea Power Station	-38.38548	144.183686	Programmed Outage	Nov	16
+Anglesea Power Station	-38.38548	144.183686	Rain/Flooding	Jan	1
+Anglesea Power Station	-38.38548	144.183686	Programmed Outage	Nov	10
+Anglesea Power Station	-38.38548	144.183686	Wind	May	4
+Anglesea Power Station	-38.38548	144.183686	Wind	Nov	17
+Anglesea Power Station	-38.38548	144.183686	Programmed Outage	Jul	2
+Anglesea Power Station	-38.38548	144.183686	Electrical Overload	May	11
+Anglesea Power Station	-38.38548	144.183686	Programmed Outage	Sep	19
+Anglesea Power Station	-38.38548	144.183686	Vehicle	Jan	6
+Anglesea Power Station	-38.38548	144.183686	Electrical Overload	Feb	15
+Anglesea Power Station	-38.38548	144.183686	Programmed Outage	Nov	18
+Anglesea Power Station	-38.38548	144.183686	Programmed Outage	Mar	18
+Anglesea Power Station	-38.38548	144.183686	Electrical Overload	May	9
+Anglesea Power Station	-38.38548	144.183686	Other Miscellaneous	May	11
+Anglesea Power Station	-38.38548	144.183686	Human error	Aug	18
+Anglesea Power Station	-38.38548	144.183686	Vehicle	Nov	16
+Anglesea Power Station	-38.38548	144.183686	Human error	Feb	13
+Anglesea Power Station	-38.38548	144.183686	Wind	Mar	2
+Anglesea Power Station	-38.38548	144.183686	Human error	Oct	13
+Anglesea Power Station	-38.38548	144.183686	Cable Fault	May	4
+Anglesea Power Station	-38.38548	144.183686	Human error	Feb	0
+Anglesea Power Station	-38.38548	144.183686	Vehicle	Oct	13
+Ararat Power Station	-37.268728	142.92417	Rain/Flooding	Apr	17
+Ararat Power Station	-37.268728	142.92417	Other Miscellaneous	Jun	16
+Ararat Power Station	-37.268728	142.92417	Vehicle	Feb	10
+Ararat Power Station	-37.268728	142.92417	Human error	Aug	12
+Ararat Power Station	-37.268728	142.92417	Programmed Outage	Feb	2
+Ararat Power Station	-37.268728	142.92417	Human error	Sep	0
+Ararat Power Station	-37.268728	142.92417	Rain/Flooding	Apr	5
+Ararat Power Station	-37.268728	142.92417	Cable Fault	May	20
+Ararat Power Station	-37.268728	142.92417	Rain/Flooding	Feb	16
+Ararat Power Station	-37.268728	142.92417	Cable Fault	Jan	9
+Ararat Power Station	-37.268728	142.92417	Cable Fault	Feb	4
+Ararat Power Station	-37.268728	142.92417	Electrical Overload	Oct	3
+Ararat Power Station	-37.268728	142.92417	Vehicle	Dec	2
+Ararat Power Station	-37.268728	142.92417	Condition Deterioration	Aug	16
+Ararat Power Station	-37.268728	142.92417	Programmed Outage	May	17
+Ararat Power Station	-37.268728	142.92417	Wind	Aug	17
+Ararat Power Station	-37.268728	142.92417	Programmed Outage	Apr	9
+Ararat Power Station	-37.268728	142.92417	Rain/Flooding	Aug	18
+Ararat Power Station	-37.268728	142.92417	Electrical Overload	Aug	20
+Ararat Power Station	-37.268728	142.92417	Vehicle	Jul	13
+Ararat Power Station	-37.268728	142.92417	Human error	May	9
+Ararat Power Station	-37.268728	142.92417	Cable Fault	Dec	13
+Ararat Power Station	-37.268728	142.92417	Wind	Apr	9
+Ararat Power Station	-37.268728	142.92417	Condition Deterioration	Jul	9
+Ararat Power Station	-37.268728	142.92417	Other Miscellaneous	Aug	20
+Ararat Power Station	-37.268728	142.92417	Wind	Jul	1
+Ararat Power Station	-37.268728	142.92417	Programmed Outage	Apr	5
+Ararat Power Station	-37.268728	142.92417	Cable Fault	Oct	6
+Ararat Power Station	-37.268728	142.92417	Human error	Feb	13
+Ararat Power Station	-37.268728	142.92417	Rain/Flooding	Sep	19
+Ballarat Power Station	-38.3542411	145.0996057	Human error	Apr	4
+Ballarat Power Station	-38.3542411	145.0996057	Rain/Flooding	Aug	1
+Ballarat Power Station	-38.3542411	145.0996057	Vehicle	Sep	9
+Ballarat Power Station	-38.3542411	145.0996057	Electrical Overload	Aug	1
+Ballarat Power Station	-38.3542411	145.0996057	Programmed Outage	Oct	17
+Ballarat Power Station	-38.3542411	145.0996057	Programmed Outage	Dec	14
+Ballarat Power Station	-38.3542411	145.0996057	Programmed Outage	May	10
+Ballarat Power Station	-38.3542411	145.0996057	Rain/Flooding	Oct	13
+Ballarat Power Station	-38.3542411	145.0996057	Electrical Overload	Mar	1
+Ballarat Power Station	-38.3542411	145.0996057	Electrical Overload	Nov	1
+Ballarat Power Station	-38.3542411	145.0996057	Rain/Flooding	Dec	11
+Ballarat Power Station	-38.3542411	145.0996057	Rain/Flooding	Feb	2
+Ballarat Power Station	-38.3542411	145.0996057	Vehicle	Jun	4
+Ballarat Power Station	-38.3542411	145.0996057	Rain/Flooding	Jul	10
+Ballarat Power Station	-38.3542411	145.0996057	Wind	Aug	13
+Ballarat Power Station	-38.3542411	145.0996057	Rain/Flooding	Feb	14
+Ballarat Power Station	-38.3542411	145.0996057	Programmed Outage	Sep	11
+Ballarat Power Station	-38.3542411	145.0996057	Human error	Mar	3
+Ballarat Power Station	-38.3542411	145.0996057	Cable Fault	Nov	5
+Ballarat Power Station	-38.3542411	145.0996057	Cable Fault	Nov	18
+Ballarat Power Station	-38.3542411	145.0996057	Electrical Overload	Sep	15
+Ballarat Power Station	-38.3542411	145.0996057	Wind	Oct	13
+Ballarat Power Station	-38.3542411	145.0996057	Other Miscellaneous	Sep	16
+Ballarat Power Station	-38.3542411	145.0996057	Rain/Flooding	Jun	5
+Ballarat Power Station	-38.3542411	145.0996057	Vehicle	Jun	16
+Ballarat Power Station	-38.3542411	145.0996057	Human error	Apr	16
+Ballarat Power Station	-38.3542411	145.0996057	Human error	May	5
+Ballarat Power Station	-38.3542411	145.0996057	Cable Fault	Jun	18
+Ballarat Power Station	-38.3542411	145.0996057	Electrical Overload	Nov	12
+Ballarat Power Station	-38.3542411	145.0996057	Condition Deterioration	Jul	17
+Banimboola Power Station	-37.3588934	143.8368069	Human error	Mar	12
+Banimboola Power Station	-37.3588934	143.8368069	Human error	Jul	3
+Banimboola Power Station	-37.3588934	143.8368069	Condition Deterioration	Jul	1
+Banimboola Power Station	-37.3588934	143.8368069	Wind	Aug	20
+Banimboola Power Station	-37.3588934	143.8368069	Electrical Overload	Jul	12
+Banimboola Power Station	-37.3588934	143.8368069	Electrical Overload	Jan	0
+Banimboola Power Station	-37.3588934	143.8368069	Rain/Flooding	Jun	19
+Banimboola Power Station	-37.3588934	143.8368069	Cable Fault	Mar	12
+Banimboola Power Station	-37.3588934	143.8368069	Cable Fault	Sep	14
+Banimboola Power Station	-37.3588934	143.8368069	Wind	Nov	8
+Banimboola Power Station	-37.3588934	143.8368069	Programmed Outage	Nov	6
+Banimboola Power Station	-37.3588934	143.8368069	Condition Deterioration	Jul	14
+Banimboola Power Station	-37.3588934	143.8368069	Human error	Apr	13
+Banimboola Power Station	-37.3588934	143.8368069	Vehicle	Nov	12
+Banimboola Power Station	-37.3588934	143.8368069	Vehicle	May	5
+Banimboola Power Station	-37.3588934	143.8368069	Wind	Jun	3
+Banimboola Power Station	-37.3588934	143.8368069	Other Miscellaneous	Mar	4
+Banimboola Power Station	-37.3588934	143.8368069	Vehicle	Dec	20
+Banimboola Power Station	-37.3588934	143.8368069	Cable Fault	Aug	15
+Banimboola Power Station	-37.3588934	143.8368069	Programmed Outage	Aug	13
+Banimboola Power Station	-37.3588934	143.8368069	Human error	Jul	5
+Banimboola Power Station	-37.3588934	143.8368069	Programmed Outage	Aug	18
+Banimboola Power Station	-37.3588934	143.8368069	Vehicle	Jun	8
+Banimboola Power Station	-37.3588934	143.8368069	Vehicle	Nov	7
+Banimboola Power Station	-37.3588934	143.8368069	Vehicle	Aug	11
+Banimboola Power Station	-37.3588934	143.8368069	Cable Fault	Jul	16
+Banimboola Power Station	-37.3588934	143.8368069	Electrical Overload	Mar	12
+Banimboola Power Station	-37.3588934	143.8368069	Programmed Outage	Apr	10
+Banimboola Power Station	-37.3588934	143.8368069	Electrical Overload	Nov	10
+Banimboola Power Station	-37.3588934	143.8368069	Programmed Outage	Mar	2
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Rain/Flooding	Aug	10
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Electrical Overload	Jul	2
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Programmed Outage	May	11
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Wind	Nov	6
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Electrical Overload	Jun	17
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Condition Deterioration	Nov	9
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Cable Fault	Feb	12
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Programmed Outage	Aug	12
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Rain/Flooding	May	0
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Electrical Overload	Aug	14
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Programmed Outage	May	11
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Electrical Overload	Feb	12
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Wind	Apr	2
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Vehicle	Sep	19
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Cable Fault	Apr	3
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Electrical Overload	Aug	8
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Vehicle	Mar	2
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Rain/Flooding	Jun	11
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Programmed Outage	Feb	7
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Vehicle	Nov	18
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Wind	Jul	11
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Electrical Overload	Jun	7
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Cable Fault	Jun	14
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Electrical Overload	Feb	1
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Cable Fault	May	16
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Other Miscellaneous	Jul	7
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Wind	Jun	11
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Rain/Flooding	Nov	16
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Condition Deterioration	Mar	4
+Basslink-Loy Yang Power Station	-38.262303	146.608085	Human error	Oct	11
+Bendigo Power Station	-36.784024	144.25359	Cable Fault	Jul	9
+Bendigo Power Station	-36.784024	144.25359	Condition Deterioration	Feb	16
+Bendigo Power Station	-36.784024	144.25359	Rain/Flooding	Sep	1
+Bendigo Power Station	-36.784024	144.25359	Programmed Outage	Jul	1
+Bendigo Power Station	-36.784024	144.25359	Cable Fault	Sep	10
+Bendigo Power Station	-36.784024	144.25359	Rain/Flooding	May	2
+Bendigo Power Station	-36.784024	144.25359	Rain/Flooding	Oct	16
+Bendigo Power Station	-36.784024	144.25359	Programmed Outage	Sep	9
+Bendigo Power Station	-36.784024	144.25359	Vehicle	Dec	1
+Bendigo Power Station	-36.784024	144.25359	Programmed Outage	Jul	9
+Bendigo Power Station	-36.784024	144.25359	Electrical Overload	Jul	10
+Bendigo Power Station	-36.784024	144.25359	Cable Fault	Jul	10
+Bendigo Power Station	-36.784024	144.25359	Condition Deterioration	Jan	6
+Bendigo Power Station	-36.784024	144.25359	Human error	May	19
+Bendigo Power Station	-36.784024	144.25359	Electrical Overload	Jan	14
+Bendigo Power Station	-36.784024	144.25359	Human error	Sep	12
+Bendigo Power Station	-36.784024	144.25359	Rain/Flooding	Aug	12
+Bendigo Power Station	-36.784024	144.25359	Condition Deterioration	Feb	11
+Bendigo Power Station	-36.784024	144.25359	Electrical Overload	Jun	16
+Bendigo Power Station	-36.784024	144.25359	Programmed Outage	Sep	18
+Bendigo Power Station	-36.784024	144.25359	Programmed Outage	May	11
+Bendigo Power Station	-36.784024	144.25359	Vehicle	Mar	4
+Bendigo Power Station	-36.784024	144.25359	Programmed Outage	Aug	20
+Bendigo Power Station	-36.784024	144.25359	Wind	Jul	12
+Bendigo Power Station	-36.784024	144.25359	Human error	Mar	5
+Bendigo Power Station	-36.784024	144.25359	Vehicle	Aug	18
+Bendigo Power Station	-36.784024	144.25359	Cable Fault	Sep	7
+Bendigo Power Station	-36.784024	144.25359	Human error	May	11
+Bendigo Power Station	-36.784024	144.25359	Wind	Jun	13
+Bendigo Power Station	-36.784024	144.25359	Vehicle	Sep	10
+Berwick Power Plant	-38.0322511	145.33851	Wind	Feb	3
+Berwick Power Plant	-38.0322511	145.33851	Wind	Mar	10
+Berwick Power Plant	-38.0322511	145.33851	Electrical Overload	May	3
+Berwick Power Plant	-38.0322511	145.33851	Programmed Outage	May	1
+Berwick Power Plant	-38.0322511	145.33851	Condition Deterioration	Jul	17
+Berwick Power Plant	-38.0322511	145.33851	Vehicle	Jun	15
+Berwick Power Plant	-38.0322511	145.33851	Rain/Flooding	May	16
+Berwick Power Plant	-38.0322511	145.33851	Rain/Flooding	Jun	17
+Berwick Power Plant	-38.0322511	145.33851	Cable Fault	Aug	4
+Berwick Power Plant	-38.0322511	145.33851	Programmed Outage	Apr	20
+Berwick Power Plant	-38.0322511	145.33851	Wind	Aug	6
+Berwick Power Plant	-38.0322511	145.33851	Wind	Feb	0
+Berwick Power Plant	-38.0322511	145.33851	Cable Fault	Dec	4
+Berwick Power Plant	-38.0322511	145.33851	Electrical Overload	Jan	5
+Berwick Power Plant	-38.0322511	145.33851	Condition Deterioration	Sep	17
+Berwick Power Plant	-38.0322511	145.33851	Human error	Jun	12
+Berwick Power Plant	-38.0322511	145.33851	Electrical Overload	Aug	15
+Berwick Power Plant	-38.0322511	145.33851	Electrical Overload	Feb	9
+Berwick Power Plant	-38.0322511	145.33851	Vehicle	Jul	10
+Berwick Power Plant	-38.0322511	145.33851	Cable Fault	Nov	9
+Berwick Power Plant	-38.0322511	145.33851	Human error	Dec	11
+Berwick Power Plant	-38.0322511	145.33851	Vehicle	Nov	19
+Berwick Power Plant	-38.0322511	145.33851	Rain/Flooding	Aug	16
+Berwick Power Plant	-38.0322511	145.33851	Rain/Flooding	Apr	12
+Berwick Power Plant	-38.0322511	145.33851	Condition Deterioration	Mar	2
+Berwick Power Plant	-38.0322511	145.33851	Human error	Aug	20
+Berwick Power Plant	-38.0322511	145.33851	Condition Deterioration	Apr	1
+Berwick Power Plant	-38.0322511	145.33851	Electrical Overload	Sep	6
+Berwick Power Plant	-38.0322511	145.33851	Human error	Mar	19
+Berwick Power Plant	-38.0322511	145.33851	Vehicle	Feb	16
+Bogong Power Station	-37.1800165	146.4068933	Wind	May	9
+Bogong Power Station	-37.1800165	146.4068933	Electrical Overload	Jul	19
+Bogong Power Station	-37.1800165	146.4068933	Wind	Dec	7
+Bogong Power Station	-37.1800165	146.4068933	Electrical Overload	Jul	2
+Bogong Power Station	-37.1800165	146.4068933	Cable Fault	May	0
+Bogong Power Station	-37.1800165	146.4068933	Cable Fault	Nov	7
+Bogong Power Station	-37.1800165	146.4068933	Cable Fault	Dec	10
+Bogong Power Station	-37.1800165	146.4068933	Condition Deterioration	Oct	5
+Bogong Power Station	-37.1800165	146.4068933	Human error	Apr	11
+Bogong Power Station	-37.1800165	146.4068933	Condition Deterioration	Mar	14
+Bogong Power Station	-37.1800165	146.4068933	Human error	May	12
+Bogong Power Station	-37.1800165	146.4068933	Human error	Sep	8
+Bogong Power Station	-37.1800165	146.4068933	Programmed Outage	Apr	17
+Bogong Power Station	-37.1800165	146.4068933	Rain/Flooding	Aug	14
+Bogong Power Station	-37.1800165	146.4068933	Rain/Flooding	Oct	12
+Bogong Power Station	-37.1800165	146.4068933	Human error	Nov	19
+Bogong Power Station	-37.1800165	146.4068933	Cable Fault	Sep	1
+Bogong Power Station	-37.1800165	146.4068933	Programmed Outage	Nov	9
+Bogong Power Station	-37.1800165	146.4068933	Human error	Mar	13
+Bogong Power Station	-37.1800165	146.4068933	Vehicle	Oct	19
+Bogong Power Station	-37.1800165	146.4068933	Rain/Flooding	Sep	1
+Bogong Power Station	-37.1800165	146.4068933	Human error	Feb	5
+Bogong Power Station	-37.1800165	146.4068933	Cable Fault	Jul	4
+Bogong Power Station	-37.1800165	146.4068933	Rain/Flooding	Sep	4
+Bogong Power Station	-37.1800165	146.4068933	Human error	May	16
+Bogong Power Station	-37.1800165	146.4068933	Programmed Outage	May	7
+Bogong Power Station	-37.1800165	146.4068933	Human error	May	1
+Bogong Power Station	-37.1800165	146.4068933	Vehicle	Feb	15
+Bogong Power Station	-37.1800165	146.4068933	Rain/Flooding	Feb	15
+Bogong Power Station	-37.1800165	146.4068933	Cable Fault	Mar	17
+Broadmeadows Power Station	-37.688697	144.9593026	Cable Fault	Oct	2
+Broadmeadows Power Station	-37.688697	144.9593026	Cable Fault	May	8
+Broadmeadows Power Station	-37.688697	144.9593026	Condition Deterioration	Aug	6
+Broadmeadows Power Station	-37.688697	144.9593026	Human error	Nov	6
+Broadmeadows Power Station	-37.688697	144.9593026	Rain/Flooding	Sep	7
+Broadmeadows Power Station	-37.688697	144.9593026	Condition Deterioration	Mar	5
+Broadmeadows Power Station	-37.688697	144.9593026	Electrical Overload	Mar	5
+Broadmeadows Power Station	-37.688697	144.9593026	Wind	Nov	6
+Broadmeadows Power Station	-37.688697	144.9593026	Wind	Mar	6
+Broadmeadows Power Station	-37.688697	144.9593026	Rain/Flooding	May	16
+Broadmeadows Power Station	-37.688697	144.9593026	Human error	Jul	17
+Broadmeadows Power Station	-37.688697	144.9593026	Vehicle	Jul	4
+Broadmeadows Power Station	-37.688697	144.9593026	Vehicle	May	18
+Broadmeadows Power Station	-37.688697	144.9593026	Electrical Overload	Aug	16
+Broadmeadows Power Station	-37.688697	144.9593026	Cable Fault	Dec	6
+Broadmeadows Power Station	-37.688697	144.9593026	Vehicle	Nov	6
+Broadmeadows Power Station	-37.688697	144.9593026	Programmed Outage	Mar	4
+Broadmeadows Power Station	-37.688697	144.9593026	Cable Fault	Jun	8
+Broadmeadows Power Station	-37.688697	144.9593026	Other Miscellaneous	Jun	9
+Broadmeadows Power Station	-37.688697	144.9593026	Condition Deterioration	Mar	7
+Broadmeadows Power Station	-37.688697	144.9593026	Electrical Overload	Jul	11
+Broadmeadows Power Station	-37.688697	144.9593026	Rain/Flooding	Dec	13
+Broadmeadows Power Station	-37.688697	144.9593026	Rain/Flooding	Sep	9
+Broadmeadows Power Station	-37.688697	144.9593026	Cable Fault	Apr	8
+Broadmeadows Power Station	-37.688697	144.9593026	Condition Deterioration	Nov	3
+Broadmeadows Power Station	-37.688697	144.9593026	Programmed Outage	Jan	16
+Broadmeadows Power Station	-37.688697	144.9593026	Electrical Overload	Sep	19
+Broadmeadows Power Station	-37.688697	144.9593026	Rain/Flooding	Nov	4
+Broadmeadows Power Station	-37.688697	144.9593026	Human error	Aug	2
+Broadmeadows Power Station	-37.688697	144.9593026	Electrical Overload	Feb	18
+Brooklyn Power Station	-37.825967	144.861786	Vehicle	Jun	14
+Brooklyn Power Station	-37.825967	144.861786	Rain/Flooding	Aug	4
+Brooklyn Power Station	-37.825967	144.861786	Wind	Nov	2
+Brooklyn Power Station	-37.825967	144.861786	Wind	Mar	16
+Brooklyn Power Station	-37.825967	144.861786	Wind	May	3
+Brooklyn Power Station	-37.825967	144.861786	Condition Deterioration	Sep	14
+Brooklyn Power Station	-37.825967	144.861786	Condition Deterioration	Aug	16
+Brooklyn Power Station	-37.825967	144.861786	Vehicle	Sep	7
+Brooklyn Power Station	-37.825967	144.861786	Electrical Overload	Jul	6
+Brooklyn Power Station	-37.825967	144.861786	Electrical Overload	Nov	6
+Brooklyn Power Station	-37.825967	144.861786	Electrical Overload	Apr	17
+Brooklyn Power Station	-37.825967	144.861786	Rain/Flooding	Sep	18
+Brooklyn Power Station	-37.825967	144.861786	Programmed Outage	Feb	17
+Brooklyn Power Station	-37.825967	144.861786	Other Miscellaneous	Sep	0
+Brooklyn Power Station	-37.825967	144.861786	Cable Fault	Jun	13
+Brooklyn Power Station	-37.825967	144.861786	Electrical Overload	Dec	15
+Brooklyn Power Station	-37.825967	144.861786	Cable Fault	Oct	3
+Brooklyn Power Station	-37.825967	144.861786	Vehicle	Nov	19
+Brooklyn Power Station	-37.825967	144.861786	Rain/Flooding	Jul	1
+Brooklyn Power Station	-37.825967	144.861786	Vehicle	Feb	12
+Brooklyn Power Station	-37.825967	144.861786	Programmed Outage	Sep	20
+Brooklyn Power Station	-37.825967	144.861786	Other Miscellaneous	Apr	15
+Brooklyn Power Station	-37.825967	144.861786	Programmed Outage	Sep	17
+Brooklyn Power Station	-37.825967	144.861786	Electrical Overload	Jul	4
+Brooklyn Power Station	-37.825967	144.861786	Rain/Flooding	Jun	7
+Brooklyn Power Station	-37.825967	144.861786	Vehicle	May	20
+Brooklyn Power Station	-37.825967	144.861786	Other Miscellaneous	Aug	12
+Brooklyn Power Station	-37.825967	144.861786	Vehicle	Jan	19
+Brooklyn Power Station	-37.825967	144.861786	Human error	Apr	8
+Brooklyn Power Station	-37.825967	144.861786	Programmed Outage	Feb	18
+Brunswick Power Station	-37.77267	144.984334	Other Miscellaneous	Oct	1
+Brunswick Power Station	-37.77267	144.984334	Rain/Flooding	Mar	16
+Brunswick Power Station	-37.77267	144.984334	Wind	May	11
+Brunswick Power Station	-37.77267	144.984334	Wind	Mar	1
+Brunswick Power Station	-37.77267	144.984334	Other Miscellaneous	Mar	1
+Brunswick Power Station	-37.77267	144.984334	Cable Fault	Apr	13
+Brunswick Power Station	-37.77267	144.984334	Human error	Oct	8
+Brunswick Power Station	-37.77267	144.984334	Electrical Overload	May	19
+Brunswick Power Station	-37.77267	144.984334	Condition Deterioration	Jul	10
+Brunswick Power Station	-37.77267	144.984334	Rain/Flooding	Oct	4
+Brunswick Power Station	-37.77267	144.984334	Electrical Overload	Feb	8
+Brunswick Power Station	-37.77267	144.984334	Rain/Flooding	May	15
+Brunswick Power Station	-37.77267	144.984334	Condition Deterioration	Mar	0
+Brunswick Power Station	-37.77267	144.984334	Electrical Overload	Sep	4
+Brunswick Power Station	-37.77267	144.984334	Electrical Overload	Jun	6
+Brunswick Power Station	-37.77267	144.984334	Programmed Outage	May	6
+Brunswick Power Station	-37.77267	144.984334	Programmed Outage	Jul	19
+Brunswick Power Station	-37.77267	144.984334	Other Miscellaneous	Jul	14
+Brunswick Power Station	-37.77267	144.984334	Programmed Outage	Aug	5
+Brunswick Power Station	-37.77267	144.984334	Rain/Flooding	Feb	14
+Brunswick Power Station	-37.77267	144.984334	Programmed Outage	Oct	19
+Brunswick Power Station	-37.77267	144.984334	Other Miscellaneous	Jun	4
+Brunswick Power Station	-37.77267	144.984334	Condition Deterioration	Feb	2
+Brunswick Power Station	-37.77267	144.984334	Condition Deterioration	Apr	7
+Brunswick Power Station	-37.77267	144.984334	Cable Fault	Jan	12
+Brunswick Power Station	-37.77267	144.984334	Cable Fault	Apr	14
+Brunswick Power Station	-37.77267	144.984334	Wind	Apr	5
+Brunswick Power Station	-37.77267	144.984334	Human error	Sep	13
+Brunswick Power Station	-37.77267	144.984334	Wind	Feb	18
+Brunswick Power Station	-37.77267	144.984334	Programmed Outage	May	10
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Human error	Apr	2
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Cable Fault	Mar	11
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Rain/Flooding	May	5
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Vehicle	Mar	13
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Rain/Flooding	Apr	3
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Rain/Flooding	Apr	14
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Cable Fault	May	13
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Cable Fault	Jan	3
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Rain/Flooding	Mar	20
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Condition Deterioration	Nov	8
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Vehicle	Sep	2
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Human error	Feb	2
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Human error	Jan	0
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Rain/Flooding	Mar	11
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Human error	Jul	10
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Vehicle	Feb	18
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Human error	Aug	10
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Other Miscellaneous	Aug	0
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Human error	Nov	7
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Wind	Nov	12
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Wind	Nov	10
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Programmed Outage	Jun	6
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Electrical Overload	Feb	17
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Programmed Outage	May	10
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Wind	Jan	12
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Vehicle	Nov	7
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Vehicle	Sep	6
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Cable Fault	Aug	12
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Electrical Overload	Mar	10
+Cape Bridgewater Wind Farm	-38.372159	141.379442	Programmed Outage	Aug	18
+Cape Nelson North Wind Farm	-38.365999	141.547998	Cable Fault	Feb	12
+Cape Nelson North Wind Farm	-38.365999	141.547998	Electrical Overload	Oct	5
+Cape Nelson North Wind Farm	-38.365999	141.547998	Rain/Flooding	Apr	10
+Cape Nelson North Wind Farm	-38.365999	141.547998	Programmed Outage	Jun	7
+Cape Nelson North Wind Farm	-38.365999	141.547998	Human error	Jul	20
+Cape Nelson North Wind Farm	-38.365999	141.547998	Programmed Outage	Jun	0
+Cape Nelson North Wind Farm	-38.365999	141.547998	Other Miscellaneous	Jan	4
+Cape Nelson North Wind Farm	-38.365999	141.547998	Condition Deterioration	Mar	17
+Cape Nelson North Wind Farm	-38.365999	141.547998	Human error	Jul	19
+Cape Nelson North Wind Farm	-38.365999	141.547998	Cable Fault	Dec	8
+Cape Nelson North Wind Farm	-38.365999	141.547998	Vehicle	Nov	2
+Cape Nelson North Wind Farm	-38.365999	141.547998	Electrical Overload	Aug	3
+Cape Nelson North Wind Farm	-38.365999	141.547998	Programmed Outage	Mar	16
+Cape Nelson North Wind Farm	-38.365999	141.547998	Other Miscellaneous	Mar	4
+Cape Nelson North Wind Farm	-38.365999	141.547998	Wind	Aug	0
+Cape Nelson North Wind Farm	-38.365999	141.547998	Programmed Outage	Apr	11
+Cape Nelson North Wind Farm	-38.365999	141.547998	Wind	Aug	17
+Cape Nelson North Wind Farm	-38.365999	141.547998	Electrical Overload	Aug	16
+Cape Nelson North Wind Farm	-38.365999	141.547998	Rain/Flooding	Jan	5
+Cape Nelson North Wind Farm	-38.365999	141.547998	Cable Fault	Aug	18
+Cape Nelson North Wind Farm	-38.365999	141.547998	Programmed Outage	Oct	13
+Cape Nelson North Wind Farm	-38.365999	141.547998	Wind	Jun	13
+Cape Nelson North Wind Farm	-38.365999	141.547998	Human error	Jul	13
+Cape Nelson North Wind Farm	-38.365999	141.547998	Human error	Jul	13
+Cape Nelson North Wind Farm	-38.365999	141.547998	Programmed Outage	Feb	1
+Cape Nelson North Wind Farm	-38.365999	141.547998	Cable Fault	May	16
+Cape Nelson North Wind Farm	-38.365999	141.547998	Programmed Outage	Jun	10
+Cape Nelson North Wind Farm	-38.365999	141.547998	Programmed Outage	Sep	4
+Cape Nelson North Wind Farm	-38.365999	141.547998	Vehicle	Apr	2
+Cape Nelson North Wind Farm	-38.365999	141.547998	Cable Fault	Aug	4
+Cape Nelson South Wind Farm	-38.412	141.543	Vehicle	Jul	15
+Cape Nelson South Wind Farm	-38.412	141.543	Other Miscellaneous	Nov	1
+Cape Nelson South Wind Farm	-38.412	141.543	Programmed Outage	Oct	1
+Cape Nelson South Wind Farm	-38.412	141.543	Rain/Flooding	Jul	9
+Cape Nelson South Wind Farm	-38.412	141.543	Electrical Overload	Apr	12
+Cape Nelson South Wind Farm	-38.412	141.543	Human error	Sep	5
+Cape Nelson South Wind Farm	-38.412	141.543	Human error	Jan	16
+Cape Nelson South Wind Farm	-38.412	141.543	Cable Fault	Feb	18
+Cape Nelson South Wind Farm	-38.412	141.543	Cable Fault	Oct	16
+Cape Nelson South Wind Farm	-38.412	141.543	Programmed Outage	Mar	1
+Cape Nelson South Wind Farm	-38.412	141.543	Wind	Oct	14
+Cape Nelson South Wind Farm	-38.412	141.543	Condition Deterioration	Feb	11
+Cape Nelson South Wind Farm	-38.412	141.543	Rain/Flooding	Mar	15
+Cape Nelson South Wind Farm	-38.412	141.543	Cable Fault	Mar	14
+Cape Nelson South Wind Farm	-38.412	141.543	Cable Fault	Aug	5
+Cape Nelson South Wind Farm	-38.412	141.543	Cable Fault	Oct	11
+Cape Nelson South Wind Farm	-38.412	141.543	Vehicle	Sep	0
+Cape Nelson South Wind Farm	-38.412	141.543	Programmed Outage	Feb	8
+Cape Nelson South Wind Farm	-38.412	141.543	Condition Deterioration	Nov	7
+Cape Nelson South Wind Farm	-38.412	141.543	Programmed Outage	Feb	6
+Cape Nelson South Wind Farm	-38.412	141.543	Rain/Flooding	Mar	20
+Cape Nelson South Wind Farm	-38.412	141.543	Programmed Outage	May	5
+Cape Nelson South Wind Farm	-38.412	141.543	Vehicle	Nov	9
+Cape Nelson South Wind Farm	-38.412	141.543	Human error	Apr	16
+Cape Nelson South Wind Farm	-38.412	141.543	Programmed Outage	Mar	7
+Cape Nelson South Wind Farm	-38.412	141.543	Vehicle	Aug	2
+Cape Nelson South Wind Farm	-38.412	141.543	Human error	Mar	12
+Cape Nelson South Wind Farm	-38.412	141.543	Rain/Flooding	Mar	18
+Cape Nelson South Wind Farm	-38.412	141.543	Programmed Outage	Aug	20
+Cape Nelson South Wind Farm	-38.412	141.543	Rain/Flooding	May	1
+Challicum Hills Wind Farm	-37.359352	143.152386	Human error	Dec	17
+Challicum Hills Wind Farm	-37.359352	143.152386	Other Miscellaneous	May	13
+Challicum Hills Wind Farm	-37.359352	143.152386	Condition Deterioration	Dec	3
+Challicum Hills Wind Farm	-37.359352	143.152386	Human error	Aug	17
+Challicum Hills Wind Farm	-37.359352	143.152386	Wind	Mar	12
+Challicum Hills Wind Farm	-37.359352	143.152386	Human error	Aug	2
+Challicum Hills Wind Farm	-37.359352	143.152386	Programmed Outage	Jul	10
+Challicum Hills Wind Farm	-37.359352	143.152386	Wind	Feb	1
+Challicum Hills Wind Farm	-37.359352	143.152386	Vehicle	Jul	16
+Challicum Hills Wind Farm	-37.359352	143.152386	Wind	Mar	5
+Challicum Hills Wind Farm	-37.359352	143.152386	Programmed Outage	Feb	4
+Challicum Hills Wind Farm	-37.359352	143.152386	Rain/Flooding	Sep	7
+Challicum Hills Wind Farm	-37.359352	143.152386	Condition Deterioration	Nov	9
+Challicum Hills Wind Farm	-37.359352	143.152386	Electrical Overload	Oct	16
+Challicum Hills Wind Farm	-37.359352	143.152386	Wind	May	14
+Challicum Hills Wind Farm	-37.359352	143.152386	Wind	Nov	9
+Challicum Hills Wind Farm	-37.359352	143.152386	Programmed Outage	Apr	12
+Challicum Hills Wind Farm	-37.359352	143.152386	Rain/Flooding	Mar	13
+Challicum Hills Wind Farm	-37.359352	143.152386	Wind	Feb	9
+Challicum Hills Wind Farm	-37.359352	143.152386	Rain/Flooding	Dec	19
+Challicum Hills Wind Farm	-37.359352	143.152386	Cable Fault	Nov	10
+Challicum Hills Wind Farm	-37.359352	143.152386	Cable Fault	May	14
+Challicum Hills Wind Farm	-37.359352	143.152386	Cable Fault	Sep	16
+Challicum Hills Wind Farm	-37.359352	143.152386	Programmed Outage	Feb	17
+Challicum Hills Wind Farm	-37.359352	143.152386	Condition Deterioration	Oct	15
+Challicum Hills Wind Farm	-37.359352	143.152386	Electrical Overload	May	12
+Challicum Hills Wind Farm	-37.359352	143.152386	Human error	May	7
+Challicum Hills Wind Farm	-37.359352	143.152386	Rain/Flooding	Oct	9
+Challicum Hills Wind Farm	-37.359352	143.152386	Programmed Outage	May	2
+Challicum Hills Wind Farm	-37.359352	143.152386	Condition Deterioration	Feb	12
+Clayton Power Station	-37.9080452	145.0952506	Cable Fault	Apr	6
+Clayton Power Station	-37.9080452	145.0952506	Wind	Jul	2
+Clayton Power Station	-37.9080452	145.0952506	Wind	Feb	18
+Clayton Power Station	-37.9080452	145.0952506	Electrical Overload	Sep	11
+Clayton Power Station	-37.9080452	145.0952506	Vehicle	Aug	9
+Clayton Power Station	-37.9080452	145.0952506	Electrical Overload	Sep	18
+Clayton Power Station	-37.9080452	145.0952506	Vehicle	Jun	15
+Clayton Power Station	-37.9080452	145.0952506	Condition Deterioration	Mar	13
+Clayton Power Station	-37.9080452	145.0952506	Other Miscellaneous	Nov	7
+Clayton Power Station	-37.9080452	145.0952506	Programmed Outage	Aug	11
+Clayton Power Station	-37.9080452	145.0952506	Human error	Nov	15
+Clayton Power Station	-37.9080452	145.0952506	Wind	Oct	6
+Clayton Power Station	-37.9080452	145.0952506	Programmed Outage	Sep	7
+Clayton Power Station	-37.9080452	145.0952506	Electrical Overload	Mar	13
+Clayton Power Station	-37.9080452	145.0952506	Electrical Overload	Jul	20
+Clayton Power Station	-37.9080452	145.0952506	Vehicle	Sep	1
+Clayton Power Station	-37.9080452	145.0952506	Other Miscellaneous	Jul	19
+Clayton Power Station	-37.9080452	145.0952506	Programmed Outage	Jan	10
+Clayton Power Station	-37.9080452	145.0952506	Wind	Sep	3
+Clayton Power Station	-37.9080452	145.0952506	Rain/Flooding	Jun	14
+Clayton Power Station	-37.9080452	145.0952506	Other Miscellaneous	Jul	1
+Clayton Power Station	-37.9080452	145.0952506	Vehicle	Oct	8
+Clayton Power Station	-37.9080452	145.0952506	Cable Fault	May	13
+Clayton Power Station	-37.9080452	145.0952506	Human error	Nov	12
+Clayton Power Station	-37.9080452	145.0952506	Vehicle	Apr	12
+Clayton Power Station	-37.9080452	145.0952506	Rain/Flooding	Jul	3
+Clayton Power Station	-37.9080452	145.0952506	Programmed Outage	Mar	19
+Clayton Power Station	-37.9080452	145.0952506	Rain/Flooding	Jul	10
+Clayton Power Station	-37.9080452	145.0952506	Programmed Outage	Jul	4
+Clayton Power Station	-37.9080452	145.0952506	Cable Fault	Nov	10
+Clover Power Station	-36.785784	147.219446	Rain/Flooding	Dec	8
+Clover Power Station	-36.785784	147.219446	Human error	May	14
+Clover Power Station	-36.785784	147.219446	Vehicle	Apr	6
+Clover Power Station	-36.785784	147.219446	Wind	Nov	19
+Clover Power Station	-36.785784	147.219446	Rain/Flooding	Mar	20
+Clover Power Station	-36.785784	147.219446	Rain/Flooding	Jul	0
+Clover Power Station	-36.785784	147.219446	Human error	Oct	15
+Clover Power Station	-36.785784	147.219446	Other Miscellaneous	Jun	17
+Clover Power Station	-36.785784	147.219446	Human error	Jul	3
+Clover Power Station	-36.785784	147.219446	Programmed Outage	Mar	12
+Clover Power Station	-36.785784	147.219446	Programmed Outage	Feb	11
+Clover Power Station	-36.785784	147.219446	Cable Fault	Nov	14
+Clover Power Station	-36.785784	147.219446	Vehicle	May	3
+Clover Power Station	-36.785784	147.219446	Cable Fault	Oct	2
+Clover Power Station	-36.785784	147.219446	Vehicle	Jun	2
+Clover Power Station	-36.785784	147.219446	Electrical Overload	May	8
+Clover Power Station	-36.785784	147.219446	Electrical Overload	Jan	4
+Clover Power Station	-36.785784	147.219446	Electrical Overload	Dec	18
+Clover Power Station	-36.785784	147.219446	Programmed Outage	Mar	20
+Clover Power Station	-36.785784	147.219446	Rain/Flooding	Jun	19
+Clover Power Station	-36.785784	147.219446	Condition Deterioration	Aug	12
+Clover Power Station	-36.785784	147.219446	Human error	Apr	9
+Clover Power Station	-36.785784	147.219446	Wind	Dec	15
+Clover Power Station	-36.785784	147.219446	Vehicle	Feb	0
+Clover Power Station	-36.785784	147.219446	Other Miscellaneous	Aug	3
+Clover Power Station	-36.785784	147.219446	Programmed Outage	Apr	2
+Clover Power Station	-36.785784	147.219446	Other Miscellaneous	Oct	5
+Clover Power Station	-36.785784	147.219446	Electrical Overload	Nov	8
+Clover Power Station	-36.785784	147.219446	Electrical Overload	Oct	8
+Clover Power Station	-36.785784	147.219446	Programmed Outage	Nov	12
+Codrington Wind Farm	-38.6439407	143.8287613	Programmed Outage	Oct	17
+Codrington Wind Farm	-38.6439407	143.8287613	Other Miscellaneous	Sep	19
+Codrington Wind Farm	-38.6439407	143.8287613	Human error	Apr	19
+Codrington Wind Farm	-38.6439407	143.8287613	Wind	Apr	18
+Codrington Wind Farm	-38.6439407	143.8287613	Wind	Mar	9
+Codrington Wind Farm	-38.6439407	143.8287613	Condition Deterioration	Feb	4
+Codrington Wind Farm	-38.6439407	143.8287613	Condition Deterioration	Aug	17
+Codrington Wind Farm	-38.6439407	143.8287613	Rain/Flooding	Apr	14
+Codrington Wind Farm	-38.6439407	143.8287613	Electrical Overload	Oct	4
+Codrington Wind Farm	-38.6439407	143.8287613	Programmed Outage	Aug	17
+Codrington Wind Farm	-38.6439407	143.8287613	Wind	Nov	19
+Codrington Wind Farm	-38.6439407	143.8287613	Wind	Dec	18
+Codrington Wind Farm	-38.6439407	143.8287613	Wind	Jun	5
+Codrington Wind Farm	-38.6439407	143.8287613	Wind	Mar	12
+Codrington Wind Farm	-38.6439407	143.8287613	Vehicle	Jun	16
+Codrington Wind Farm	-38.6439407	143.8287613	Cable Fault	Mar	6
+Codrington Wind Farm	-38.6439407	143.8287613	Other Miscellaneous	Jul	8
+Codrington Wind Farm	-38.6439407	143.8287613	Cable Fault	May	19
+Codrington Wind Farm	-38.6439407	143.8287613	Rain/Flooding	Sep	19
+Codrington Wind Farm	-38.6439407	143.8287613	Cable Fault	Jul	14
+Codrington Wind Farm	-38.6439407	143.8287613	Electrical Overload	Sep	15
+Codrington Wind Farm	-38.6439407	143.8287613	Human error	Jul	14
+Codrington Wind Farm	-38.6439407	143.8287613	Programmed Outage	Apr	14
+Codrington Wind Farm	-38.6439407	143.8287613	Other Miscellaneous	Apr	4
+Codrington Wind Farm	-38.6439407	143.8287613	Wind	Aug	1
+Codrington Wind Farm	-38.6439407	143.8287613	Cable Fault	Nov	17
+Codrington Wind Farm	-38.6439407	143.8287613	Other Miscellaneous	Apr	5
+Codrington Wind Farm	-38.6439407	143.8287613	Wind	Sep	19
+Codrington Wind Farm	-38.6439407	143.8287613	Electrical Overload	Feb	11
+Codrington Wind Farm	-38.6439407	143.8287613	Human error	May	3
+Cranbourne Power Station	-38.085635	145.266432	Electrical Overload	Feb	17
+Cranbourne Power Station	-38.085635	145.266432	Human error	Apr	3
+Cranbourne Power Station	-38.085635	145.266432	Vehicle	Jul	17
+Cranbourne Power Station	-38.085635	145.266432	Rain/Flooding	Jan	19
+Cranbourne Power Station	-38.085635	145.266432	Other Miscellaneous	Jun	1
+Cranbourne Power Station	-38.085635	145.266432	Vehicle	Nov	1
+Cranbourne Power Station	-38.085635	145.266432	Programmed Outage	Jun	16
+Cranbourne Power Station	-38.085635	145.266432	Programmed Outage	Nov	7
+Cranbourne Power Station	-38.085635	145.266432	Cable Fault	Oct	6
+Cranbourne Power Station	-38.085635	145.266432	Vehicle	Sep	0
+Cranbourne Power Station	-38.085635	145.266432	Cable Fault	Sep	16
+Cranbourne Power Station	-38.085635	145.266432	Other Miscellaneous	May	4
+Cranbourne Power Station	-38.085635	145.266432	Vehicle	Feb	4
+Cranbourne Power Station	-38.085635	145.266432	Wind	Jun	20
+Cranbourne Power Station	-38.085635	145.266432	Rain/Flooding	Jun	16
+Cranbourne Power Station	-38.085635	145.266432	Vehicle	Feb	13
+Cranbourne Power Station	-38.085635	145.266432	Human error	Mar	0
+Cranbourne Power Station	-38.085635	145.266432	Programmed Outage	Mar	5
+Cranbourne Power Station	-38.085635	145.266432	Electrical Overload	Mar	17
+Cranbourne Power Station	-38.085635	145.266432	Other Miscellaneous	Jun	17
+Cranbourne Power Station	-38.085635	145.266432	Vehicle	Jun	19
+Cranbourne Power Station	-38.085635	145.266432	Cable Fault	Sep	13
+Cranbourne Power Station	-38.085635	145.266432	Condition Deterioration	Jul	9
+Cranbourne Power Station	-38.085635	145.266432	Human error	Nov	8
+Cranbourne Power Station	-38.085635	145.266432	Human error	Nov	1
+Cranbourne Power Station	-38.085635	145.266432	Human error	Mar	10
+Cranbourne Power Station	-38.085635	145.266432	Human error	Jun	18
+Cranbourne Power Station	-38.085635	145.266432	Programmed Outage	Jun	10
+Cranbourne Power Station	-38.085635	145.266432	Cable Fault	Jan	13
+Cranbourne Power Station	-38.085635	145.266432	Cable Fault	Sep	14
+Dartmouth Power Station	-37.1863239	144.8341746	Electrical Overload	Sep	6
+Dartmouth Power Station	-37.1863239	144.8341746	Cable Fault	Sep	1
+Dartmouth Power Station	-37.1863239	144.8341746	Cable Fault	Aug	4
+Dartmouth Power Station	-37.1863239	144.8341746	Cable Fault	Mar	13
+Dartmouth Power Station	-37.1863239	144.8341746	Rain/Flooding	May	17
+Dartmouth Power Station	-37.1863239	144.8341746	Wind	Mar	20
+Dartmouth Power Station	-37.1863239	144.8341746	Cable Fault	Aug	12
+Dartmouth Power Station	-37.1863239	144.8341746	Cable Fault	Apr	1
+Dartmouth Power Station	-37.1863239	144.8341746	Rain/Flooding	Nov	4
+Dartmouth Power Station	-37.1863239	144.8341746	Electrical Overload	Nov	3
+Dartmouth Power Station	-37.1863239	144.8341746	Electrical Overload	Nov	7
+Dartmouth Power Station	-37.1863239	144.8341746	Programmed Outage	Nov	3
+Dartmouth Power Station	-37.1863239	144.8341746	Cable Fault	Mar	11
+Dartmouth Power Station	-37.1863239	144.8341746	Vehicle	Jul	10
+Dartmouth Power Station	-37.1863239	144.8341746	Rain/Flooding	Jul	11
+Dartmouth Power Station	-37.1863239	144.8341746	Human error	Mar	16
+Dartmouth Power Station	-37.1863239	144.8341746	Vehicle	Nov	9
+Dartmouth Power Station	-37.1863239	144.8341746	Electrical Overload	Sep	2
+Dartmouth Power Station	-37.1863239	144.8341746	Condition Deterioration	May	13
+Dartmouth Power Station	-37.1863239	144.8341746	Electrical Overload	Nov	19
+Dartmouth Power Station	-37.1863239	144.8341746	Other Miscellaneous	May	7
+Dartmouth Power Station	-37.1863239	144.8341746	Programmed Outage	Sep	7
+Dartmouth Power Station	-37.1863239	144.8341746	Rain/Flooding	Feb	1
+Dartmouth Power Station	-37.1863239	144.8341746	Programmed Outage	Feb	4
+Dartmouth Power Station	-37.1863239	144.8341746	Rain/Flooding	Sep	11
+Dartmouth Power Station	-37.1863239	144.8341746	Vehicle	Oct	2
+Dartmouth Power Station	-37.1863239	144.8341746	Vehicle	Mar	3
+Dartmouth Power Station	-37.1863239	144.8341746	Vehicle	Feb	18
+Dartmouth Power Station	-37.1863239	144.8341746	Other Miscellaneous	Feb	2
+Dartmouth Power Station	-37.1863239	144.8341746	Vehicle	Feb	13
+Dederang Power Station	-36.454287	146.990813	Cable Fault	Nov	6
+Dederang Power Station	-36.454287	146.990813	Vehicle	May	1
+Dederang Power Station	-36.454287	146.990813	Other Miscellaneous	Dec	18
+Dederang Power Station	-36.454287	146.990813	Human error	Sep	2
+Dederang Power Station	-36.454287	146.990813	Wind	May	2
+Dederang Power Station	-36.454287	146.990813	Vehicle	Sep	11
+Dederang Power Station	-36.454287	146.990813	Electrical Overload	Apr	6
+Dederang Power Station	-36.454287	146.990813	Other Miscellaneous	Mar	10
+Dederang Power Station	-36.454287	146.990813	Human error	Feb	13
+Dederang Power Station	-36.454287	146.990813	Electrical Overload	Jun	10
+Dederang Power Station	-36.454287	146.990813	Human error	May	16
+Dederang Power Station	-36.454287	146.990813	Wind	May	7
+Dederang Power Station	-36.454287	146.990813	Cable Fault	Oct	15
+Dederang Power Station	-36.454287	146.990813	Cable Fault	Aug	8
+Dederang Power Station	-36.454287	146.990813	Electrical Overload	Dec	5
+Dederang Power Station	-36.454287	146.990813	Other Miscellaneous	Oct	4
+Dederang Power Station	-36.454287	146.990813	Cable Fault	Apr	10
+Dederang Power Station	-36.454287	146.990813	Wind	Aug	6
+Dederang Power Station	-36.454287	146.990813	Rain/Flooding	Feb	13
+Dederang Power Station	-36.454287	146.990813	Programmed Outage	Feb	6
+Dederang Power Station	-36.454287	146.990813	Other Miscellaneous	Apr	11
+Dederang Power Station	-36.454287	146.990813	Rain/Flooding	Nov	6
+Dederang Power Station	-36.454287	146.990813	Vehicle	Mar	8
+Dederang Power Station	-36.454287	146.990813	Electrical Overload	Jul	11
+Dederang Power Station	-36.454287	146.990813	Other Miscellaneous	Sep	12
+Dederang Power Station	-36.454287	146.990813	Electrical Overload	Sep	17
+Dederang Power Station	-36.454287	146.990813	Electrical Overload	Feb	14
+Dederang Power Station	-36.454287	146.990813	Cable Fault	Sep	12
+Dederang Power Station	-36.454287	146.990813	Programmed Outage	Apr	16
+Dederang Power Station	-36.454287	146.990813	Vehicle	Apr	16
+East Rowville Power Station	-37.940959	145.236341	Human error	Jul	13
+East Rowville Power Station	-37.940959	145.236341	Wind	Jul	19
+East Rowville Power Station	-37.940959	145.236341	Wind	Nov	6
+East Rowville Power Station	-37.940959	145.236341	Wind	Feb	13
+East Rowville Power Station	-37.940959	145.236341	Vehicle	Feb	17
+East Rowville Power Station	-37.940959	145.236341	Rain/Flooding	Sep	4
+East Rowville Power Station	-37.940959	145.236341	Programmed Outage	Oct	0
+East Rowville Power Station	-37.940959	145.236341	Wind	May	7
+East Rowville Power Station	-37.940959	145.236341	Human error	Apr	14
+East Rowville Power Station	-37.940959	145.236341	Wind	Nov	16
+East Rowville Power Station	-37.940959	145.236341	Wind	Jun	20
+East Rowville Power Station	-37.940959	145.236341	Electrical Overload	Mar	11
+East Rowville Power Station	-37.940959	145.236341	Electrical Overload	Feb	16
+East Rowville Power Station	-37.940959	145.236341	Rain/Flooding	Apr	17
+East Rowville Power Station	-37.940959	145.236341	Condition Deterioration	Apr	5
+East Rowville Power Station	-37.940959	145.236341	Wind	Apr	5
+East Rowville Power Station	-37.940959	145.236341	Human error	Feb	16
+East Rowville Power Station	-37.940959	145.236341	Wind	May	10
+East Rowville Power Station	-37.940959	145.236341	Cable Fault	Jun	13
+East Rowville Power Station	-37.940959	145.236341	Condition Deterioration	May	10
+East Rowville Power Station	-37.940959	145.236341	Vehicle	May	6
+East Rowville Power Station	-37.940959	145.236341	Other Miscellaneous	Sep	13
+East Rowville Power Station	-37.940959	145.236341	Other Miscellaneous	May	15
+East Rowville Power Station	-37.940959	145.236341	Electrical Overload	Feb	13
+East Rowville Power Station	-37.940959	145.236341	Human error	Dec	8
+East Rowville Power Station	-37.940959	145.236341	Programmed Outage	Jun	20
+East Rowville Power Station	-37.940959	145.236341	Rain/Flooding	Nov	17
+East Rowville Power Station	-37.940959	145.236341	Rain/Flooding	May	7
+East Rowville Power Station	-37.940959	145.236341	Electrical Overload	Jul	10
+East Rowville Power Station	-37.940959	145.236341	Rain/Flooding	Sep	13
+Eildon Power Station	-37.223708	145.92092	Condition Deterioration	May	2
+Eildon Power Station	-37.223708	145.92092	Cable Fault	Sep	19
+Eildon Power Station	-37.223708	145.92092	Electrical Overload	Mar	15
+Eildon Power Station	-37.223708	145.92092	Wind	May	19
+Eildon Power Station	-37.223708	145.92092	Cable Fault	Jan	18
+Eildon Power Station	-37.223708	145.92092	Vehicle	Sep	18
+Eildon Power Station	-37.223708	145.92092	Electrical Overload	Mar	10
+Eildon Power Station	-37.223708	145.92092	Vehicle	Apr	14
+Eildon Power Station	-37.223708	145.92092	Wind	Mar	20
+Eildon Power Station	-37.223708	145.92092	Cable Fault	Jun	19
+Eildon Power Station	-37.223708	145.92092	Programmed Outage	Apr	5
+Eildon Power Station	-37.223708	145.92092	Rain/Flooding	Feb	20
+Eildon Power Station	-37.223708	145.92092	Electrical Overload	Apr	7
+Eildon Power Station	-37.223708	145.92092	Programmed Outage	May	12
+Eildon Power Station	-37.223708	145.92092	Rain/Flooding	Aug	8
+Eildon Power Station	-37.223708	145.92092	Cable Fault	Mar	4
+Eildon Power Station	-37.223708	145.92092	Programmed Outage	Feb	10
+Eildon Power Station	-37.223708	145.92092	Human error	Oct	16
+Eildon Power Station	-37.223708	145.92092	Wind	Oct	17
+Eildon Power Station	-37.223708	145.92092	Vehicle	Mar	18
+Eildon Power Station	-37.223708	145.92092	Vehicle	Jan	13
+Eildon Power Station	-37.223708	145.92092	Vehicle	May	17
+Eildon Power Station	-37.223708	145.92092	Cable Fault	Nov	6
+Eildon Power Station	-37.223708	145.92092	Electrical Overload	Jun	11
+Eildon Power Station	-37.223708	145.92092	Human error	Feb	13
+Eildon Power Station	-37.223708	145.92092	Human error	Jul	9
+Eildon Power Station	-37.223708	145.92092	Rain/Flooding	Apr	15
+Eildon Power Station	-37.223708	145.92092	Cable Fault	May	7
+Eildon Power Station	-37.223708	145.92092	Other Miscellaneous	Oct	20
+Eildon Power Station	-37.223708	145.92092	Wind	Oct	14
+Fishermans Bend Power Station	-37.825191	144.929431	Cable Fault	Mar	13
+Fishermans Bend Power Station	-37.825191	144.929431	Other Miscellaneous	Jan	2
+Fishermans Bend Power Station	-37.825191	144.929431	Vehicle	May	18
+Fishermans Bend Power Station	-37.825191	144.929431	Electrical Overload	Dec	12
+Fishermans Bend Power Station	-37.825191	144.929431	Other Miscellaneous	Apr	1
+Fishermans Bend Power Station	-37.825191	144.929431	Programmed Outage	Apr	9
+Fishermans Bend Power Station	-37.825191	144.929431	Other Miscellaneous	Jul	2
+Fishermans Bend Power Station	-37.825191	144.929431	Other Miscellaneous	Jun	9
+Fishermans Bend Power Station	-37.825191	144.929431	Programmed Outage	Apr	15
+Fishermans Bend Power Station	-37.825191	144.929431	Vehicle	Dec	11
+Fishermans Bend Power Station	-37.825191	144.929431	Vehicle	Aug	11
+Fishermans Bend Power Station	-37.825191	144.929431	Programmed Outage	May	19
+Fishermans Bend Power Station	-37.825191	144.929431	Wind	May	16
+Fishermans Bend Power Station	-37.825191	144.929431	Electrical Overload	Jul	14
+Fishermans Bend Power Station	-37.825191	144.929431	Electrical Overload	Jun	13
+Fishermans Bend Power Station	-37.825191	144.929431	Human error	May	0
+Fishermans Bend Power Station	-37.825191	144.929431	Cable Fault	Jul	6
+Fishermans Bend Power Station	-37.825191	144.929431	Human error	Oct	5
+Fishermans Bend Power Station	-37.825191	144.929431	Human error	Sep	3
+Fishermans Bend Power Station	-37.825191	144.929431	Cable Fault	Jul	17
+Fishermans Bend Power Station	-37.825191	144.929431	Wind	Aug	17
+Fishermans Bend Power Station	-37.825191	144.929431	Electrical Overload	Sep	19
+Fishermans Bend Power Station	-37.825191	144.929431	Wind	Sep	12
+Fishermans Bend Power Station	-37.825191	144.929431	Rain/Flooding	May	5
+Fishermans Bend Power Station	-37.825191	144.929431	Electrical Overload	Apr	2
+Fishermans Bend Power Station	-37.825191	144.929431	Other Miscellaneous	May	11
+Fishermans Bend Power Station	-37.825191	144.929431	Condition Deterioration	Dec	12
+Fishermans Bend Power Station	-37.825191	144.929431	Human error	Aug	5
+Fishermans Bend Power Station	-37.825191	144.929431	Cable Fault	Sep	16
+Fishermans Bend Power Station	-37.825191	144.929431	Condition Deterioration	Dec	10
+Fosterville Power Station	-36.738229	144.510621	Rain/Flooding	Sep	10
+Fosterville Power Station	-36.738229	144.510621	Cable Fault	Jun	5
+Fosterville Power Station	-36.738229	144.510621	Programmed Outage	Feb	8
+Fosterville Power Station	-36.738229	144.510621	Other Miscellaneous	Mar	8
+Fosterville Power Station	-36.738229	144.510621	Vehicle	May	5
+Fosterville Power Station	-36.738229	144.510621	Rain/Flooding	Nov	2
+Fosterville Power Station	-36.738229	144.510621	Vehicle	May	7
+Fosterville Power Station	-36.738229	144.510621	Cable Fault	Feb	6
+Fosterville Power Station	-36.738229	144.510621	Vehicle	Aug	18
+Fosterville Power Station	-36.738229	144.510621	Rain/Flooding	May	18
+Fosterville Power Station	-36.738229	144.510621	Wind	Aug	20
+Fosterville Power Station	-36.738229	144.510621	Human error	May	9
+Fosterville Power Station	-36.738229	144.510621	Rain/Flooding	Sep	4
+Fosterville Power Station	-36.738229	144.510621	Human error	Oct	14
+Fosterville Power Station	-36.738229	144.510621	Condition Deterioration	Jul	3
+Fosterville Power Station	-36.738229	144.510621	Wind	Jul	4
+Fosterville Power Station	-36.738229	144.510621	Programmed Outage	Dec	6
+Fosterville Power Station	-36.738229	144.510621	Vehicle	Feb	9
+Fosterville Power Station	-36.738229	144.510621	Rain/Flooding	May	11
+Fosterville Power Station	-36.738229	144.510621	Vehicle	May	17
+Fosterville Power Station	-36.738229	144.510621	Condition Deterioration	Feb	16
+Fosterville Power Station	-36.738229	144.510621	Rain/Flooding	Sep	8
+Fosterville Power Station	-36.738229	144.510621	Vehicle	Apr	19
+Fosterville Power Station	-36.738229	144.510621	Cable Fault	Feb	19
+Fosterville Power Station	-36.738229	144.510621	Wind	Apr	4
+Fosterville Power Station	-36.738229	144.510621	Electrical Overload	Mar	15
+Fosterville Power Station	-36.738229	144.510621	Vehicle	May	19
+Fosterville Power Station	-36.738229	144.510621	Vehicle	Sep	7
+Fosterville Power Station	-36.738229	144.510621	Programmed Outage	Dec	14
+Fosterville Power Station	-36.738229	144.510621	Rain/Flooding	May	9
+Geelong Power Station	-38.082624	144.338498	Rain/Flooding	Oct	16
+Geelong Power Station	-38.082624	144.338498	Other Miscellaneous	Dec	6
+Geelong Power Station	-38.082624	144.338498	Wind	Jan	19
+Geelong Power Station	-38.082624	144.338498	Electrical Overload	Feb	5
+Geelong Power Station	-38.082624	144.338498	Other Miscellaneous	Nov	1
+Geelong Power Station	-38.082624	144.338498	Cable Fault	Dec	11
+Geelong Power Station	-38.082624	144.338498	Wind	Jan	12
+Geelong Power Station	-38.082624	144.338498	Rain/Flooding	Jun	13
+Geelong Power Station	-38.082624	144.338498	Human error	Aug	2
+Geelong Power Station	-38.082624	144.338498	Human error	Jul	5
+Geelong Power Station	-38.082624	144.338498	Condition Deterioration	Oct	10
+Geelong Power Station	-38.082624	144.338498	Other Miscellaneous	Aug	15
+Geelong Power Station	-38.082624	144.338498	Rain/Flooding	Sep	11
+Geelong Power Station	-38.082624	144.338498	Electrical Overload	Oct	19
+Geelong Power Station	-38.082624	144.338498	Condition Deterioration	Aug	2
+Geelong Power Station	-38.082624	144.338498	Wind	Mar	15
+Geelong Power Station	-38.082624	144.338498	Programmed Outage	Sep	0
+Geelong Power Station	-38.082624	144.338498	Rain/Flooding	Mar	3
+Geelong Power Station	-38.082624	144.338498	Human error	Sep	16
+Geelong Power Station	-38.082624	144.338498	Human error	Mar	17
+Geelong Power Station	-38.082624	144.338498	Wind	May	12
+Geelong Power Station	-38.082624	144.338498	Vehicle	Dec	2
+Geelong Power Station	-38.082624	144.338498	Rain/Flooding	Mar	17
+Geelong Power Station	-38.082624	144.338498	Rain/Flooding	Dec	8
+Geelong Power Station	-38.082624	144.338498	Human error	Sep	8
+Geelong Power Station	-38.082624	144.338498	Condition Deterioration	May	4
+Geelong Power Station	-38.082624	144.338498	Electrical Overload	Jan	10
+Geelong Power Station	-38.082624	144.338498	Cable Fault	Jun	2
+Geelong Power Station	-38.082624	144.338498	Human error	Aug	3
+Geelong Power Station	-38.082624	144.338498	Cable Fault	Aug	14
+Glenrowan Power Station	-36.493503	146.131973	Rain/Flooding	Nov	2
+Glenrowan Power Station	-36.493503	146.131973	Cable Fault	Jun	12
+Glenrowan Power Station	-36.493503	146.131973	Other Miscellaneous	Jan	4
+Glenrowan Power Station	-36.493503	146.131973	Human error	Jan	7
+Glenrowan Power Station	-36.493503	146.131973	Cable Fault	Aug	16
+Glenrowan Power Station	-36.493503	146.131973	Programmed Outage	Mar	6
+Glenrowan Power Station	-36.493503	146.131973	Rain/Flooding	Jun	15
+Glenrowan Power Station	-36.493503	146.131973	Rain/Flooding	Oct	7
+Glenrowan Power Station	-36.493503	146.131973	Programmed Outage	Nov	3
+Glenrowan Power Station	-36.493503	146.131973	Electrical Overload	Sep	3
+Glenrowan Power Station	-36.493503	146.131973	Programmed Outage	Dec	9
+Glenrowan Power Station	-36.493503	146.131973	Electrical Overload	Jul	6
+Glenrowan Power Station	-36.493503	146.131973	Human error	Feb	5
+Glenrowan Power Station	-36.493503	146.131973	Electrical Overload	Oct	10
+Glenrowan Power Station	-36.493503	146.131973	Rain/Flooding	Jan	5
+Glenrowan Power Station	-36.493503	146.131973	Cable Fault	Nov	6
+Glenrowan Power Station	-36.493503	146.131973	Vehicle	Mar	16
+Glenrowan Power Station	-36.493503	146.131973	Programmed Outage	Oct	12
+Glenrowan Power Station	-36.493503	146.131973	Cable Fault	Nov	19
+Glenrowan Power Station	-36.493503	146.131973	Electrical Overload	Jul	7
+Glenrowan Power Station	-36.493503	146.131973	Human error	Jun	13
+Glenrowan Power Station	-36.493503	146.131973	Human error	Oct	8
+Glenrowan Power Station	-36.493503	146.131973	Programmed Outage	Mar	10
+Glenrowan Power Station	-36.493503	146.131973	Wind	May	1
+Glenrowan Power Station	-36.493503	146.131973	Cable Fault	Jul	19
+Glenrowan Power Station	-36.493503	146.131973	Programmed Outage	Jul	6
+Glenrowan Power Station	-36.493503	146.131973	Programmed Outage	May	2
+Glenrowan Power Station	-36.493503	146.131973	Programmed Outage	Jul	12
+Glenrowan Power Station	-36.493503	146.131973	Vehicle	Sep	15
+Glenrowan Power Station	-36.493503	146.131973	Vehicle	Nov	16
+Hazelwood Power Station	-38.281172	146.428342	Electrical Overload	Oct	13
+Hazelwood Power Station	-38.281172	146.428342	Rain/Flooding	Jun	18
+Hazelwood Power Station	-38.281172	146.428342	Condition Deterioration	Dec	20
+Hazelwood Power Station	-38.281172	146.428342	Other Miscellaneous	May	6
+Hazelwood Power Station	-38.281172	146.428342	Cable Fault	Oct	5
+Hazelwood Power Station	-38.281172	146.428342	Electrical Overload	Nov	1
+Hazelwood Power Station	-38.281172	146.428342	Rain/Flooding	Jun	2
+Hazelwood Power Station	-38.281172	146.428342	Wind	Jun	9
+Hazelwood Power Station	-38.281172	146.428342	Cable Fault	Aug	15
+Hazelwood Power Station	-38.281172	146.428342	Programmed Outage	May	2
+Hazelwood Power Station	-38.281172	146.428342	Rain/Flooding	Feb	13
+Hazelwood Power Station	-38.281172	146.428342	Wind	Jul	2
+Hazelwood Power Station	-38.281172	146.428342	Electrical Overload	Nov	13
+Hazelwood Power Station	-38.281172	146.428342	Programmed Outage	Oct	9
+Hazelwood Power Station	-38.281172	146.428342	Human error	Nov	5
+Hazelwood Power Station	-38.281172	146.428342	Rain/Flooding	Sep	8
+Hazelwood Power Station	-38.281172	146.428342	Cable Fault	Mar	18
+Hazelwood Power Station	-38.281172	146.428342	Cable Fault	Oct	10
+Hazelwood Power Station	-38.281172	146.428342	Electrical Overload	Mar	10
+Hazelwood Power Station	-38.281172	146.428342	Vehicle	May	7
+Hazelwood Power Station	-38.281172	146.428342	Wind	Sep	10
+Hazelwood Power Station	-38.281172	146.428342	Programmed Outage	Oct	5
+Hazelwood Power Station	-38.281172	146.428342	Cable Fault	Jul	16
+Hazelwood Power Station	-38.281172	146.428342	Condition Deterioration	Nov	5
+Hazelwood Power Station	-38.281172	146.428342	Programmed Outage	Apr	13
+Hazelwood Power Station	-38.281172	146.428342	Vehicle	Nov	16
+Hazelwood Power Station	-38.281172	146.428342	Human error	Apr	17
+Hazelwood Power Station	-38.281172	146.428342	Cable Fault	Aug	18
+Hazelwood Power Station	-38.281172	146.428342	Programmed Outage	Aug	14
+Hazelwood Power Station	-38.281172	146.428342	Electrical Overload	Oct	9
+Heatherton Power Station	-37.941128	145.078232	Wind	Jan	2
+Heatherton Power Station	-37.941128	145.078232	Vehicle	Mar	10
+Heatherton Power Station	-37.941128	145.078232	Other Miscellaneous	Jul	4
+Heatherton Power Station	-37.941128	145.078232	Electrical Overload	May	19
+Heatherton Power Station	-37.941128	145.078232	Human error	Feb	17
+Heatherton Power Station	-37.941128	145.078232	Other Miscellaneous	May	5
+Heatherton Power Station	-37.941128	145.078232	Condition Deterioration	Oct	1
+Heatherton Power Station	-37.941128	145.078232	Rain/Flooding	Feb	9
+Heatherton Power Station	-37.941128	145.078232	Vehicle	Mar	3
+Heatherton Power Station	-37.941128	145.078232	Human error	Jan	19
+Heatherton Power Station	-37.941128	145.078232	Cable Fault	Jul	17
+Heatherton Power Station	-37.941128	145.078232	Programmed Outage	Feb	20
+Heatherton Power Station	-37.941128	145.078232	Wind	Aug	6
+Heatherton Power Station	-37.941128	145.078232	Human error	Oct	10
+Heatherton Power Station	-37.941128	145.078232	Cable Fault	Mar	10
+Heatherton Power Station	-37.941128	145.078232	Human error	Dec	11
+Heatherton Power Station	-37.941128	145.078232	Condition Deterioration	Jul	11
+Heatherton Power Station	-37.941128	145.078232	Other Miscellaneous	Mar	19
+Heatherton Power Station	-37.941128	145.078232	Human error	Feb	15
+Heatherton Power Station	-37.941128	145.078232	Cable Fault	Jul	16
+Heatherton Power Station	-37.941128	145.078232	Vehicle	Jun	2
+Heatherton Power Station	-37.941128	145.078232	Electrical Overload	May	2
+Heatherton Power Station	-37.941128	145.078232	Wind	Jun	12
+Heatherton Power Station	-37.941128	145.078232	Wind	May	12
+Heatherton Power Station	-37.941128	145.078232	Vehicle	Mar	7
+Heatherton Power Station	-37.941128	145.078232	Programmed Outage	Dec	7
+Heatherton Power Station	-37.941128	145.078232	Wind	Sep	7
+Heatherton Power Station	-37.941128	145.078232	Vehicle	Aug	16
+Heatherton Power Station	-37.941128	145.078232	Programmed Outage	Aug	19
+Heatherton Power Station	-37.941128	145.078232	Wind	Apr	17
+Horsham Power Station	-36.722205	142.247589	Wind	Sep	19
+Horsham Power Station	-36.722205	142.247589	Programmed Outage	May	5
+Horsham Power Station	-36.722205	142.247589	Electrical Overload	May	15
+Horsham Power Station	-36.722205	142.247589	Programmed Outage	Dec	18
+Horsham Power Station	-36.722205	142.247589	Vehicle	Mar	10
+Horsham Power Station	-36.722205	142.247589	Electrical Overload	Sep	7
+Horsham Power Station	-36.722205	142.247589	Vehicle	Oct	4
+Horsham Power Station	-36.722205	142.247589	Vehicle	Jun	0
+Horsham Power Station	-36.722205	142.247589	Programmed Outage	Nov	18
+Horsham Power Station	-36.722205	142.247589	Human error	Apr	11
+Horsham Power Station	-36.722205	142.247589	Vehicle	Aug	18
+Horsham Power Station	-36.722205	142.247589	Human error	Jun	20
+Horsham Power Station	-36.722205	142.247589	Vehicle	Mar	7
+Horsham Power Station	-36.722205	142.247589	Vehicle	Sep	8
+Horsham Power Station	-36.722205	142.247589	Human error	Aug	8
+Horsham Power Station	-36.722205	142.247589	Programmed Outage	Jul	9
+Horsham Power Station	-36.722205	142.247589	Rain/Flooding	Feb	20
+Horsham Power Station	-36.722205	142.247589	Vehicle	Nov	2
+Horsham Power Station	-36.722205	142.247589	Rain/Flooding	Feb	19
+Horsham Power Station	-36.722205	142.247589	Electrical Overload	Aug	0
+Horsham Power Station	-36.722205	142.247589	Human error	Jun	17
+Horsham Power Station	-36.722205	142.247589	Rain/Flooding	May	5
+Horsham Power Station	-36.722205	142.247589	Cable Fault	Aug	19
+Horsham Power Station	-36.722205	142.247589	Electrical Overload	May	15
+Horsham Power Station	-36.722205	142.247589	Wind	Aug	11
+Horsham Power Station	-36.722205	142.247589	Rain/Flooding	Oct	2
+Horsham Power Station	-36.722205	142.247589	Rain/Flooding	Feb	3
+Horsham Power Station	-36.722205	142.247589	Condition Deterioration	Nov	10
+Horsham Power Station	-36.722205	142.247589	Electrical Overload	Jul	15
+Horsham Power Station	-36.722205	142.247589	Rain/Flooding	Nov	12
+Heywood Power Station	-38.180773	141.639092	Vehicle	May	3
+Heywood Power Station	-38.180773	141.639092	Human error	Feb	3
+Heywood Power Station	-38.180773	141.639092	Rain/Flooding	Aug	8
+Heywood Power Station	-38.180773	141.639092	Human error	May	16
+Heywood Power Station	-38.180773	141.639092	Rain/Flooding	Nov	13
+Heywood Power Station	-38.180773	141.639092	Electrical Overload	Apr	16
+Heywood Power Station	-38.180773	141.639092	Condition Deterioration	May	4
+Heywood Power Station	-38.180773	141.639092	Rain/Flooding	Feb	17
+Heywood Power Station	-38.180773	141.639092	Electrical Overload	Apr	6
+Heywood Power Station	-38.180773	141.639092	Human error	Apr	6
+Heywood Power Station	-38.180773	141.639092	Electrical Overload	Jun	4
+Heywood Power Station	-38.180773	141.639092	Programmed Outage	Jun	15
+Heywood Power Station	-38.180773	141.639092	Human error	Oct	19
+Heywood Power Station	-38.180773	141.639092	Human error	Apr	17
+Heywood Power Station	-38.180773	141.639092	Programmed Outage	Sep	20
+Heywood Power Station	-38.180773	141.639092	Wind	Oct	3
+Heywood Power Station	-38.180773	141.639092	Human error	Nov	0
+Heywood Power Station	-38.180773	141.639092	Cable Fault	Oct	17
+Heywood Power Station	-38.180773	141.639092	Condition Deterioration	Nov	11
+Heywood Power Station	-38.180773	141.639092	Cable Fault	Apr	20
+Heywood Power Station	-38.180773	141.639092	Cable Fault	Apr	6
+Heywood Power Station	-38.180773	141.639092	Vehicle	Feb	4
+Heywood Power Station	-38.180773	141.639092	Wind	Aug	4
+Heywood Power Station	-38.180773	141.639092	Rain/Flooding	Nov	17
+Heywood Power Station	-38.180773	141.639092	Vehicle	Jun	19
+Heywood Power Station	-38.180773	141.639092	Vehicle	Aug	6
+Heywood Power Station	-38.180773	141.639092	Condition Deterioration	Feb	13
+Heywood Power Station	-38.180773	141.639092	Condition Deterioration	May	8
+Heywood Power Station	-38.180773	141.639092	Rain/Flooding	Sep	3
+Heywood Power Station	-38.180773	141.639092	Vehicle	Oct	7
+Jeeralang Power Station	-38.276921	146.424482	Wind	Mar	11
+Jeeralang Power Station	-38.276921	146.424482	Cable Fault	Oct	14
+Jeeralang Power Station	-38.276921	146.424482	Vehicle	Oct	4
+Jeeralang Power Station	-38.276921	146.424482	Vehicle	May	5
+Jeeralang Power Station	-38.276921	146.424482	Other Miscellaneous	Jun	9
+Jeeralang Power Station	-38.276921	146.424482	Wind	Mar	16
+Jeeralang Power Station	-38.276921	146.424482	Cable Fault	Dec	7
+Jeeralang Power Station	-38.276921	146.424482	Programmed Outage	Mar	20
+Jeeralang Power Station	-38.276921	146.424482	Human error	Apr	10
+Jeeralang Power Station	-38.276921	146.424482	Vehicle	Nov	9
+Jeeralang Power Station	-38.276921	146.424482	Cable Fault	Jan	19
+Jeeralang Power Station	-38.276921	146.424482	Rain/Flooding	Feb	7
+Jeeralang Power Station	-38.276921	146.424482	Programmed Outage	Nov	19
+Jeeralang Power Station	-38.276921	146.424482	Rain/Flooding	Apr	1
+Jeeralang Power Station	-38.276921	146.424482	Cable Fault	Jul	1
+Jeeralang Power Station	-38.276921	146.424482	Wind	Oct	20
+Jeeralang Power Station	-38.276921	146.424482	Wind	Feb	9
+Jeeralang Power Station	-38.276921	146.424482	Wind	Nov	13
+Jeeralang Power Station	-38.276921	146.424482	Rain/Flooding	Nov	12
+Jeeralang Power Station	-38.276921	146.424482	Other Miscellaneous	Feb	6
+Jeeralang Power Station	-38.276921	146.424482	Electrical Overload	Feb	1
+Jeeralang Power Station	-38.276921	146.424482	Human error	Nov	3
+Jeeralang Power Station	-38.276921	146.424482	Rain/Flooding	Mar	11
+Jeeralang Power Station	-38.276921	146.424482	Cable Fault	Apr	18
+Jeeralang Power Station	-38.276921	146.424482	Electrical Overload	Nov	15
+Jeeralang Power Station	-38.276921	146.424482	Human error	Aug	1
+Jeeralang Power Station	-38.276921	146.424482	Electrical Overload	Jul	2
+Jeeralang Power Station	-38.276921	146.424482	Other Miscellaneous	Dec	3
+Jeeralang Power Station	-38.276921	146.424482	Human error	Aug	1
+Jeeralang Power Station	-38.276921	146.424482	Electrical Overload	Sep	12
+Keilor Power Station	-37.738239	144.846177	Programmed Outage	Feb	5
+Keilor Power Station	-37.738239	144.846177	Electrical Overload	Mar	20
+Keilor Power Station	-37.738239	144.846177	Cable Fault	Sep	9
+Keilor Power Station	-37.738239	144.846177	Wind	Apr	7
+Keilor Power Station	-37.738239	144.846177	Programmed Outage	Jun	11
+Keilor Power Station	-37.738239	144.846177	Human error	Mar	17
+Keilor Power Station	-37.738239	144.846177	Rain/Flooding	Jan	15
+Keilor Power Station	-37.738239	144.846177	Electrical Overload	May	13
+Keilor Power Station	-37.738239	144.846177	Cable Fault	Apr	9
+Keilor Power Station	-37.738239	144.846177	Cable Fault	Sep	3
+Keilor Power Station	-37.738239	144.846177	Cable Fault	Oct	14
+Keilor Power Station	-37.738239	144.846177	Human error	Feb	9
+Keilor Power Station	-37.738239	144.846177	Programmed Outage	Feb	0
+Keilor Power Station	-37.738239	144.846177	Condition Deterioration	Jun	15
+Keilor Power Station	-37.738239	144.846177	Vehicle	Mar	6
+Keilor Power Station	-37.738239	144.846177	Electrical Overload	Jul	0
+Keilor Power Station	-37.738239	144.846177	Other Miscellaneous	Apr	18
+Keilor Power Station	-37.738239	144.846177	Electrical Overload	Mar	3
+Keilor Power Station	-37.738239	144.846177	Electrical Overload	Jun	3
+Keilor Power Station	-37.738239	144.846177	Human error	Aug	2
+Keilor Power Station	-37.738239	144.846177	Vehicle	Feb	12
+Keilor Power Station	-37.738239	144.846177	Electrical Overload	Feb	18
+Keilor Power Station	-37.738239	144.846177	Wind	Feb	19
+Keilor Power Station	-37.738239	144.846177	Programmed Outage	May	5
+Keilor Power Station	-37.738239	144.846177	Programmed Outage	May	5
+Keilor Power Station	-37.738239	144.846177	Cable Fault	Mar	18
+Keilor Power Station	-37.738239	144.846177	Rain/Flooding	Dec	2
+Keilor Power Station	-37.738239	144.846177	Rain/Flooding	Nov	17
+Keilor Power Station	-37.738239	144.846177	Wind	Dec	4
+Keilor Power Station	-37.738239	144.846177	Cable Fault	Jul	5
+Kerang Power Station	-35.771467	143.933995	Human error	Nov	14
+Kerang Power Station	-35.771467	143.933995	Programmed Outage	Aug	10
+Kerang Power Station	-35.771467	143.933995	Rain/Flooding	Nov	4
+Kerang Power Station	-35.771467	143.933995	Programmed Outage	Mar	20
+Kerang Power Station	-35.771467	143.933995	Cable Fault	Dec	6
+Kerang Power Station	-35.771467	143.933995	Rain/Flooding	Apr	4
+Kerang Power Station	-35.771467	143.933995	Programmed Outage	Apr	12
+Kerang Power Station	-35.771467	143.933995	Rain/Flooding	Nov	11
+Kerang Power Station	-35.771467	143.933995	Programmed Outage	May	18
+Kerang Power Station	-35.771467	143.933995	Wind	Nov	8
+Kerang Power Station	-35.771467	143.933995	Other Miscellaneous	Feb	17
+Kerang Power Station	-35.771467	143.933995	Wind	Sep	12
+Kerang Power Station	-35.771467	143.933995	Rain/Flooding	Dec	11
+Kerang Power Station	-35.771467	143.933995	Programmed Outage	Sep	1
+Kerang Power Station	-35.771467	143.933995	Wind	Apr	16
+Kerang Power Station	-35.771467	143.933995	Electrical Overload	May	6
+Kerang Power Station	-35.771467	143.933995	Electrical Overload	Feb	6
+Kerang Power Station	-35.771467	143.933995	Condition Deterioration	Oct	5
+Kerang Power Station	-35.771467	143.933995	Other Miscellaneous	Mar	8
+Kerang Power Station	-35.771467	143.933995	Wind	Apr	8
+Kerang Power Station	-35.771467	143.933995	Rain/Flooding	Oct	5
+Kerang Power Station	-35.771467	143.933995	Electrical Overload	Oct	10
+Kerang Power Station	-35.771467	143.933995	Vehicle	Jun	14
+Kerang Power Station	-35.771467	143.933995	Programmed Outage	Mar	12
+Kerang Power Station	-35.771467	143.933995	Cable Fault	Jul	9
+Kerang Power Station	-35.771467	143.933995	Vehicle	Aug	19
+Kerang Power Station	-35.771467	143.933995	Rain/Flooding	May	7
+Kerang Power Station	-35.771467	143.933995	Wind	Oct	11
+Kerang Power Station	-35.771467	143.933995	Vehicle	Oct	15
+Kerang Power Station	-35.771467	143.933995	Human error	Nov	20
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Electrical Overload	Feb	3
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Human error	Jan	8
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Rain/Flooding	Nov	16
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Human error	Sep	17
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Human error	Apr	13
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Electrical Overload	Jun	12
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Wind	Jan	19
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Cable Fault	Aug	9
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Programmed Outage	Apr	9
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Electrical Overload	Jun	19
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Electrical Overload	Jan	6
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Human error	Jun	15
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Vehicle	Feb	16
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Vehicle	Aug	0
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Rain/Flooding	Jul	18
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Electrical Overload	Jun	14
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Vehicle	Jun	14
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Vehicle	Oct	4
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Condition Deterioration	Aug	8
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Cable Fault	Feb	16
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Wind	Nov	6
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Other Miscellaneous	Jan	18
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Other Miscellaneous	Oct	8
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Other Miscellaneous	Feb	3
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Human error	Apr	3
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Rain/Flooding	Nov	6
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Human error	Mar	18
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Rain/Flooding	May	13
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Rain/Flooding	Jan	2
+Snowy Hydro Laverton Power Station	-37.8329643	144.7864833	Human error	Aug	11
+Loy Yang A Power Station	-38.254875	146.571266	Electrical Overload	Dec	2
+Loy Yang A Power Station	-38.254875	146.571266	Vehicle	Jun	19
+Loy Yang A Power Station	-38.254875	146.571266	Cable Fault	Feb	10
+Loy Yang A Power Station	-38.254875	146.571266	Rain/Flooding	Nov	18
+Loy Yang A Power Station	-38.254875	146.571266	Other Miscellaneous	Nov	1
+Loy Yang A Power Station	-38.254875	146.571266	Cable Fault	Nov	6
+Loy Yang A Power Station	-38.254875	146.571266	Rain/Flooding	Jul	4
+Loy Yang A Power Station	-38.254875	146.571266	Programmed Outage	Nov	11
+Loy Yang A Power Station	-38.254875	146.571266	Other Miscellaneous	Apr	6
+Loy Yang A Power Station	-38.254875	146.571266	Human error	Jul	1
+Loy Yang A Power Station	-38.254875	146.571266	Wind	Oct	18
+Loy Yang A Power Station	-38.254875	146.571266	Programmed Outage	May	4
+Loy Yang A Power Station	-38.254875	146.571266	Wind	Apr	1
+Loy Yang A Power Station	-38.254875	146.571266	Wind	Nov	12
+Loy Yang A Power Station	-38.254875	146.571266	Wind	Mar	12
+Loy Yang A Power Station	-38.254875	146.571266	Condition Deterioration	Apr	8
+Loy Yang A Power Station	-38.254875	146.571266	Rain/Flooding	Apr	5
+Loy Yang A Power Station	-38.254875	146.571266	Rain/Flooding	Oct	7
+Loy Yang A Power Station	-38.254875	146.571266	Other Miscellaneous	Sep	5
+Loy Yang A Power Station	-38.254875	146.571266	Human error	Jul	0
+Loy Yang A Power Station	-38.254875	146.571266	Programmed Outage	May	7
+Loy Yang A Power Station	-38.254875	146.571266	Electrical Overload	Apr	7
+Loy Yang A Power Station	-38.254875	146.571266	Cable Fault	Jul	15
+Loy Yang A Power Station	-38.254875	146.571266	Cable Fault	May	19
+Loy Yang A Power Station	-38.254875	146.571266	Condition Deterioration	Feb	0
+Loy Yang A Power Station	-38.254875	146.571266	Programmed Outage	Mar	5
+Loy Yang A Power Station	-38.254875	146.571266	Cable Fault	Oct	15
+Loy Yang A Power Station	-38.254875	146.571266	Electrical Overload	Oct	10
+Loy Yang A Power Station	-38.254875	146.571266	Human error	Jul	4
+Loy Yang A Power Station	-38.254875	146.571266	Condition Deterioration	Nov	3
+Loy Yang B Power Station	-38.256497	146.573862	Other Miscellaneous	Nov	10
+Loy Yang B Power Station	-38.256497	146.573862	Cable Fault	Sep	12
+Loy Yang B Power Station	-38.256497	146.573862	Vehicle	Feb	4
+Loy Yang B Power Station	-38.256497	146.573862	Programmed Outage	Nov	18
+Loy Yang B Power Station	-38.256497	146.573862	Cable Fault	Mar	11
+Loy Yang B Power Station	-38.256497	146.573862	Electrical Overload	Jul	0
+Loy Yang B Power Station	-38.256497	146.573862	Rain/Flooding	Nov	12
+Loy Yang B Power Station	-38.256497	146.573862	Vehicle	Feb	15
+Loy Yang B Power Station	-38.256497	146.573862	Wind	Sep	16
+Loy Yang B Power Station	-38.256497	146.573862	Electrical Overload	Feb	10
+Loy Yang B Power Station	-38.256497	146.573862	Programmed Outage	Jul	14
+Loy Yang B Power Station	-38.256497	146.573862	Wind	Oct	7
+Loy Yang B Power Station	-38.256497	146.573862	Wind	May	13
+Loy Yang B Power Station	-38.256497	146.573862	Wind	Apr	9
+Loy Yang B Power Station	-38.256497	146.573862	Rain/Flooding	Aug	1
+Loy Yang B Power Station	-38.256497	146.573862	Rain/Flooding	Aug	4
+Loy Yang B Power Station	-38.256497	146.573862	Other Miscellaneous	Jun	11
+Loy Yang B Power Station	-38.256497	146.573862	Programmed Outage	Mar	14
+Loy Yang B Power Station	-38.256497	146.573862	Programmed Outage	Jul	5
+Loy Yang B Power Station	-38.256497	146.573862	Electrical Overload	Sep	19
+Loy Yang B Power Station	-38.256497	146.573862	Vehicle	Jan	5
+Loy Yang B Power Station	-38.256497	146.573862	Vehicle	Nov	19
+Loy Yang B Power Station	-38.256497	146.573862	Vehicle	Mar	1
+Loy Yang B Power Station	-38.256497	146.573862	Programmed Outage	Dec	11
+Loy Yang B Power Station	-38.256497	146.573862	Wind	Oct	7
+Loy Yang B Power Station	-38.256497	146.573862	Programmed Outage	Sep	10
+Loy Yang B Power Station	-38.256497	146.573862	Vehicle	Apr	1
+Loy Yang B Power Station	-38.256497	146.573862	Cable Fault	Feb	19
+Loy Yang B Power Station	-38.256497	146.573862	Condition Deterioration	Jun	17
+Loy Yang B Power Station	-38.256497	146.573862	Programmed Outage	Sep	2
+Keilor Power Station	-37.738239	144.846177	Vehicle	Oct	17
+Keilor Power Station	-37.738239	144.846177	Programmed Outage	Sep	15
+Keilor Power Station	-37.738239	144.846177	Human error	Nov	18
+Keilor Power Station	-37.738239	144.846177	Electrical Overload	Mar	7
+Keilor Power Station	-37.738239	144.846177	Rain/Flooding	May	3
+Keilor Power Station	-37.738239	144.846177	Electrical Overload	Jun	18
+Keilor Power Station	-37.738239	144.846177	Programmed Outage	Jun	7
+Keilor Power Station	-37.738239	144.846177	Human error	Sep	6
+Keilor Power Station	-37.738239	144.846177	Vehicle	Nov	3
+Keilor Power Station	-37.738239	144.846177	Cable Fault	Sep	7
+Keilor Power Station	-37.738239	144.846177	Vehicle	Jul	8
+Keilor Power Station	-37.738239	144.846177	Condition Deterioration	Mar	15
+Keilor Power Station	-37.738239	144.846177	Programmed Outage	Jan	11
+Keilor Power Station	-37.738239	144.846177	Human error	Oct	5
+Keilor Power Station	-37.738239	144.846177	Vehicle	Jan	17
+Keilor Power Station	-37.738239	144.846177	Wind	Dec	8
+Keilor Power Station	-37.738239	144.846177	Rain/Flooding	Apr	19
+Keilor Power Station	-37.738239	144.846177	Vehicle	Aug	20
+Keilor Power Station	-37.738239	144.846177	Vehicle	Aug	8
+Keilor Power Station	-37.738239	144.846177	Rain/Flooding	Apr	20
+Keilor Power Station	-37.738239	144.846177	Condition Deterioration	Sep	6
+Keilor Power Station	-37.738239	144.846177	Human error	Sep	5
+Keilor Power Station	-37.738239	144.846177	Rain/Flooding	Jun	12
+Keilor Power Station	-37.738239	144.846177	Electrical Overload	Feb	12
+Keilor Power Station	-37.738239	144.846177	Cable Fault	May	2
+Keilor Power Station	-37.738239	144.846177	Vehicle	Sep	3
+Keilor Power Station	-37.738239	144.846177	Wind	Apr	5
+Keilor Power Station	-37.738239	144.846177	Cable Fault	Jan	19
+Keilor Power Station	-37.738239	144.846177	Human error	Apr	8
+Keilor Power Station	-37.738239	144.846177	Electrical Overload	Jul	5
+Macarthur Wind Farm	-38.064804	142.18436	Wind	Aug	18
+Macarthur Wind Farm	-38.064804	142.18436	Human error	Jan	1
+Macarthur Wind Farm	-38.064804	142.18436	Rain/Flooding	Nov	9
+Macarthur Wind Farm	-38.064804	142.18436	Programmed Outage	Feb	17
+Macarthur Wind Farm	-38.064804	142.18436	Programmed Outage	Feb	10
+Macarthur Wind Farm	-38.064804	142.18436	Vehicle	May	9
+Macarthur Wind Farm	-38.064804	142.18436	Other Miscellaneous	Sep	2
+Macarthur Wind Farm	-38.064804	142.18436	Programmed Outage	Mar	10
+Macarthur Wind Farm	-38.064804	142.18436	Wind	Apr	15
+Macarthur Wind Farm	-38.064804	142.18436	Vehicle	Jul	4
+Macarthur Wind Farm	-38.064804	142.18436	Programmed Outage	Sep	0
+Macarthur Wind Farm	-38.064804	142.18436	Condition Deterioration	Apr	16
+Macarthur Wind Farm	-38.064804	142.18436	Programmed Outage	Jan	1
+Macarthur Wind Farm	-38.064804	142.18436	Rain/Flooding	Feb	13
+Macarthur Wind Farm	-38.064804	142.18436	Programmed Outage	Jul	2
+Macarthur Wind Farm	-38.064804	142.18436	Programmed Outage	Jul	4
+Macarthur Wind Farm	-38.064804	142.18436	Programmed Outage	Aug	19
+Macarthur Wind Farm	-38.064804	142.18436	Vehicle	Nov	6
+Macarthur Wind Farm	-38.064804	142.18436	Wind	Oct	10
+Macarthur Wind Farm	-38.064804	142.18436	Cable Fault	Mar	2
+Macarthur Wind Farm	-38.064804	142.18436	Rain/Flooding	Aug	5
+Macarthur Wind Farm	-38.064804	142.18436	Electrical Overload	Aug	2
+Macarthur Wind Farm	-38.064804	142.18436	Programmed Outage	Mar	3
+Macarthur Wind Farm	-38.064804	142.18436	Cable Fault	Nov	2
+Macarthur Wind Farm	-38.064804	142.18436	Programmed Outage	Mar	17
+Macarthur Wind Farm	-38.064804	142.18436	Programmed Outage	Jul	6
+Macarthur Wind Farm	-38.064804	142.18436	Cable Fault	Oct	16
+Macarthur Wind Farm	-38.064804	142.18436	Programmed Outage	May	1
+Macarthur Wind Farm	-38.064804	142.18436	Wind	Mar	1
+Macarthur Wind Farm	-38.064804	142.18436	Programmed Outage	Oct	15
+Malvern Power Station	-37.877829	-37.877829	Human error	Jun	6
+Malvern Power Station	-37.877829	-37.877829	Wind	Nov	3
+Malvern Power Station	-37.877829	-37.877829	Human error	Apr	8
+Malvern Power Station	-37.877829	-37.877829	Cable Fault	Feb	3
+Malvern Power Station	-37.877829	-37.877829	Human error	Apr	9
+Malvern Power Station	-37.877829	-37.877829	Human error	Oct	18
+Malvern Power Station	-37.877829	-37.877829	Human error	Mar	11
+Malvern Power Station	-37.877829	-37.877829	Human error	Dec	11
+Malvern Power Station	-37.877829	-37.877829	Cable Fault	Nov	8
+Malvern Power Station	-37.877829	-37.877829	Vehicle	Oct	10
+Malvern Power Station	-37.877829	-37.877829	Condition Deterioration	Aug	4
+Malvern Power Station	-37.877829	-37.877829	Human error	Mar	8
+Malvern Power Station	-37.877829	-37.877829	Other Miscellaneous	Apr	15
+Malvern Power Station	-37.877829	-37.877829	Programmed Outage	Sep	5
+Malvern Power Station	-37.877829	-37.877829	Wind	Oct	14
+Malvern Power Station	-37.877829	-37.877829	Vehicle	Sep	17
+Malvern Power Station	-37.877829	-37.877829	Human error	Feb	20
+Malvern Power Station	-37.877829	-37.877829	Condition Deterioration	Nov	16
+Malvern Power Station	-37.877829	-37.877829	Human error	May	1
+Malvern Power Station	-37.877829	-37.877829	Human error	Jun	11
+Malvern Power Station	-37.877829	-37.877829	Wind	Aug	18
+Malvern Power Station	-37.877829	-37.877829	Electrical Overload	Dec	9
+Malvern Power Station	-37.877829	-37.877829	Condition Deterioration	Nov	3
+Malvern Power Station	-37.877829	-37.877829	Rain/Flooding	Jun	4
+Malvern Power Station	-37.877829	-37.877829	Electrical Overload	Sep	10
+Malvern Power Station	-37.877829	-37.877829	Vehicle	Feb	15
+Malvern Power Station	-37.877829	-37.877829	Cable Fault	Apr	3
+Malvern Power Station	-37.877829	-37.877829	Programmed Outage	Jan	0
+Malvern Power Station	-37.877829	-37.877829	Human error	Mar	12
+Malvern Power Station	-37.877829	-37.877829	Other Miscellaneous	Feb	11
+Mckay Creek Power Station	-36.7853472	147.2196667	Electrical Overload	Oct	12
+Mckay Creek Power Station	-36.7853472	147.2196667	Rain/Flooding	May	16
+Mckay Creek Power Station	-36.7853472	147.2196667	Human error	Feb	18
+Mckay Creek Power Station	-36.7853472	147.2196667	Rain/Flooding	Aug	14
+Mckay Creek Power Station	-36.7853472	147.2196667	Rain/Flooding	Dec	7
+Mckay Creek Power Station	-36.7853472	147.2196667	Programmed Outage	Jul	17
+Mckay Creek Power Station	-36.7853472	147.2196667	Programmed Outage	Apr	14
+Mckay Creek Power Station	-36.7853472	147.2196667	Other Miscellaneous	Oct	17
+Mckay Creek Power Station	-36.7853472	147.2196667	Vehicle	Feb	13
+Mckay Creek Power Station	-36.7853472	147.2196667	Wind	Jul	18
+Mckay Creek Power Station	-36.7853472	147.2196667	Cable Fault	Feb	18
+Mckay Creek Power Station	-36.7853472	147.2196667	Wind	Nov	19
+Mckay Creek Power Station	-36.7853472	147.2196667	Wind	Nov	19
+Mckay Creek Power Station	-36.7853472	147.2196667	Programmed Outage	Sep	1
+Mckay Creek Power Station	-36.7853472	147.2196667	Vehicle	May	11
+Mckay Creek Power Station	-36.7853472	147.2196667	Vehicle	Sep	11
+Mckay Creek Power Station	-36.7853472	147.2196667	Wind	May	20
+Mckay Creek Power Station	-36.7853472	147.2196667	Rain/Flooding	Jan	5
+Mckay Creek Power Station	-36.7853472	147.2196667	Programmed Outage	May	14
+Mckay Creek Power Station	-36.7853472	147.2196667	Programmed Outage	Jul	13
+Mckay Creek Power Station	-36.7853472	147.2196667	Electrical Overload	Mar	13
+Mckay Creek Power Station	-36.7853472	147.2196667	Wind	May	1
+Mckay Creek Power Station	-36.7853472	147.2196667	Rain/Flooding	Nov	19
+Mckay Creek Power Station	-36.7853472	147.2196667	Human error	Sep	8
+Mckay Creek Power Station	-36.7853472	147.2196667	Cable Fault	Sep	6
+Mckay Creek Power Station	-36.7853472	147.2196667	Programmed Outage	Jun	0
+Mckay Creek Power Station	-36.7853472	147.2196667	Rain/Flooding	Sep	12
+Mckay Creek Power Station	-36.7853472	147.2196667	Vehicle	May	16
+Mckay Creek Power Station	-36.7853472	147.2196667	Vehicle	May	16
+Mckay Creek Power Station	-36.7853472	147.2196667	Condition Deterioration	Aug	9
+Mildura Solar Farm	-34.1899229	142.1676801	Electrical Overload	Aug	16
+Mildura Solar Farm	-34.1899229	142.1676801	Wind	Sep	7
+Mildura Solar Farm	-34.1899229	142.1676801	Rain/Flooding	Jul	19
+Mildura Solar Farm	-34.1899229	142.1676801	Cable Fault	Jun	5
+Mildura Solar Farm	-34.1899229	142.1676801	Electrical Overload	Nov	18
+Mildura Solar Farm	-34.1899229	142.1676801	Cable Fault	Sep	13
+Mildura Solar Farm	-34.1899229	142.1676801	Electrical Overload	Jan	10
+Mildura Solar Farm	-34.1899229	142.1676801	Cable Fault	Jun	11
+Mildura Solar Farm	-34.1899229	142.1676801	Programmed Outage	Aug	0
+Mildura Solar Farm	-34.1899229	142.1676801	Vehicle	Aug	0
+Mildura Solar Farm	-34.1899229	142.1676801	Vehicle	Sep	3
+Mildura Solar Farm	-34.1899229	142.1676801	Programmed Outage	Nov	11
+Mildura Solar Farm	-34.1899229	142.1676801	Condition Deterioration	Aug	16
+Mildura Solar Farm	-34.1899229	142.1676801	Rain/Flooding	Apr	0
+Mildura Solar Farm	-34.1899229	142.1676801	Rain/Flooding	Jul	8
+Mildura Solar Farm	-34.1899229	142.1676801	Rain/Flooding	May	8
+Mildura Solar Farm	-34.1899229	142.1676801	Vehicle	Jan	11
+Mildura Solar Farm	-34.1899229	142.1676801	Human error	Sep	10
+Mildura Solar Farm	-34.1899229	142.1676801	Wind	Feb	11
+Mildura Solar Farm	-34.1899229	142.1676801	Vehicle	Nov	14
+Mildura Solar Farm	-34.1899229	142.1676801	Condition Deterioration	Dec	8
+Mildura Solar Farm	-34.1899229	142.1676801	Wind	Mar	2
+Mildura Solar Farm	-34.1899229	142.1676801	Electrical Overload	Jan	13
+Mildura Solar Farm	-34.1899229	142.1676801	Rain/Flooding	Nov	3
+Mildura Solar Farm	-34.1899229	142.1676801	Human error	Apr	12
+Mildura Solar Farm	-34.1899229	142.1676801	Vehicle	Aug	7
+Mildura Solar Farm	-34.1899229	142.1676801	Wind	Jan	0
+Mildura Solar Farm	-34.1899229	142.1676801	Electrical Overload	Oct	6
+Mildura Solar Farm	-34.1899229	142.1676801	Electrical Overload	Sep	16
+Mildura Solar Farm	-34.1899229	142.1676801	Wind	Oct	6
+Moorabool Power Station	-38.037	144.296809	Vehicle	Jul	5
+Moorabool Power Station	-38.037	144.296809	Wind	Mar	15
+Moorabool Power Station	-38.037	144.296809	Other Miscellaneous	Jun	8
+Moorabool Power Station	-38.037	144.296809	Cable Fault	Sep	0
+Moorabool Power Station	-38.037	144.296809	Wind	Jul	15
+Moorabool Power Station	-38.037	144.296809	Electrical Overload	Jul	5
+Moorabool Power Station	-38.037	144.296809	Cable Fault	Oct	18
+Moorabool Power Station	-38.037	144.296809	Cable Fault	Jul	3
+Moorabool Power Station	-38.037	144.296809	Human error	Jul	1
+Moorabool Power Station	-38.037	144.296809	Other Miscellaneous	Oct	18
+Moorabool Power Station	-38.037	144.296809	Electrical Overload	Mar	18
+Moorabool Power Station	-38.037	144.296809	Programmed Outage	Aug	4
+Moorabool Power Station	-38.037	144.296809	Programmed Outage	Jul	8
+Moorabool Power Station	-38.037	144.296809	Programmed Outage	May	4
+Moorabool Power Station	-38.037	144.296809	Condition Deterioration	Jun	7
+Moorabool Power Station	-38.037	144.296809	Vehicle	Dec	8
+Moorabool Power Station	-38.037	144.296809	Rain/Flooding	Jan	6
+Moorabool Power Station	-38.037	144.296809	Other Miscellaneous	Jun	12
+Moorabool Power Station	-38.037	144.296809	Vehicle	Sep	8
+Moorabool Power Station	-38.037	144.296809	Vehicle	Sep	7
+Moorabool Power Station	-38.037	144.296809	Wind	May	4
+Moorabool Power Station	-38.037	144.296809	Rain/Flooding	Feb	9
+Moorabool Power Station	-38.037	144.296809	Wind	Jun	3
+Moorabool Power Station	-38.037	144.296809	Wind	Jul	2
+Moorabool Power Station	-38.037	144.296809	Electrical Overload	Dec	5
+Moorabool Power Station	-38.037	144.296809	Electrical Overload	Jul	16
+Moorabool Power Station	-38.037	144.296809	Electrical Overload	Sep	8
+Moorabool Power Station	-38.037	144.296809	Electrical Overload	Sep	1
+Moorabool Power Station	-38.037	144.296809	Wind	May	1
+Moorabool Power Station	-38.037	144.296809	Vehicle	Dec	9
+Mortlake Power Station	-38.062219	142.670381	Other Miscellaneous	Feb	2
+Mortlake Power Station	-38.062219	142.670381	Wind	Sep	13
+Mortlake Power Station	-38.062219	142.670381	Programmed Outage	Sep	16
+Mortlake Power Station	-38.062219	142.670381	Wind	May	10
+Mortlake Power Station	-38.062219	142.670381	Electrical Overload	Jul	6
+Mortlake Power Station	-38.062219	142.670381	Other Miscellaneous	Jun	11
+Mortlake Power Station	-38.062219	142.670381	Wind	Sep	19
+Mortlake Power Station	-38.062219	142.670381	Wind	Sep	12
+Mortlake Power Station	-38.062219	142.670381	Cable Fault	Nov	9
+Mortlake Power Station	-38.062219	142.670381	Rain/Flooding	Nov	1
+Mortlake Power Station	-38.062219	142.670381	Other Miscellaneous	Mar	3
+Mortlake Power Station	-38.062219	142.670381	Cable Fault	Jan	7
+Mortlake Power Station	-38.062219	142.670381	Electrical Overload	Feb	16
+Mortlake Power Station	-38.062219	142.670381	Condition Deterioration	Mar	11
+Mortlake Power Station	-38.062219	142.670381	Vehicle	Jan	14
+Mortlake Power Station	-38.062219	142.670381	Cable Fault	Jun	11
+Mortlake Power Station	-38.062219	142.670381	Wind	Dec	7
+Mortlake Power Station	-38.062219	142.670381	Rain/Flooding	Sep	5
+Mortlake Power Station	-38.062219	142.670381	Wind	Jul	1
+Mortlake Power Station	-38.062219	142.670381	Electrical Overload	Apr	3
+Mortlake Power Station	-38.062219	142.670381	Electrical Overload	May	0
+Mortlake Power Station	-38.062219	142.670381	Human error	Sep	1
+Mortlake Power Station	-38.062219	142.670381	Rain/Flooding	Jun	18
+Mortlake Power Station	-38.062219	142.670381	Cable Fault	Apr	3
+Mortlake Power Station	-38.062219	142.670381	Wind	Apr	12
+Mortlake Power Station	-38.062219	142.670381	Wind	Oct	17
+Mortlake Power Station	-38.062219	142.670381	Programmed Outage	Feb	9
+Mortlake Power Station	-38.062219	142.670381	Wind	Nov	9
+Mortlake Power Station	-38.062219	142.670381	Human error	Aug	4
+Mortlake Power Station	-38.062219	142.670381	Other Miscellaneous	Jun	19
+Mortons Lane Wind Farm	-37.835157	142.46628	Human error	Aug	19
+Mortons Lane Wind Farm	-37.835157	142.46628	Rain/Flooding	Oct	14
+Mortons Lane Wind Farm	-37.835157	142.46628	Wind	Feb	8
+Mortons Lane Wind Farm	-37.835157	142.46628	Cable Fault	Jan	11
+Mortons Lane Wind Farm	-37.835157	142.46628	Vehicle	Jul	16
+Mortons Lane Wind Farm	-37.835157	142.46628	Vehicle	Sep	16
+Mortons Lane Wind Farm	-37.835157	142.46628	Wind	May	10
+Mortons Lane Wind Farm	-37.835157	142.46628	Cable Fault	Apr	5
+Mortons Lane Wind Farm	-37.835157	142.46628	Wind	Mar	8
+Mortons Lane Wind Farm	-37.835157	142.46628	Vehicle	Feb	18
+Mortons Lane Wind Farm	-37.835157	142.46628	Condition Deterioration	Oct	4
+Mortons Lane Wind Farm	-37.835157	142.46628	Wind	Jun	12
+Mortons Lane Wind Farm	-37.835157	142.46628	Wind	Aug	3
+Mortons Lane Wind Farm	-37.835157	142.46628	Programmed Outage	Jan	10
+Mortons Lane Wind Farm	-37.835157	142.46628	Wind	Nov	9
+Mortons Lane Wind Farm	-37.835157	142.46628	Wind	Apr	15
+Mortons Lane Wind Farm	-37.835157	142.46628	Human error	Oct	2
+Mortons Lane Wind Farm	-37.835157	142.46628	Vehicle	Jun	10
+Mortons Lane Wind Farm	-37.835157	142.46628	Rain/Flooding	Sep	11
+Mortons Lane Wind Farm	-37.835157	142.46628	Programmed Outage	Feb	14
+Mortons Lane Wind Farm	-37.835157	142.46628	Programmed Outage	Feb	1
+Mortons Lane Wind Farm	-37.835157	142.46628	Human error	Dec	13
+Mortons Lane Wind Farm	-37.835157	142.46628	Wind	Apr	15
+Mortons Lane Wind Farm	-37.835157	142.46628	Programmed Outage	Dec	10
+Mortons Lane Wind Farm	-37.835157	142.46628	Programmed Outage	Oct	11
+Mortons Lane Wind Farm	-37.835157	142.46628	Vehicle	Mar	13
+Mortons Lane Wind Farm	-37.835157	142.46628	Rain/Flooding	May	1
+Mortons Lane Wind Farm	-37.835157	142.46628	Vehicle	Mar	16
+Mortons Lane Wind Farm	-37.835157	142.46628	Electrical Overload	Nov	10
+Mortons Lane Wind Farm	-37.835157	142.46628	Electrical Overload	Mar	19
+Morwell Power Station	-38.258828	146.419898	Other Miscellaneous	Jul	1
+Morwell Power Station	-38.258828	146.419898	Electrical Overload	Jul	11
+Morwell Power Station	-38.258828	146.419898	Wind	Nov	1
+Morwell Power Station	-38.258828	146.419898	Vehicle	Apr	18
+Morwell Power Station	-38.258828	146.419898	Wind	Apr	11
+Morwell Power Station	-38.258828	146.419898	Condition Deterioration	Oct	11
+Morwell Power Station	-38.258828	146.419898	Cable Fault	Jul	15
+Morwell Power Station	-38.258828	146.419898	Rain/Flooding	Sep	13
+Morwell Power Station	-38.258828	146.419898	Cable Fault	May	13
+Morwell Power Station	-38.258828	146.419898	Human error	Aug	4
+Morwell Power Station	-38.258828	146.419898	Other Miscellaneous	Oct	19
+Morwell Power Station	-38.258828	146.419898	Programmed Outage	Apr	14
+Morwell Power Station	-38.258828	146.419898	Condition Deterioration	Dec	7
+Morwell Power Station	-38.258828	146.419898	Programmed Outage	Dec	16
+Morwell Power Station	-38.258828	146.419898	Cable Fault	Sep	4
+Morwell Power Station	-38.258828	146.419898	Cable Fault	Dec	6
+Morwell Power Station	-38.258828	146.419898	Cable Fault	Oct	12
+Morwell Power Station	-38.258828	146.419898	Rain/Flooding	Mar	15
+Morwell Power Station	-38.258828	146.419898	Programmed Outage	Mar	4
+Morwell Power Station	-38.258828	146.419898	Wind	Mar	14
+Morwell Power Station	-38.258828	146.419898	Cable Fault	Oct	0
+Morwell Power Station	-38.258828	146.419898	Condition Deterioration	Sep	19
+Morwell Power Station	-38.258828	146.419898	Human error	Feb	0
+Morwell Power Station	-38.258828	146.419898	Rain/Flooding	Aug	12
+Morwell Power Station	-38.258828	146.419898	Cable Fault	Aug	15
+Morwell Power Station	-38.258828	146.419898	Wind	Jun	6
+Morwell Power Station	-38.258828	146.419898	Electrical Overload	Sep	14
+Morwell Power Station	-38.258828	146.419898	Condition Deterioration	May	13
+Morwell Power Station	-38.258828	146.419898	Rain/Flooding	Mar	3
+Morwell Power Station	-38.258828	146.419898	Electrical Overload	Dec	5
+Mount Beauty	-36.743887	147.165862	Electrical Overload	Aug	18
+Mount Beauty	-36.743887	147.165862	Human error	Apr	14
+Mount Beauty	-36.743887	147.165862	Electrical Overload	Aug	14
+Mount Beauty	-36.743887	147.165862	Human error	Feb	11
+Mount Beauty	-36.743887	147.165862	Electrical Overload	Mar	11
+Mount Beauty	-36.743887	147.165862	Cable Fault	May	3
+Mount Beauty	-36.743887	147.165862	Vehicle	Aug	11
+Mount Beauty	-36.743887	147.165862	Rain/Flooding	Feb	7
+Mount Beauty	-36.743887	147.165862	Programmed Outage	Jul	17
+Mount Beauty	-36.743887	147.165862	Programmed Outage	Jun	7
+Mount Beauty	-36.743887	147.165862	Cable Fault	Apr	11
+Mount Beauty	-36.743887	147.165862	Human error	Sep	13
+Mount Beauty	-36.743887	147.165862	Vehicle	Apr	13
+Mount Beauty	-36.743887	147.165862	Electrical Overload	Sep	6
+Mount Beauty	-36.743887	147.165862	Programmed Outage	Jul	12
+Mount Beauty	-36.743887	147.165862	Cable Fault	Jul	8
+Mount Beauty	-36.743887	147.165862	Condition Deterioration	Aug	5
+Mount Beauty	-36.743887	147.165862	Electrical Overload	Oct	4
+Mount Beauty	-36.743887	147.165862	Electrical Overload	Aug	0
+Mount Beauty	-36.743887	147.165862	Electrical Overload	Aug	6
+Mount Beauty	-36.743887	147.165862	Rain/Flooding	Feb	8
+Mount Beauty	-36.743887	147.165862	Cable Fault	Jul	9
+Mount Beauty	-36.743887	147.165862	Cable Fault	Nov	7
+Mount Beauty	-36.743887	147.165862	Vehicle	Mar	13
+Mount Beauty	-36.743887	147.165862	Vehicle	Jul	7
+Mount Beauty	-36.743887	147.165862	Electrical Overload	Jun	8
+Mount Beauty	-36.743887	147.165862	Condition Deterioration	Nov	8
+Mount Beauty	-36.743887	147.165862	Electrical Overload	Feb	6
+Mount Beauty	-36.743887	147.165862	Human error	Sep	11
+Mount Beauty	-36.743887	147.165862	Programmed Outage	Apr	20
+Newport Power Station	-37.8438215	144.8934531	Other Miscellaneous	Apr	3
+Newport Power Station	-37.8438215	144.8934531	Cable Fault	Feb	20
+Newport Power Station	-37.8438215	144.8934531	Wind	Mar	7
+Newport Power Station	-37.8438215	144.8934531	Wind	Apr	10
+Newport Power Station	-37.8438215	144.8934531	Vehicle	Dec	3
+Newport Power Station	-37.8438215	144.8934531	Electrical Overload	Aug	6
+Newport Power Station	-37.8438215	144.8934531	Rain/Flooding	Jul	18
+Newport Power Station	-37.8438215	144.8934531	Electrical Overload	Sep	10
+Newport Power Station	-37.8438215	144.8934531	Programmed Outage	Feb	9
+Newport Power Station	-37.8438215	144.8934531	Human error	Dec	6
+Newport Power Station	-37.8438215	144.8934531	Other Miscellaneous	Sep	13
+Newport Power Station	-37.8438215	144.8934531	Rain/Flooding	Sep	10
+Newport Power Station	-37.8438215	144.8934531	Electrical Overload	Jul	19
+Newport Power Station	-37.8438215	144.8934531	Human error	Jul	16
+Newport Power Station	-37.8438215	144.8934531	Cable Fault	Nov	10
+Newport Power Station	-37.8438215	144.8934531	Programmed Outage	May	8
+Newport Power Station	-37.8438215	144.8934531	Vehicle	Nov	13
+Newport Power Station	-37.8438215	144.8934531	Other Miscellaneous	Apr	12
+Newport Power Station	-37.8438215	144.8934531	Vehicle	Nov	8
+Newport Power Station	-37.8438215	144.8934531	Vehicle	Oct	13
+Newport Power Station	-37.8438215	144.8934531	Cable Fault	Jun	1
+Newport Power Station	-37.8438215	144.8934531	Other Miscellaneous	Aug	13
+Newport Power Station	-37.8438215	144.8934531	Rain/Flooding	Apr	18
+Newport Power Station	-37.8438215	144.8934531	Cable Fault	Sep	7
+Newport Power Station	-37.8438215	144.8934531	Programmed Outage	Apr	8
+Newport Power Station	-37.8438215	144.8934531	Rain/Flooding	Jul	16
+Newport Power Station	-37.8438215	144.8934531	Electrical Overload	Dec	1
+Newport Power Station	-37.8438215	144.8934531	Cable Fault	Mar	6
+Newport Power Station	-37.8438215	144.8934531	Cable Fault	Sep	12
+Newport Power Station	-37.8438215	144.8934531	Wind	Dec	1
+Oakland Hills Wind Farm	-37.681472	142.55226	Rain/Flooding	May	15
+Oakland Hills Wind Farm	-37.681472	142.55226	Wind	Apr	5
+Oakland Hills Wind Farm	-37.681472	142.55226	Vehicle	Jun	10
+Oakland Hills Wind Farm	-37.681472	142.55226	Cable Fault	Sep	19
+Oakland Hills Wind Farm	-37.681472	142.55226	Cable Fault	Nov	2
+Oakland Hills Wind Farm	-37.681472	142.55226	Programmed Outage	Dec	9
+Oakland Hills Wind Farm	-37.681472	142.55226	Electrical Overload	Oct	1
+Oakland Hills Wind Farm	-37.681472	142.55226	Wind	Oct	13
+Oakland Hills Wind Farm	-37.681472	142.55226	Programmed Outage	Jul	2
+Oakland Hills Wind Farm	-37.681472	142.55226	Rain/Flooding	Jul	1
+Oakland Hills Wind Farm	-37.681472	142.55226	Wind	Apr	3
+Oakland Hills Wind Farm	-37.681472	142.55226	Condition Deterioration	Aug	11
+Oakland Hills Wind Farm	-37.681472	142.55226	Programmed Outage	Feb	6
+Oakland Hills Wind Farm	-37.681472	142.55226	Cable Fault	Oct	18
+Oakland Hills Wind Farm	-37.681472	142.55226	Rain/Flooding	Oct	14
+Oakland Hills Wind Farm	-37.681472	142.55226	Programmed Outage	Mar	7
+Oakland Hills Wind Farm	-37.681472	142.55226	Programmed Outage	Jun	16
+Oakland Hills Wind Farm	-37.681472	142.55226	Wind	Feb	11
+Oakland Hills Wind Farm	-37.681472	142.55226	Vehicle	Aug	16
+Oakland Hills Wind Farm	-37.681472	142.55226	Programmed Outage	Oct	4
+Oakland Hills Wind Farm	-37.681472	142.55226	Rain/Flooding	Sep	16
+Oakland Hills Wind Farm	-37.681472	142.55226	Electrical Overload	Sep	7
+Oakland Hills Wind Farm	-37.681472	142.55226	Other Miscellaneous	Jul	5
+Oakland Hills Wind Farm	-37.681472	142.55226	Vehicle	Jul	4
+Oakland Hills Wind Farm	-37.681472	142.55226	Other Miscellaneous	Aug	18
+Oakland Hills Wind Farm	-37.681472	142.55226	Human error	Nov	13
+Oakland Hills Wind Farm	-37.681472	142.55226	Cable Fault	Aug	4
+Oakland Hills Wind Farm	-37.681472	142.55226	Rain/Flooding	Jun	19
+Oakland Hills Wind Farm	-37.681472	142.55226	Vehicle	Feb	17
+Oakland Hills Wind Farm	-37.681472	142.55226	Electrical Overload	Jun	1
+Point Henry	-38.135029	144.422283	Human error	Sep	5
+Point Henry	-38.135029	144.422283	Wind	May	20
+Point Henry	-38.135029	144.422283	Rain/Flooding	Nov	8
+Point Henry	-38.135029	144.422283	Vehicle	Feb	11
+Point Henry	-38.135029	144.422283	Human error	Aug	12
+Point Henry	-38.135029	144.422283	Programmed Outage	Jan	15
+Point Henry	-38.135029	144.422283	Other Miscellaneous	Nov	4
+Point Henry	-38.135029	144.422283	Electrical Overload	Aug	3
+Point Henry	-38.135029	144.422283	Cable Fault	Jul	10
+Point Henry	-38.135029	144.422283	Programmed Outage	Jun	14
+Point Henry	-38.135029	144.422283	Wind	Apr	7
+Point Henry	-38.135029	144.422283	Wind	Jun	19
+Point Henry	-38.135029	144.422283	Vehicle	Sep	18
+Point Henry	-38.135029	144.422283	Condition Deterioration	Feb	16
+Point Henry	-38.135029	144.422283	Wind	Aug	8
+Point Henry	-38.135029	144.422283	Human error	Oct	10
+Point Henry	-38.135029	144.422283	Rain/Flooding	Jun	1
+Point Henry	-38.135029	144.422283	Cable Fault	Nov	17
+Point Henry	-38.135029	144.422283	Human error	Aug	18
+Point Henry	-38.135029	144.422283	Rain/Flooding	Feb	5
+Point Henry	-38.135029	144.422283	Wind	Oct	1
+Point Henry	-38.135029	144.422283	Rain/Flooding	Sep	13
+Point Henry	-38.135029	144.422283	Human error	May	4
+Point Henry	-38.135029	144.422283	Cable Fault	Apr	7
+Point Henry	-38.135029	144.422283	Cable Fault	Apr	13
+Point Henry	-38.135029	144.422283	Vehicle	Aug	7
+Point Henry	-38.135029	144.422283	Programmed Outage	Nov	19
+Point Henry	-38.135029	144.422283	Wind	Apr	19
+Point Henry	-38.135029	144.422283	Cable Fault	Jun	4
+Point Henry	-38.135029	144.422283	Wind	Aug	14
+Portland Aluminium	-38.135029	144.422283	Programmed Outage	Mar	7
+Portland Aluminium	-38.135029	144.422283	Human error	Aug	0
+Portland Aluminium	-38.135029	144.422283	Human error	Oct	8
+Portland Aluminium	-38.135029	144.422283	Wind	Dec	19
+Portland Aluminium	-38.135029	144.422283	Human error	Aug	19
+Portland Aluminium	-38.135029	144.422283	Wind	Apr	3
+Portland Aluminium	-38.135029	144.422283	Condition Deterioration	Apr	9
+Portland Aluminium	-38.135029	144.422283	Wind	Jan	4
+Portland Aluminium	-38.135029	144.422283	Condition Deterioration	Feb	15
+Portland Aluminium	-38.135029	144.422283	Rain/Flooding	Sep	12
+Portland Aluminium	-38.135029	144.422283	Wind	Nov	18
+Portland Aluminium	-38.135029	144.422283	Electrical Overload	Oct	5
+Portland Aluminium	-38.135029	144.422283	Programmed Outage	Feb	14
+Portland Aluminium	-38.135029	144.422283	Cable Fault	Feb	19
+Portland Aluminium	-38.135029	144.422283	Electrical Overload	Sep	1
+Portland Aluminium	-38.135029	144.422283	Electrical Overload	Oct	17
+Portland Aluminium	-38.135029	144.422283	Vehicle	Aug	14
+Portland Aluminium	-38.135029	144.422283	Wind	May	1
+Portland Aluminium	-38.135029	144.422283	Rain/Flooding	Jan	16
+Portland Aluminium	-38.135029	144.422283	Programmed Outage	Sep	18
+Portland Aluminium	-38.135029	144.422283	Rain/Flooding	Sep	15
+Portland Aluminium	-38.135029	144.422283	Vehicle	Jun	19
+Portland Aluminium	-38.135029	144.422283	Vehicle	Aug	20
+Portland Aluminium	-38.135029	144.422283	Electrical Overload	Mar	11
+Portland Aluminium	-38.135029	144.422283	Vehicle	Jul	10
+Portland Aluminium	-38.135029	144.422283	Human error	Apr	3
+Portland Aluminium	-38.135029	144.422283	Other Miscellaneous	Oct	4
+Portland Aluminium	-38.135029	144.422283	Rain/Flooding	Nov	4
+Portland Aluminium	-38.135029	144.422283	Cable Fault	Dec	6
+Portland Aluminium	-38.135029	144.422283	Rain/Flooding	May	3
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Wind	Oct	19
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Programmed Outage	Aug	11
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Programmed Outage	May	11
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Electrical Overload	May	20
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Cable Fault	Jul	14
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Condition Deterioration	Apr	8
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Cable Fault	Dec	5
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Human error	May	8
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Programmed Outage	Jul	17
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Electrical Overload	Dec	4
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Vehicle	Jun	17
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Wind	Jul	18
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Other Miscellaneous	Nov	10
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Rain/Flooding	Nov	17
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Rain/Flooding	Sep	8
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Vehicle	Aug	11
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Electrical Overload	Apr	10
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Rain/Flooding	Sep	3
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Vehicle	Oct	6
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Wind	Oct	1
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Wind	Nov	0
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Programmed Outage	May	14
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Programmed Outage	Aug	15
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Programmed Outage	Dec	1
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Vehicle	Sep	16
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Vehicle	Feb	13
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Cable Fault	Sep	13
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Vehicle	Mar	5
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Wind	May	13
+Queen Victoria Market Solar Array	-37.8062549	144.9563326	Electrical Overload	Dec	3
+Red Cliffs Power Station	-34.291843	142.239323	Programmed Outage	Jan	1
+Red Cliffs Power Station	-34.291843	142.239323	Electrical Overload	May	4
+Red Cliffs Power Station	-34.291843	142.239323	Wind	Apr	3
+Red Cliffs Power Station	-34.291843	142.239323	Vehicle	Sep	14
+Red Cliffs Power Station	-34.291843	142.239323	Cable Fault	Jul	4
+Red Cliffs Power Station	-34.291843	142.239323	Human error	Aug	19
+Red Cliffs Power Station	-34.291843	142.239323	Cable Fault	May	11
+Red Cliffs Power Station	-34.291843	142.239323	Cable Fault	Oct	5
+Red Cliffs Power Station	-34.291843	142.239323	Other Miscellaneous	Oct	7
+Red Cliffs Power Station	-34.291843	142.239323	Cable Fault	May	19
+Red Cliffs Power Station	-34.291843	142.239323	Rain/Flooding	Dec	16
+Red Cliffs Power Station	-34.291843	142.239323	Electrical Overload	Sep	19
+Red Cliffs Power Station	-34.291843	142.239323	Electrical Overload	Feb	5
+Red Cliffs Power Station	-34.291843	142.239323	Electrical Overload	May	14
+Red Cliffs Power Station	-34.291843	142.239323	Wind	Jun	5
+Red Cliffs Power Station	-34.291843	142.239323	Cable Fault	Nov	1
+Red Cliffs Power Station	-34.291843	142.239323	Other Miscellaneous	Oct	17
+Red Cliffs Power Station	-34.291843	142.239323	Programmed Outage	Dec	4
+Red Cliffs Power Station	-34.291843	142.239323	Rain/Flooding	May	6
+Red Cliffs Power Station	-34.291843	142.239323	Vehicle	Jul	2
+Red Cliffs Power Station	-34.291843	142.239323	Cable Fault	Jul	10
+Red Cliffs Power Station	-34.291843	142.239323	Electrical Overload	Sep	2
+Red Cliffs Power Station	-34.291843	142.239323	Wind	Mar	14
+Red Cliffs Power Station	-34.291843	142.239323	Other Miscellaneous	Jan	14
+Red Cliffs Power Station	-34.291843	142.239323	Cable Fault	Mar	2
+Red Cliffs Power Station	-34.291843	142.239323	Wind	Mar	1
+Red Cliffs Power Station	-34.291843	142.239323	Other Miscellaneous	Jun	12
+Red Cliffs Power Station	-34.291843	142.239323	Human error	May	8
+Red Cliffs Power Station	-34.291843	142.239323	Human error	Jul	20
+Red Cliffs Power Station	-34.291843	142.239323	Wind	Jun	16
+Richmond Power Station	-37.831136	145.001581	Human error	May	15
+Richmond Power Station	-37.831136	145.001581	Wind	Oct	7
+Richmond Power Station	-37.831136	145.001581	Electrical Overload	Feb	2
+Richmond Power Station	-37.831136	145.001581	Wind	Aug	12
+Richmond Power Station	-37.831136	145.001581	Vehicle	Jun	7
+Richmond Power Station	-37.831136	145.001581	Human error	Feb	18
+Richmond Power Station	-37.831136	145.001581	Human error	Feb	1
+Richmond Power Station	-37.831136	145.001581	Rain/Flooding	Mar	15
+Richmond Power Station	-37.831136	145.001581	Vehicle	Dec	14
+Richmond Power Station	-37.831136	145.001581	Other Miscellaneous	Feb	2
+Richmond Power Station	-37.831136	145.001581	Electrical Overload	Sep	8
+Richmond Power Station	-37.831136	145.001581	Cable Fault	May	1
+Richmond Power Station	-37.831136	145.001581	Programmed Outage	Oct	1
+Richmond Power Station	-37.831136	145.001581	Electrical Overload	May	1
+Richmond Power Station	-37.831136	145.001581	Rain/Flooding	Mar	5
+Richmond Power Station	-37.831136	145.001581	Condition Deterioration	Jun	19
+Richmond Power Station	-37.831136	145.001581	Electrical Overload	Nov	4
+Richmond Power Station	-37.831136	145.001581	Wind	Jun	5
+Richmond Power Station	-37.831136	145.001581	Electrical Overload	Feb	16
+Richmond Power Station	-37.831136	145.001581	Cable Fault	Aug	13
+Richmond Power Station	-37.831136	145.001581	Condition Deterioration	Feb	5
+Richmond Power Station	-37.831136	145.001581	Vehicle	Jan	5
+Richmond Power Station	-37.831136	145.001581	Cable Fault	Oct	7
+Richmond Power Station	-37.831136	145.001581	Electrical Overload	Jul	5
+Richmond Power Station	-37.831136	145.001581	Wind	Apr	2
+Richmond Power Station	-37.831136	145.001581	Electrical Overload	Jun	19
+Richmond Power Station	-37.831136	145.001581	Programmed Outage	Feb	7
+Richmond Power Station	-37.831136	145.001581	Vehicle	Apr	3
+Richmond Power Station	-37.831136	145.001581	Cable Fault	May	12
+Richmond Power Station	-37.831136	145.001581	Rain/Flooding	Oct	20
+Ringwood Power Station	-37.820834	145.215577	Other Miscellaneous	Jul	7
+Ringwood Power Station	-37.820834	145.215577	Other Miscellaneous	Oct	11
+Ringwood Power Station	-37.820834	145.215577	Vehicle	Jul	10
+Ringwood Power Station	-37.820834	145.215577	Cable Fault	Jul	17
+Ringwood Power Station	-37.820834	145.215577	Rain/Flooding	Jan	10
+Ringwood Power Station	-37.820834	145.215577	Wind	Dec	17
+Ringwood Power Station	-37.820834	145.215577	Cable Fault	Nov	3
+Ringwood Power Station	-37.820834	145.215577	Vehicle	Oct	2
+Ringwood Power Station	-37.820834	145.215577	Electrical Overload	Jul	13
+Ringwood Power Station	-37.820834	145.215577	Rain/Flooding	Oct	6
+Ringwood Power Station	-37.820834	145.215577	Programmed Outage	May	8
+Ringwood Power Station	-37.820834	145.215577	Vehicle	Nov	20
+Ringwood Power Station	-37.820834	145.215577	Electrical Overload	Apr	6
+Ringwood Power Station	-37.820834	145.215577	Vehicle	Apr	3
+Ringwood Power Station	-37.820834	145.215577	Vehicle	Apr	0
+Ringwood Power Station	-37.820834	145.215577	Electrical Overload	Mar	12
+Ringwood Power Station	-37.820834	145.215577	Rain/Flooding	Apr	13
+Ringwood Power Station	-37.820834	145.215577	Human error	Jan	18
+Ringwood Power Station	-37.820834	145.215577	Programmed Outage	Feb	19
+Ringwood Power Station	-37.820834	145.215577	Human error	May	0
+Ringwood Power Station	-37.820834	145.215577	Electrical Overload	Nov	20
+Ringwood Power Station	-37.820834	145.215577	Other Miscellaneous	Aug	15
+Ringwood Power Station	-37.820834	145.215577	Rain/Flooding	Feb	13
+Ringwood Power Station	-37.820834	145.215577	Human error	Feb	13
+Ringwood Power Station	-37.820834	145.215577	Cable Fault	Aug	10
+Ringwood Power Station	-37.820834	145.215577	Rain/Flooding	Oct	16
+Ringwood Power Station	-37.820834	145.215577	Cable Fault	May	12
+Ringwood Power Station	-37.820834	145.215577	Cable Fault	Mar	7
+Ringwood Power Station	-37.820834	145.215577	Condition Deterioration	Jun	11
+Ringwood Power Station	-37.820834	145.215577	Vehicle	May	8
+Rowville Power Station	-37.92928	145.227283	Human error	Sep	14
+Rowville Power Station	-37.92928	145.227283	Rain/Flooding	Nov	4
+Rowville Power Station	-37.92928	145.227283	Wind	Mar	17
+Rowville Power Station	-37.92928	145.227283	Wind	Mar	19
+Rowville Power Station	-37.92928	145.227283	Programmed Outage	Jan	11
+Rowville Power Station	-37.92928	145.227283	Rain/Flooding	Dec	19
+Rowville Power Station	-37.92928	145.227283	Wind	Aug	16
+Rowville Power Station	-37.92928	145.227283	Human error	Nov	12
+Rowville Power Station	-37.92928	145.227283	Programmed Outage	Aug	6
+Rowville Power Station	-37.92928	145.227283	Rain/Flooding	Oct	9
+Rowville Power Station	-37.92928	145.227283	Rain/Flooding	Jan	14
+Rowville Power Station	-37.92928	145.227283	Human error	Jul	4
+Rowville Power Station	-37.92928	145.227283	Rain/Flooding	Oct	18
+Rowville Power Station	-37.92928	145.227283	Vehicle	Jul	8
+Rowville Power Station	-37.92928	145.227283	Rain/Flooding	Dec	20
+Rowville Power Station	-37.92928	145.227283	Vehicle	Apr	12
+Rowville Power Station	-37.92928	145.227283	Condition Deterioration	Mar	5
+Rowville Power Station	-37.92928	145.227283	Human error	Jun	8
+Rowville Power Station	-37.92928	145.227283	Vehicle	Mar	12
+Rowville Power Station	-37.92928	145.227283	Condition Deterioration	Mar	2
+Rowville Power Station	-37.92928	145.227283	Electrical Overload	Mar	20
+Rowville Power Station	-37.92928	145.227283	Programmed Outage	Oct	16
+Rowville Power Station	-37.92928	145.227283	Other Miscellaneous	Jul	8
+Rowville Power Station	-37.92928	145.227283	Human error	Feb	17
+Rowville Power Station	-37.92928	145.227283	Vehicle	Jan	17
+Rowville Power Station	-37.92928	145.227283	Human error	Jul	17
+Rowville Power Station	-37.92928	145.227283	Cable Fault	Sep	9
+Rowville Power Station	-37.92928	145.227283	Cable Fault	Jan	2
+Rowville Power Station	-37.92928	145.227283	Human error	Feb	17
+Rowville Power Station	-37.92928	145.227283	Electrical Overload	Nov	1
+Rubicon Power Station	-37.3271498	145.8583438	Cable Fault	Apr	14
+Rubicon Power Station	-37.3271498	145.8583438	Other Miscellaneous	Mar	6
+Rubicon Power Station	-37.3271498	145.8583438	Rain/Flooding	Sep	11
+Rubicon Power Station	-37.3271498	145.8583438	Rain/Flooding	Nov	7
+Rubicon Power Station	-37.3271498	145.8583438	Rain/Flooding	Sep	3
+Rubicon Power Station	-37.3271498	145.8583438	Other Miscellaneous	May	3
+Rubicon Power Station	-37.3271498	145.8583438	Rain/Flooding	Dec	6
+Rubicon Power Station	-37.3271498	145.8583438	Vehicle	May	7
+Rubicon Power Station	-37.3271498	145.8583438	Electrical Overload	Feb	10
+Rubicon Power Station	-37.3271498	145.8583438	Human error	Feb	13
+Rubicon Power Station	-37.3271498	145.8583438	Human error	Sep	11
+Rubicon Power Station	-37.3271498	145.8583438	Cable Fault	Mar	11
+Rubicon Power Station	-37.3271498	145.8583438	Cable Fault	Sep	4
+Rubicon Power Station	-37.3271498	145.8583438	Cable Fault	Oct	8
+Rubicon Power Station	-37.3271498	145.8583438	Cable Fault	Mar	5
+Rubicon Power Station	-37.3271498	145.8583438	Cable Fault	Jul	7
+Rubicon Power Station	-37.3271498	145.8583438	Other Miscellaneous	Oct	15
+Rubicon Power Station	-37.3271498	145.8583438	Wind	May	16
+Rubicon Power Station	-37.3271498	145.8583438	Programmed Outage	Sep	7
+Rubicon Power Station	-37.3271498	145.8583438	Cable Fault	May	11
+Rubicon Power Station	-37.3271498	145.8583438	Programmed Outage	Aug	1
+Rubicon Power Station	-37.3271498	145.8583438	Electrical Overload	Jan	7
+Rubicon Power Station	-37.3271498	145.8583438	Other Miscellaneous	Oct	6
+Rubicon Power Station	-37.3271498	145.8583438	Condition Deterioration	Mar	6
+Rubicon Power Station	-37.3271498	145.8583438	Programmed Outage	Feb	13
+Rubicon Power Station	-37.3271498	145.8583438	Cable Fault	Aug	19
+Rubicon Power Station	-37.3271498	145.8583438	Cable Fault	Sep	7
+Rubicon Power Station	-37.3271498	145.8583438	Cable Fault	Sep	6
+Rubicon Power Station	-37.3271498	145.8583438	Wind	Jun	19
+Rubicon Power Station	-37.3271498	145.8583438	Human error	Jan	11
+Shepparton Power Station	-36.342813	145.414578	Wind	Jul	18
+Shepparton Power Station	-36.342813	145.414578	Programmed Outage	Jan	16
+Shepparton Power Station	-36.342813	145.414578	Wind	May	5
+Shepparton Power Station	-36.342813	145.414578	Programmed Outage	Feb	17
+Shepparton Power Station	-36.342813	145.414578	Human error	Feb	5
+Shepparton Power Station	-36.342813	145.414578	Programmed Outage	Nov	10
+Shepparton Power Station	-36.342813	145.414578	Condition Deterioration	Sep	20
+Shepparton Power Station	-36.342813	145.414578	Rain/Flooding	Dec	13
+Shepparton Power Station	-36.342813	145.414578	Vehicle	Sep	17
+Shepparton Power Station	-36.342813	145.414578	Vehicle	Jun	3
+Shepparton Power Station	-36.342813	145.414578	Condition Deterioration	Sep	4
+Shepparton Power Station	-36.342813	145.414578	Human error	Nov	7
+Shepparton Power Station	-36.342813	145.414578	Electrical Overload	Apr	17
+Shepparton Power Station	-36.342813	145.414578	Cable Fault	Nov	15
+Shepparton Power Station	-36.342813	145.414578	Electrical Overload	Oct	14
+Shepparton Power Station	-36.342813	145.414578	Condition Deterioration	Aug	10
+Shepparton Power Station	-36.342813	145.414578	Vehicle	Nov	19
+Shepparton Power Station	-36.342813	145.414578	Condition Deterioration	May	15
+Shepparton Power Station	-36.342813	145.414578	Vehicle	May	17
+Shepparton Power Station	-36.342813	145.414578	Condition Deterioration	May	6
+Shepparton Power Station	-36.342813	145.414578	Rain/Flooding	Oct	5
+Shepparton Power Station	-36.342813	145.414578	Condition Deterioration	Jul	10
+Shepparton Power Station	-36.342813	145.414578	Condition Deterioration	Jul	15
+Shepparton Power Station	-36.342813	145.414578	Cable Fault	Aug	18
+Shepparton Power Station	-36.342813	145.414578	Rain/Flooding	Sep	11
+Shepparton Power Station	-36.342813	145.414578	Vehicle	Sep	11
+Shepparton Power Station	-36.342813	145.414578	Other Miscellaneous	Feb	14
+Shepparton Power Station	-36.342813	145.414578	Rain/Flooding	May	12
+Shepparton Power Station	-36.342813	145.414578	Vehicle	Jun	14
+Shepparton Power Station	-36.342813	145.414578	Cable Fault	Sep	16
+Somerton Power Station	-37.622474	144.948635	Programmed Outage	Sep	6
+Somerton Power Station	-37.622474	144.948635	Electrical Overload	Oct	13
+Somerton Power Station	-37.622474	144.948635	Human error	May	19
+Somerton Power Station	-37.622474	144.948635	Condition Deterioration	Dec	14
+Somerton Power Station	-37.622474	144.948635	Wind	Jan	18
+Somerton Power Station	-37.622474	144.948635	Rain/Flooding	Aug	9
+Somerton Power Station	-37.622474	144.948635	Wind	Nov	12
+Somerton Power Station	-37.622474	144.948635	Programmed Outage	Jul	10
+Somerton Power Station	-37.622474	144.948635	Programmed Outage	Jun	19
+Somerton Power Station	-37.622474	144.948635	Rain/Flooding	Nov	15
+Somerton Power Station	-37.622474	144.948635	Human error	Jul	19
+Somerton Power Station	-37.622474	144.948635	Programmed Outage	Dec	16
+Somerton Power Station	-37.622474	144.948635	Cable Fault	Jul	13
+Somerton Power Station	-37.622474	144.948635	Vehicle	May	11
+Somerton Power Station	-37.622474	144.948635	Human error	May	19
+Somerton Power Station	-37.622474	144.948635	Vehicle	Sep	18
+Somerton Power Station	-37.622474	144.948635	Cable Fault	Jul	17
+Somerton Power Station	-37.622474	144.948635	Cable Fault	Aug	5
+Somerton Power Station	-37.622474	144.948635	Human error	Jun	7
+Somerton Power Station	-37.622474	144.948635	Electrical Overload	Sep	8
+Somerton Power Station	-37.622474	144.948635	Rain/Flooding	Apr	6
+Somerton Power Station	-37.622474	144.948635	Condition Deterioration	Jan	1
+Somerton Power Station	-37.622474	144.948635	Wind	Jul	4
+Somerton Power Station	-37.622474	144.948635	Rain/Flooding	Feb	17
+Somerton Power Station	-37.622474	144.948635	Programmed Outage	Jun	10
+Somerton Power Station	-37.622474	144.948635	Programmed Outage	Dec	7
+Somerton Power Station	-37.622474	144.948635	Wind	Oct	11
+Somerton Power Station	-37.622474	144.948635	Programmed Outage	May	19
+Somerton Power Station	-37.622474	144.948635	Electrical Overload	Aug	17
+Somerton Power Station	-37.622474	144.948635	Electrical Overload	Feb	9
+South Morang Power Station	-37.644482	145.078436	Programmed Outage	May	14
+South Morang Power Station	-37.644482	145.078436	Vehicle	May	4
+South Morang Power Station	-37.644482	145.078436	Condition Deterioration	Oct	2
+South Morang Power Station	-37.644482	145.078436	Human error	Oct	11
+South Morang Power Station	-37.644482	145.078436	Other Miscellaneous	Sep	11
+South Morang Power Station	-37.644482	145.078436	Rain/Flooding	Feb	19
+South Morang Power Station	-37.644482	145.078436	Vehicle	Jun	14
+South Morang Power Station	-37.644482	145.078436	Condition Deterioration	Nov	15
+South Morang Power Station	-37.644482	145.078436	Human error	Apr	7
+South Morang Power Station	-37.644482	145.078436	Rain/Flooding	Nov	14
+South Morang Power Station	-37.644482	145.078436	Human error	May	8
+South Morang Power Station	-37.644482	145.078436	Wind	Jun	7
+South Morang Power Station	-37.644482	145.078436	Human error	Sep	3
+South Morang Power Station	-37.644482	145.078436	Human error	Jun	0
+South Morang Power Station	-37.644482	145.078436	Human error	Jun	17
+South Morang Power Station	-37.644482	145.078436	Cable Fault	Oct	3
+South Morang Power Station	-37.644482	145.078436	Electrical Overload	Oct	9
+South Morang Power Station	-37.644482	145.078436	Other Miscellaneous	Jul	18
+South Morang Power Station	-37.644482	145.078436	Wind	Apr	4
+South Morang Power Station	-37.644482	145.078436	Electrical Overload	Feb	1
+South Morang Power Station	-37.644482	145.078436	Vehicle	Aug	12
+South Morang Power Station	-37.644482	145.078436	Rain/Flooding	Mar	7
+South Morang Power Station	-37.644482	145.078436	Vehicle	Jul	0
+South Morang Power Station	-37.644482	145.078436	Rain/Flooding	Oct	1
+South Morang Power Station	-37.644482	145.078436	Cable Fault	Dec	0
+South Morang Power Station	-37.644482	145.078436	Rain/Flooding	Sep	19
+South Morang Power Station	-37.644482	145.078436	Wind	Jun	6
+South Morang Power Station	-37.644482	145.078436	Rain/Flooding	May	6
+South Morang Power Station	-37.644482	145.078436	Vehicle	Sep	15
+South Morang Power Station	-37.644482	145.078436	Vehicle	Jul	10
+Springvale Power Station	-37.928182	145.146101	Programmed Outage	May	14
+Springvale Power Station	-37.928182	145.146101	Vehicle	May	2
+Springvale Power Station	-37.928182	145.146101	Vehicle	Jun	6
+Springvale Power Station	-37.928182	145.146101	Vehicle	Feb	2
+Springvale Power Station	-37.928182	145.146101	Cable Fault	Nov	3
+Springvale Power Station	-37.928182	145.146101	Programmed Outage	May	9
+Springvale Power Station	-37.928182	145.146101	Vehicle	Oct	15
+Springvale Power Station	-37.928182	145.146101	Cable Fault	Oct	15
+Springvale Power Station	-37.928182	145.146101	Human error	Nov	9
+Springvale Power Station	-37.928182	145.146101	Human error	Mar	6
+Springvale Power Station	-37.928182	145.146101	Wind	Aug	10
+Springvale Power Station	-37.928182	145.146101	Rain/Flooding	Jan	4
+Springvale Power Station	-37.928182	145.146101	Condition Deterioration	May	3
+Springvale Power Station	-37.928182	145.146101	Human error	May	8
+Springvale Power Station	-37.928182	145.146101	Other Miscellaneous	Nov	13
+Springvale Power Station	-37.928182	145.146101	Electrical Overload	Feb	19
+Springvale Power Station	-37.928182	145.146101	Other Miscellaneous	Aug	18
+Springvale Power Station	-37.928182	145.146101	Human error	Feb	2
+Springvale Power Station	-37.928182	145.146101	Cable Fault	Jan	8
+Springvale Power Station	-37.928182	145.146101	Wind	Jun	13
+Springvale Power Station	-37.928182	145.146101	Electrical Overload	Nov	7
+Springvale Power Station	-37.928182	145.146101	Wind	Oct	19
+Springvale Power Station	-37.928182	145.146101	Vehicle	Jul	11
+Springvale Power Station	-37.928182	145.146101	Cable Fault	Oct	6
+Springvale Power Station	-37.928182	145.146101	Cable Fault	Aug	9
+Springvale Power Station	-37.928182	145.146101	Human error	Jun	11
+Springvale Power Station	-37.928182	145.146101	Condition Deterioration	Jul	0
+Springvale Power Station	-37.928182	145.146101	Cable Fault	Oct	9
+Springvale Power Station	-37.928182	145.146101	Wind	Sep	19
+Springvale Power Station	-37.928182	145.146101	Condition Deterioration	Mar	2
+Stawell Power Station	-37.058339	142.752474	Vehicle	Jun	14
+Stawell Power Station	-37.058339	142.752474	Rain/Flooding	Jan	19
+Stawell Power Station	-37.058339	142.752474	Vehicle	Nov	5
+Stawell Power Station	-37.058339	142.752474	Vehicle	Mar	13
+Stawell Power Station	-37.058339	142.752474	Condition Deterioration	Apr	8
+Stawell Power Station	-37.058339	142.752474	Electrical Overload	Sep	18
+Stawell Power Station	-37.058339	142.752474	Electrical Overload	Jun	15
+Stawell Power Station	-37.058339	142.752474	Programmed Outage	Feb	14
+Stawell Power Station	-37.058339	142.752474	Vehicle	Jun	12
+Stawell Power Station	-37.058339	142.752474	Human error	Sep	10
+Stawell Power Station	-37.058339	142.752474	Vehicle	Feb	17
+Stawell Power Station	-37.058339	142.752474	Wind	Feb	14
+Stawell Power Station	-37.058339	142.752474	Vehicle	May	1
+Stawell Power Station	-37.058339	142.752474	Vehicle	Apr	7
+Stawell Power Station	-37.058339	142.752474	Wind	Apr	15
+Stawell Power Station	-37.058339	142.752474	Electrical Overload	Mar	1
+Stawell Power Station	-37.058339	142.752474	Vehicle	Nov	7
+Stawell Power Station	-37.058339	142.752474	Rain/Flooding	Sep	8
+Stawell Power Station	-37.058339	142.752474	Programmed Outage	Mar	8
+Stawell Power Station	-37.058339	142.752474	Programmed Outage	Mar	20
+Stawell Power Station	-37.058339	142.752474	Electrical Overload	May	9
+Stawell Power Station	-37.058339	142.752474	Cable Fault	Jun	17
+Stawell Power Station	-37.058339	142.752474	Vehicle	May	8
+Stawell Power Station	-37.058339	142.752474	Wind	Sep	7
+Stawell Power Station	-37.058339	142.752474	Vehicle	Jul	2
+Stawell Power Station	-37.058339	142.752474	Rain/Flooding	Nov	11
+Stawell Power Station	-37.058339	142.752474	Human error	Mar	16
+Stawell Power Station	-37.058339	142.752474	Electrical Overload	Jan	14
+Stawell Power Station	-37.058339	142.752474	Cable Fault	Apr	0
+Stawell Power Station	-37.058339	142.752474	Human error	Feb	14
+Sydenham Power Station	-37.676163	144.747213	Electrical Overload	Aug	9
+Sydenham Power Station	-37.676163	144.747213	Programmed Outage	Dec	17
+Sydenham Power Station	-37.676163	144.747213	Rain/Flooding	Sep	3
+Sydenham Power Station	-37.676163	144.747213	Wind	Jul	13
+Sydenham Power Station	-37.676163	144.747213	Cable Fault	Jun	19
+Sydenham Power Station	-37.676163	144.747213	Electrical Overload	Mar	3
+Sydenham Power Station	-37.676163	144.747213	Electrical Overload	Sep	18
+Sydenham Power Station	-37.676163	144.747213	Human error	Feb	8
+Sydenham Power Station	-37.676163	144.747213	Cable Fault	Jun	3
+Sydenham Power Station	-37.676163	144.747213	Wind	Mar	2
+Sydenham Power Station	-37.676163	144.747213	Rain/Flooding	Mar	10
+Sydenham Power Station	-37.676163	144.747213	Vehicle	Dec	10
+Sydenham Power Station	-37.676163	144.747213	Rain/Flooding	Apr	9
+Sydenham Power Station	-37.676163	144.747213	Rain/Flooding	Feb	12
+Sydenham Power Station	-37.676163	144.747213	Rain/Flooding	Oct	15
+Sydenham Power Station	-37.676163	144.747213	Human error	Aug	13
+Sydenham Power Station	-37.676163	144.747213	Vehicle	Feb	6
+Sydenham Power Station	-37.676163	144.747213	Programmed Outage	Aug	11
+Sydenham Power Station	-37.676163	144.747213	Wind	Dec	0
+Sydenham Power Station	-37.676163	144.747213	Cable Fault	Mar	18
+Sydenham Power Station	-37.676163	144.747213	Rain/Flooding	Dec	6
+Sydenham Power Station	-37.676163	144.747213	Cable Fault	Apr	1
+Sydenham Power Station	-37.676163	144.747213	Wind	Dec	17
+Sydenham Power Station	-37.676163	144.747213	Rain/Flooding	May	2
+Sydenham Power Station	-37.676163	144.747213	Vehicle	Oct	16
+Sydenham Power Station	-37.676163	144.747213	Other Miscellaneous	Sep	13
+Sydenham Power Station	-37.676163	144.747213	Condition Deterioration	Jul	14
+Sydenham Power Station	-37.676163	144.747213	Wind	May	11
+Sydenham Power Station	-37.676163	144.747213	Vehicle	Oct	6
+Sydenham Power Station	-37.676163	144.747213	Electrical Overload	Mar	5
+Tarrone Power Station	-38.17917	142.181073	Rain/Flooding	Jun	18
+Tarrone Power Station	-38.17917	142.181073	Programmed Outage	Mar	8
+Tarrone Power Station	-38.17917	142.181073	Wind	Apr	13
+Tarrone Power Station	-38.17917	142.181073	Cable Fault	Jun	10
+Tarrone Power Station	-38.17917	142.181073	Wind	Jun	17
+Tarrone Power Station	-38.17917	142.181073	Cable Fault	Sep	12
+Tarrone Power Station	-38.17917	142.181073	Condition Deterioration	Sep	10
+Tarrone Power Station	-38.17917	142.181073	Programmed Outage	Oct	10
+Tarrone Power Station	-38.17917	142.181073	Cable Fault	Oct	16
+Tarrone Power Station	-38.17917	142.181073	Wind	Nov	18
+Tarrone Power Station	-38.17917	142.181073	Rain/Flooding	Apr	7
+Tarrone Power Station	-38.17917	142.181073	Other Miscellaneous	Jul	11
+Tarrone Power Station	-38.17917	142.181073	Rain/Flooding	Oct	1
+Tarrone Power Station	-38.17917	142.181073	Electrical Overload	Jan	13
+Tarrone Power Station	-38.17917	142.181073	Human error	Mar	5
+Tarrone Power Station	-38.17917	142.181073	Electrical Overload	Jan	13
+Tarrone Power Station	-38.17917	142.181073	Electrical Overload	Jan	18
+Tarrone Power Station	-38.17917	142.181073	Wind	Apr	1
+Tarrone Power Station	-38.17917	142.181073	Cable Fault	Mar	20
+Tarrone Power Station	-38.17917	142.181073	Vehicle	Jan	18
+Tarrone Power Station	-38.17917	142.181073	Other Miscellaneous	Apr	7
+Tarrone Power Station	-38.17917	142.181073	Human error	Mar	8
+Tarrone Power Station	-38.17917	142.181073	Wind	Oct	12
+Tarrone Power Station	-38.17917	142.181073	Rain/Flooding	May	4
+Tarrone Power Station	-38.17917	142.181073	Programmed Outage	Apr	14
+Tarrone Power Station	-38.17917	142.181073	Programmed Outage	Apr	16
+Tarrone Power Station	-38.17917	142.181073	Wind	Dec	11
+Tarrone Power Station	-38.17917	142.181073	Programmed Outage	Aug	14
+Tarrone Power Station	-38.17917	142.181073	Human error	Oct	6
+Tarrone Power Station	-38.17917	142.181073	Cable Fault	Jul	4
+Templestowe Power Station	-37.74807	145.170536	Rain/Flooding	Oct	8
+Templestowe Power Station	-37.74807	145.170536	Condition Deterioration	Aug	8
+Templestowe Power Station	-37.74807	145.170536	Rain/Flooding	May	10
+Templestowe Power Station	-37.74807	145.170536	Vehicle	Jul	16
+Templestowe Power Station	-37.74807	145.170536	Programmed Outage	Jul	7
+Templestowe Power Station	-37.74807	145.170536	Human error	Aug	14
+Templestowe Power Station	-37.74807	145.170536	Electrical Overload	Jan	5
+Templestowe Power Station	-37.74807	145.170536	Cable Fault	Nov	1
+Templestowe Power Station	-37.74807	145.170536	Human error	Dec	13
+Templestowe Power Station	-37.74807	145.170536	Other Miscellaneous	Feb	7
+Templestowe Power Station	-37.74807	145.170536	Rain/Flooding	Aug	3
+Templestowe Power Station	-37.74807	145.170536	Vehicle	Jun	18
+Templestowe Power Station	-37.74807	145.170536	Vehicle	Jan	13
+Templestowe Power Station	-37.74807	145.170536	Electrical Overload	Feb	20
+Templestowe Power Station	-37.74807	145.170536	Vehicle	Nov	5
+Templestowe Power Station	-37.74807	145.170536	Condition Deterioration	Aug	16
+Templestowe Power Station	-37.74807	145.170536	Wind	Jul	8
+Templestowe Power Station	-37.74807	145.170536	Vehicle	Dec	19
+Templestowe Power Station	-37.74807	145.170536	Programmed Outage	Dec	18
+Templestowe Power Station	-37.74807	145.170536	Condition Deterioration	Jul	19
+Templestowe Power Station	-37.74807	145.170536	Wind	Jan	3
+Templestowe Power Station	-37.74807	145.170536	Vehicle	Oct	3
+Templestowe Power Station	-37.74807	145.170536	Human error	Apr	18
+Templestowe Power Station	-37.74807	145.170536	Electrical Overload	Apr	6
+Templestowe Power Station	-37.74807	145.170536	Vehicle	May	12
+Templestowe Power Station	-37.74807	145.170536	Other Miscellaneous	Apr	12
+Templestowe Power Station	-37.74807	145.170536	Electrical Overload	Feb	16
+Templestowe Power Station	-37.74807	145.170536	Human error	Oct	4
+Templestowe Power Station	-37.74807	145.170536	Programmed Outage	Mar	17
+Templestowe Power Station	-37.74807	145.170536	Other Miscellaneous	Mar	17
+Terang Power Station	-38.232971	142.932312	Cable Fault	May	9
+Terang Power Station	-38.232971	142.932312	Electrical Overload	Jan	18
+Terang Power Station	-38.232971	142.932312	Electrical Overload	Jul	2
+Terang Power Station	-38.232971	142.932312	Programmed Outage	Jan	14
+Terang Power Station	-38.232971	142.932312	Human error	Dec	9
+Terang Power Station	-38.232971	142.932312	Rain/Flooding	Nov	12
+Terang Power Station	-38.232971	142.932312	Wind	Jul	16
+Terang Power Station	-38.232971	142.932312	Cable Fault	Jul	14
+Terang Power Station	-38.232971	142.932312	Electrical Overload	Nov	13
+Terang Power Station	-38.232971	142.932312	Cable Fault	Jul	5
+Terang Power Station	-38.232971	142.932312	Vehicle	Apr	14
+Terang Power Station	-38.232971	142.932312	Electrical Overload	Feb	20
+Terang Power Station	-38.232971	142.932312	Programmed Outage	Mar	7
+Terang Power Station	-38.232971	142.932312	Electrical Overload	Nov	11
+Terang Power Station	-38.232971	142.932312	Cable Fault	Dec	11
+Terang Power Station	-38.232971	142.932312	Other Miscellaneous	May	11
+Terang Power Station	-38.232971	142.932312	Wind	Sep	13
+Terang Power Station	-38.232971	142.932312	Programmed Outage	Dec	7
+Terang Power Station	-38.232971	142.932312	Human error	Nov	6
+Terang Power Station	-38.232971	142.932312	Rain/Flooding	Jan	6
+Terang Power Station	-38.232971	142.932312	Electrical Overload	Aug	4
+Terang Power Station	-38.232971	142.932312	Human error	Jun	15
+Terang Power Station	-38.232971	142.932312	Programmed Outage	Nov	2
+Terang Power Station	-38.232971	142.932312	Cable Fault	Jul	5
+Terang Power Station	-38.232971	142.932312	Cable Fault	Feb	1
+Terang Power Station	-38.232971	142.932312	Vehicle	Jul	18
+Terang Power Station	-38.232971	142.932312	Cable Fault	Jan	10
+Terang Power Station	-38.232971	142.932312	Vehicle	Apr	15
+Terang Power Station	-38.232971	142.932312	Wind	Nov	4
+Terang Power Station	-38.232971	142.932312	Rain/Flooding	Sep	19
+Thomastown Power Station	-37.693699	145.009929	Human error	Sep	4
+Thomastown Power Station	-37.693699	145.009929	Programmed Outage	Oct	2
+Thomastown Power Station	-37.693699	145.009929	Human error	Jun	10
+Thomastown Power Station	-37.693699	145.009929	Wind	Mar	18
+Thomastown Power Station	-37.693699	145.009929	Human error	Jul	14
+Thomastown Power Station	-37.693699	145.009929	Vehicle	Oct	10
+Thomastown Power Station	-37.693699	145.009929	Cable Fault	Jun	5
+Thomastown Power Station	-37.693699	145.009929	Programmed Outage	Sep	4
+Thomastown Power Station	-37.693699	145.009929	Condition Deterioration	Aug	15
+Thomastown Power Station	-37.693699	145.009929	Rain/Flooding	Mar	4
+Thomastown Power Station	-37.693699	145.009929	Wind	Jun	9
+Thomastown Power Station	-37.693699	145.009929	Rain/Flooding	Apr	15
+Thomastown Power Station	-37.693699	145.009929	Condition Deterioration	Jun	15
+Thomastown Power Station	-37.693699	145.009929	Programmed Outage	Jun	15
+Thomastown Power Station	-37.693699	145.009929	Wind	May	17
+Thomastown Power Station	-37.693699	145.009929	Rain/Flooding	Dec	12
+Thomastown Power Station	-37.693699	145.009929	Electrical Overload	Dec	20
+Thomastown Power Station	-37.693699	145.009929	Cable Fault	May	2
+Thomastown Power Station	-37.693699	145.009929	Programmed Outage	Oct	20
+Thomastown Power Station	-37.693699	145.009929	Rain/Flooding	Jan	3
+Thomastown Power Station	-37.693699	145.009929	Electrical Overload	Aug	11
+Thomastown Power Station	-37.693699	145.009929	Vehicle	Oct	4
+Thomastown Power Station	-37.693699	145.009929	Cable Fault	Aug	12
+Thomastown Power Station	-37.693699	145.009929	Wind	Mar	12
+Thomastown Power Station	-37.693699	145.009929	Human error	Apr	8
+Thomastown Power Station	-37.693699	145.009929	Vehicle	Nov	5
+Thomastown Power Station	-37.693699	145.009929	Condition Deterioration	Jan	16
+Thomastown Power Station	-37.693699	145.009929	Electrical Overload	Sep	9
+Thomastown Power Station	-37.693699	145.009929	Vehicle	Oct	3
+Thomastown Power Station	-37.693699	145.009929	Rain/Flooding	Sep	20
+Toora Wind Farm	-38.6534396	146.3380408	Condition Deterioration	Mar	1
+Toora Wind Farm	-38.6534396	146.3380408	Wind	Sep	3
+Toora Wind Farm	-38.6534396	146.3380408	Condition Deterioration	Apr	19
+Toora Wind Farm	-38.6534396	146.3380408	Electrical Overload	Apr	8
+Toora Wind Farm	-38.6534396	146.3380408	Other Miscellaneous	Jan	4
+Toora Wind Farm	-38.6534396	146.3380408	Other Miscellaneous	Jun	14
+Toora Wind Farm	-38.6534396	146.3380408	Cable Fault	Oct	4
+Toora Wind Farm	-38.6534396	146.3380408	Wind	May	12
+Toora Wind Farm	-38.6534396	146.3380408	Other Miscellaneous	Aug	18
+Toora Wind Farm	-38.6534396	146.3380408	Human error	Apr	7
+Toora Wind Farm	-38.6534396	146.3380408	Wind	Oct	1
+Toora Wind Farm	-38.6534396	146.3380408	Programmed Outage	Jul	17
+Toora Wind Farm	-38.6534396	146.3380408	Electrical Overload	Feb	16
+Toora Wind Farm	-38.6534396	146.3380408	Electrical Overload	May	4
+Toora Wind Farm	-38.6534396	146.3380408	Programmed Outage	May	6
+Toora Wind Farm	-38.6534396	146.3380408	Cable Fault	Jul	1
+Toora Wind Farm	-38.6534396	146.3380408	Wind	Jun	10
+Toora Wind Farm	-38.6534396	146.3380408	Wind	May	4
+Toora Wind Farm	-38.6534396	146.3380408	Human error	Oct	14
+Toora Wind Farm	-38.6534396	146.3380408	Electrical Overload	Oct	2
+Toora Wind Farm	-38.6534396	146.3380408	Rain/Flooding	Feb	17
+Toora Wind Farm	-38.6534396	146.3380408	Cable Fault	Sep	9
+Toora Wind Farm	-38.6534396	146.3380408	Programmed Outage	Sep	13
+Toora Wind Farm	-38.6534396	146.3380408	Wind	Sep	9
+Toora Wind Farm	-38.6534396	146.3380408	Condition Deterioration	Jul	7
+Toora Wind Farm	-38.6534396	146.3380408	Other Miscellaneous	Nov	16
+Toora Wind Farm	-38.6534396	146.3380408	Rain/Flooding	Nov	15
+Toora Wind Farm	-38.6534396	146.3380408	Human error	Aug	3
+Toora Wind Farm	-38.6534396	146.3380408	Wind	Jun	6
+Toora Wind Farm	-38.6534396	146.3380408	Human error	Feb	2
+Tyabb Power Station	-38.267861	145.201553	Cable Fault	Dec	14
+Tyabb Power Station	-38.267861	145.201553	Electrical Overload	Feb	18
+Tyabb Power Station	-38.267861	145.201553	Electrical Overload	Aug	2
+Tyabb Power Station	-38.267861	145.201553	Wind	May	8
+Tyabb Power Station	-38.267861	145.201553	Cable Fault	Dec	19
+Tyabb Power Station	-38.267861	145.201553	Cable Fault	Feb	19
+Tyabb Power Station	-38.267861	145.201553	Programmed Outage	Apr	14
+Tyabb Power Station	-38.267861	145.201553	Vehicle	Feb	4
+Tyabb Power Station	-38.267861	145.201553	Other Miscellaneous	Oct	5
+Tyabb Power Station	-38.267861	145.201553	Cable Fault	Apr	16
+Tyabb Power Station	-38.267861	145.201553	Human error	May	10
+Tyabb Power Station	-38.267861	145.201553	Condition Deterioration	Oct	7
+Tyabb Power Station	-38.267861	145.201553	Condition Deterioration	Jul	9
+Tyabb Power Station	-38.267861	145.201553	Vehicle	May	15
+Tyabb Power Station	-38.267861	145.201553	Wind	Jul	18
+Tyabb Power Station	-38.267861	145.201553	Human error	May	17
+Tyabb Power Station	-38.267861	145.201553	Condition Deterioration	Jun	14
+Tyabb Power Station	-38.267861	145.201553	Programmed Outage	Oct	6
+Tyabb Power Station	-38.267861	145.201553	Cable Fault	Jul	16
+Tyabb Power Station	-38.267861	145.201553	Electrical Overload	Jul	2
+Tyabb Power Station	-38.267861	145.201553	Human error	Apr	11
+Tyabb Power Station	-38.267861	145.201553	Wind	Apr	8
+Tyabb Power Station	-38.267861	145.201553	Condition Deterioration	Feb	2
+Tyabb Power Station	-38.267861	145.201553	Electrical Overload	Nov	18
+Tyabb Power Station	-38.267861	145.201553	Human error	Apr	8
+Tyabb Power Station	-38.267861	145.201553	Other Miscellaneous	Jun	7
+Tyabb Power Station	-38.267861	145.201553	Rain/Flooding	May	4
+Tyabb Power Station	-38.267861	145.201553	Rain/Flooding	Aug	18
+Tyabb Power Station	-38.267861	145.201553	Vehicle	Oct	1
+Tyabb Power Station	-38.267861	145.201553	Human error	May	14
+Waubra Power Station	-37.355982	143.605915	Other Miscellaneous	Jul	3
+Waubra Power Station	-37.355982	143.605915	Programmed Outage	Nov	6
+Waubra Power Station	-37.355982	143.605915	Rain/Flooding	Jun	3
+Waubra Power Station	-37.355982	143.605915	Programmed Outage	Feb	6
+Waubra Power Station	-37.355982	143.605915	Programmed Outage	Nov	18
+Waubra Power Station	-37.355982	143.605915	Rain/Flooding	Apr	2
+Waubra Power Station	-37.355982	143.605915	Vehicle	Jul	10
+Waubra Power Station	-37.355982	143.605915	Electrical Overload	Apr	4
+Waubra Power Station	-37.355982	143.605915	Programmed Outage	Oct	16
+Waubra Power Station	-37.355982	143.605915	Wind	Jul	18
+Waubra Power Station	-37.355982	143.605915	Cable Fault	Sep	12
+Waubra Power Station	-37.355982	143.605915	Condition Deterioration	Dec	11
+Waubra Power Station	-37.355982	143.605915	Rain/Flooding	Aug	11
+Waubra Power Station	-37.355982	143.605915	Programmed Outage	Sep	13
+Waubra Power Station	-37.355982	143.605915	Other Miscellaneous	Mar	12
+Waubra Power Station	-37.355982	143.605915	Electrical Overload	Sep	14
+Waubra Power Station	-37.355982	143.605915	Vehicle	Nov	4
+Waubra Power Station	-37.355982	143.605915	Wind	Oct	17
+Waubra Power Station	-37.355982	143.605915	Rain/Flooding	Aug	17
+Waubra Power Station	-37.355982	143.605915	Cable Fault	Nov	2
+Waubra Power Station	-37.355982	143.605915	Condition Deterioration	Mar	15
+Waubra Power Station	-37.355982	143.605915	Other Miscellaneous	Feb	14
+Waubra Power Station	-37.355982	143.605915	Rain/Flooding	Jul	15
+Waubra Power Station	-37.355982	143.605915	Vehicle	Jan	4
+Waubra Power Station	-37.355982	143.605915	Programmed Outage	Aug	9
+Waubra Power Station	-37.355982	143.605915	Human error	Mar	16
+Waubra Power Station	-37.355982	143.605915	Vehicle	Sep	19
+Waubra Power Station	-37.355982	143.605915	Electrical Overload	Sep	5
+Waubra Power Station	-37.355982	143.605915	Rain/Flooding	Sep	8
+Waubra Power Station	-37.355982	143.605915	Other Miscellaneous	Apr	6
+Wemen Power Station	-34.784857	142.521461	Programmed Outage	Feb	20
+Wemen Power Station	-34.784857	142.521461	Wind	Mar	5
+Wemen Power Station	-34.784857	142.521461	Condition Deterioration	Aug	3
+Wemen Power Station	-34.784857	142.521461	Vehicle	Mar	14
+Wemen Power Station	-34.784857	142.521461	Other Miscellaneous	Oct	10
+Wemen Power Station	-34.784857	142.521461	Condition Deterioration	Jan	0
+Wemen Power Station	-34.784857	142.521461	Other Miscellaneous	Sep	1
+Wemen Power Station	-34.784857	142.521461	Programmed Outage	Aug	19
+Wemen Power Station	-34.784857	142.521461	Programmed Outage	May	8
+Wemen Power Station	-34.784857	142.521461	Condition Deterioration	Jul	12
+Wemen Power Station	-34.784857	142.521461	Other Miscellaneous	Nov	15
+Wemen Power Station	-34.784857	142.521461	Cable Fault	Mar	9
+Wemen Power Station	-34.784857	142.521461	Rain/Flooding	Sep	2
+Wemen Power Station	-34.784857	142.521461	Condition Deterioration	Aug	10
+Wemen Power Station	-34.784857	142.521461	Condition Deterioration	Jun	9
+Wemen Power Station	-34.784857	142.521461	Other Miscellaneous	Apr	11
+Wemen Power Station	-34.784857	142.521461	Programmed Outage	Feb	2
+Wemen Power Station	-34.784857	142.521461	Wind	Jan	13
+Wemen Power Station	-34.784857	142.521461	Rain/Flooding	Jun	2
+Wemen Power Station	-34.784857	142.521461	Human error	Jul	0
+Wemen Power Station	-34.784857	142.521461	Electrical Overload	Feb	3
+Wemen Power Station	-34.784857	142.521461	Programmed Outage	Sep	5
+Wemen Power Station	-34.784857	142.521461	Programmed Outage	Jun	14
+Wemen Power Station	-34.784857	142.521461	Cable Fault	Dec	0
+Wemen Power Station	-34.784857	142.521461	Rain/Flooding	Feb	10
+Wemen Power Station	-34.784857	142.521461	Rain/Flooding	Apr	13
+Wemen Power Station	-34.784857	142.521461	Electrical Overload	Apr	19
+Wemen Power Station	-34.784857	142.521461	Condition Deterioration	Sep	10
+Wemen Power Station	-34.784857	142.521461	Cable Fault	Aug	19
+Wemen Power Station	-34.784857	142.521461	Human error	Feb	3
+West Melbourne Power Station	-37.80034	144.934854	Other Miscellaneous	Nov	1
+West Melbourne Power Station	-37.80034	144.934854	Programmed Outage	Apr	8
+West Melbourne Power Station	-37.80034	144.934854	Rain/Flooding	Mar	9
+West Melbourne Power Station	-37.80034	144.934854	Other Miscellaneous	Jul	18
+West Melbourne Power Station	-37.80034	144.934854	Cable Fault	Jun	14
+West Melbourne Power Station	-37.80034	144.934854	Programmed Outage	Apr	6
+West Melbourne Power Station	-37.80034	144.934854	Wind	Oct	19
+West Melbourne Power Station	-37.80034	144.934854	Wind	Feb	11
+West Melbourne Power Station	-37.80034	144.934854	Condition Deterioration	Jul	4
+West Melbourne Power Station	-37.80034	144.934854	Programmed Outage	Mar	18
+West Melbourne Power Station	-37.80034	144.934854	Electrical Overload	Jul	8
+West Melbourne Power Station	-37.80034	144.934854	Programmed Outage	Oct	16
+West Melbourne Power Station	-37.80034	144.934854	Cable Fault	Jul	7
+West Melbourne Power Station	-37.80034	144.934854	Rain/Flooding	Aug	18
+West Melbourne Power Station	-37.80034	144.934854	Cable Fault	Mar	5
+West Melbourne Power Station	-37.80034	144.934854	Other Miscellaneous	Sep	6
+West Melbourne Power Station	-37.80034	144.934854	Programmed Outage	May	6
+West Melbourne Power Station	-37.80034	144.934854	Rain/Flooding	Mar	20
+West Melbourne Power Station	-37.80034	144.934854	Human error	Aug	1
+West Melbourne Power Station	-37.80034	144.934854	Rain/Flooding	Apr	14
+West Melbourne Power Station	-37.80034	144.934854	Rain/Flooding	Nov	8
+West Melbourne Power Station	-37.80034	144.934854	Cable Fault	Jan	10
+West Melbourne Power Station	-37.80034	144.934854	Condition Deterioration	Jan	17
+West Melbourne Power Station	-37.80034	144.934854	Wind	Dec	3
+West Melbourne Power Station	-37.80034	144.934854	Wind	Jun	2
+West Melbourne Power Station	-37.80034	144.934854	Cable Fault	Mar	12
+West Melbourne Power Station	-37.80034	144.934854	Programmed Outage	Jun	4
+West Melbourne Power Station	-37.80034	144.934854	Rain/Flooding	May	5
+West Melbourne Power Station	-37.80034	144.934854	Human error	Jan	3
+West Melbourne Power Station	-37.80034	144.934854	Human error	Nov	5
+Western Port Power Station	-38.281938	145.208307	Vehicle	Aug	20
+Western Port Power Station	-38.281938	145.208307	Cable Fault	Mar	11
+Western Port Power Station	-38.281938	145.208307	Wind	Sep	8
+Western Port Power Station	-38.281938	145.208307	Wind	Jul	8
+Western Port Power Station	-38.281938	145.208307	Human error	Oct	16
+Western Port Power Station	-38.281938	145.208307	Human error	Sep	8
+Western Port Power Station	-38.281938	145.208307	Condition Deterioration	Jul	6
+Western Port Power Station	-38.281938	145.208307	Electrical Overload	Mar	7
+Western Port Power Station	-38.281938	145.208307	Electrical Overload	Jun	0
+Western Port Power Station	-38.281938	145.208307	Cable Fault	Nov	8
+Western Port Power Station	-38.281938	145.208307	Programmed Outage	Apr	10
+Western Port Power Station	-38.281938	145.208307	Human error	Mar	9
+Western Port Power Station	-38.281938	145.208307	Electrical Overload	Dec	9
+Western Port Power Station	-38.281938	145.208307	Condition Deterioration	Sep	15
+Western Port Power Station	-38.281938	145.208307	Cable Fault	Jul	2
+Western Port Power Station	-38.281938	145.208307	Rain/Flooding	Apr	7
+Western Port Power Station	-38.281938	145.208307	Programmed Outage	Apr	12
+Western Port Power Station	-38.281938	145.208307	Programmed Outage	Aug	7
+Western Port Power Station	-38.281938	145.208307	Wind	Apr	14
+Western Port Power Station	-38.281938	145.208307	Human error	Jul	16
+Western Port Power Station	-38.281938	145.208307	Cable Fault	Nov	12
+Western Port Power Station	-38.281938	145.208307	Rain/Flooding	Feb	10
+Western Port Power Station	-38.281938	145.208307	Condition Deterioration	Mar	11
+Western Port Power Station	-38.281938	145.208307	Wind	Sep	18
+Western Port Power Station	-38.281938	145.208307	Condition Deterioration	Nov	4
+Western Port Power Station	-38.281938	145.208307	Condition Deterioration	Jul	18
+Western Port Power Station	-38.281938	145.208307	Cable Fault	Feb	11
+Western Port Power Station	-38.281938	145.208307	Wind	Dec	0
+Western Port Power Station	-38.281938	145.208307	Electrical Overload	Jul	11
+Western Port Power Station	-38.281938	145.208307	Cable Fault	May	4
+Wodonga Power Station	-36.154815	146.950149	Electrical Overload	Jun	8
+Wodonga Power Station	-36.154815	146.950149	Wind	Jun	13
+Wodonga Power Station	-36.154815	146.950149	Human error	Feb	0
+Wodonga Power Station	-36.154815	146.950149	Vehicle	Apr	20
+Wodonga Power Station	-36.154815	146.950149	Human error	Sep	4
+Wodonga Power Station	-36.154815	146.950149	Condition Deterioration	Oct	5
+Wodonga Power Station	-36.154815	146.950149	Programmed Outage	Oct	3
+Wodonga Power Station	-36.154815	146.950149	Human error	May	11
+Wodonga Power Station	-36.154815	146.950149	Cable Fault	Feb	1
+Wodonga Power Station	-36.154815	146.950149	Wind	Mar	12
+Wodonga Power Station	-36.154815	146.950149	Other Miscellaneous	Mar	5
+Wodonga Power Station	-36.154815	146.950149	Wind	May	3
+Wodonga Power Station	-36.154815	146.950149	Cable Fault	Jan	15
+Wodonga Power Station	-36.154815	146.950149	Cable Fault	Mar	13
+Wodonga Power Station	-36.154815	146.950149	Human error	May	3
+Wodonga Power Station	-36.154815	146.950149	Programmed Outage	May	12
+Wodonga Power Station	-36.154815	146.950149	Other Miscellaneous	Oct	9
+Wodonga Power Station	-36.154815	146.950149	Vehicle	Nov	12
+Wodonga Power Station	-36.154815	146.950149	Electrical Overload	Dec	9
+Wodonga Power Station	-36.154815	146.950149	Programmed Outage	Jan	8
+Wodonga Power Station	-36.154815	146.950149	Electrical Overload	Dec	13
+Wodonga Power Station	-36.154815	146.950149	Electrical Overload	Mar	14
+Wodonga Power Station	-36.154815	146.950149	Programmed Outage	Apr	5
+Wodonga Power Station	-36.154815	146.950149	Programmed Outage	Jan	15
+Wodonga Power Station	-36.154815	146.950149	Electrical Overload	May	18
+Wodonga Power Station	-36.154815	146.950149	Human error	Feb	11
+Wodonga Power Station	-36.154815	146.950149	Wind	Aug	1
+Wodonga Power Station	-36.154815	146.950149	Human error	Nov	1
+Wodonga Power Station	-36.154815	146.950149	Other Miscellaneous	Mar	9
+Wodonga Power Station	-36.154815	146.950149	Rain/Flooding	Mar	19
+Yallourn Power Station	-38.174138	146.349914	Human error	Dec	12
+Yallourn Power Station	-38.174138	146.349914	Rain/Flooding	Apr	19
+Yallourn Power Station	-38.174138	146.349914	Other Miscellaneous	Jan	11
+Yallourn Power Station	-38.174138	146.349914	Wind	Apr	12
+Yallourn Power Station	-38.174138	146.349914	Programmed Outage	Feb	6
+Yallourn Power Station	-38.174138	146.349914	Other Miscellaneous	Aug	19
+Yallourn Power Station	-38.174138	146.349914	Condition Deterioration	Feb	7
+Yallourn Power Station	-38.174138	146.349914	Wind	Sep	1
+Yallourn Power Station	-38.174138	146.349914	Rain/Flooding	Jun	7
+Yallourn Power Station	-38.174138	146.349914	Electrical Overload	Nov	9
+Yallourn Power Station	-38.174138	146.349914	Human error	Jan	18
+Yallourn Power Station	-38.174138	146.349914	Electrical Overload	Aug	4
+Yallourn Power Station	-38.174138	146.349914	Cable Fault	Feb	6
+Yallourn Power Station	-38.174138	146.349914	Human error	Apr	3
+Yallourn Power Station	-38.174138	146.349914	Vehicle	Nov	15
+Yallourn Power Station	-38.174138	146.349914	Human error	Feb	15
+Yallourn Power Station	-38.174138	146.349914	Vehicle	May	18
+Yallourn Power Station	-38.174138	146.349914	Wind	Jul	15
+Yallourn Power Station	-38.174138	146.349914	Programmed Outage	Oct	9
+Yallourn Power Station	-38.174138	146.349914	Electrical Overload	Jul	3
+Yallourn Power Station	-38.174138	146.349914	Rain/Flooding	Jul	1
+Yallourn Power Station	-38.174138	146.349914	Human error	Dec	4
+Yallourn Power Station	-38.174138	146.349914	Vehicle	Jul	18
+Yallourn Power Station	-38.174138	146.349914	Programmed Outage	Jun	19
+Yallourn Power Station	-38.174138	146.349914	Cable Fault	May	19
+Yallourn Power Station	-38.174138	146.349914	Cable Fault	Jan	9
+Yallourn Power Station	-38.174138	146.349914	Cable Fault	Jul	1
+Yallourn Power Station	-38.174138	146.349914	Cable Fault	Apr	17
+Yallourn Power Station	-38.174138	146.349914	Human error	Oct	9
+Yallourn Power Station	-38.174138	146.349914	Other Miscellaneous	Sep	13
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Wind	Aug	11
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Programmed Outage	Oct	14
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Cable Fault	Sep	18
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Programmed Outage	Oct	11
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Wind	Oct	16
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Cable Fault	Jun	17
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Vehicle	Jan	10
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Cable Fault	Jun	15
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Programmed Outage	Jul	6
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Other Miscellaneous	Oct	9
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Electrical Overload	Apr	5
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Electrical Overload	May	2
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Electrical Overload	Apr	7
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Programmed Outage	Oct	12
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Programmed Outage	Nov	9
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Wind	Feb	2
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Other Miscellaneous	Oct	12
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Wind	Jul	3
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Vehicle	Apr	13
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Wind	Jan	14
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Condition Deterioration	Feb	14
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Human error	Aug	0
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Rain/Flooding	Oct	3
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Wind	Jun	12
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Other Miscellaneous	Aug	17
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Cable Fault	Jun	18
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Human error	Mar	7
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Programmed Outage	Mar	4
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Human error	Apr	3
+Yarrawonga Weir Power Station	-36.0096134	145.9971817	Other Miscellaneous	Sep	14

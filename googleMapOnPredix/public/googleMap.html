@@ -72,7 +72,7 @@
 <script type="text/javascript" src="../scripts/googleMapApi.js"></script>
 <script type="text/javascript" src="../scripts/pieChartViewer.js"></script>
 <script type="text/javascript" src="../scripts/simpleLineChart.js"></script>
-<script type="text/javascript" src="../scripts/googleMap.js"></script>
+<script type="text/javascript" src="../scripts/googleMap.js"></script> 
 
 <script charset="utf-8">
 
@@ -99,33 +99,31 @@
 
     var pieChart;
     var lineChart;
-    d3.tsv("../resources/data/data.tsv", function(error, data) {
 
+    var randDataGenerated = [];
+    d3.tsv("../resources/data/data.tsv", function(error, data) {
         if (error) throw error;
 
-        randDataGenerated = [];
-		data.forEach(function(d,i){
-			for(var i =0; i < 30; i++){
-				randDataGenerated.push({"name":d.name,"lat":d.lat,"lng":d.lng,"cause":catrgories.type[Math.round(Math.random()*8)],"month":timeRange[Math.round(Math.random()*11)],"numOfCustomerAffected":Math.round(Math.random()*20)});
-			}
+        data.forEach(function(d){
+        		randDataGenerated.push({"name":d.name,"lat":d.lat,"lng":d.lng,"cause":d.cause,"month":d.month,"numOfCustomerAffected":parseInt(d.numOfCustomerAffected)});
+        })
+		
+	
+	    pieChart = new pieChartViewer($("#pieChartContainer")[0], null ,randDataGenerated , column, stationName, catrgories);
+
+	    //tabViewer = new TABViewer($("tableContainer")[0], {}, randDataGenerated, name);
+
+	    /*var setting = {"width":800,"height":400};*/
+
+	    lineChart = new simpleLineChart($("#lineChartContainer")[0], randDataGenerated, stationName);
+
+	    d3.select(window)
+			.on("resize", function() {
+				pieChart.onSizeChange();
+				lineChart.onSizeChange();
 		});
 
-        pieChart = new pieChartViewer($("#pieChartContainer")[0], null ,randDataGenerated , column, stationName, catrgories);
-
-        //tabViewer = new TABViewer($("tableContainer")[0], {}, randDataGenerated, name);
-
-        /*var setting = {"width":800,"height":400};*/
-
-        lineChart = new simpleLineChart($("#lineChartContainer")[0], randDataGenerated, stationName);
-
-        d3.select(window)
-    		.on("resize", function() {
-    			pieChart.onSizeChange();
-    			lineChart.onSizeChange();
-    	});
-
-
-    });
+	});
 
 </script>
 
