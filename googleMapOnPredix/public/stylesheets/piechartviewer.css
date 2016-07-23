@@ -97,3 +97,11 @@ text.active {
 rect {
   stroke-width: 2;
 }
+
+.lable_pie {
+  font-size: 10px;
+}
+
+.title_pie {
+  font-size: 1em;
+}

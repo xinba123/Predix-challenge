@@ -4,6 +4,7 @@ var simpleLineChart = function(container,data,stationName, setting){
   'use strict';
 
   this.container = d3.select(container);
+  this.titleContainer = this.container.append("div");
   this.data = data;
 
   
@@ -40,19 +41,35 @@ var simpleLineChart = function(container,data,stationName, setting){
       that.height =  targetWidth / that.aspect;
 
       that.container.select("svg").remove();
-      that.drawSvg();
-      that.drawLine(that.stationName);
+      that._drawSvg();
+      that._drawTitle(that.stationName);
+      that._drawLine(that.stationName);
   }
 
 
 /*  this.timeRange = [0,1,2,3,4,5,6,7,8,9,10,11];*/
   this.drawLineChart = function(){
-    that.dataProcess(that.data);
-    that.drawSvg();
-    that.drawLine(that.stationName);
+    that._dataProcess(that.data);    
+    that._drawSvg();
+    that._drawTitle(that.stationName);
+    that._drawLine(that.stationName);
   }
 
-  this.dataProcess = function(data){
+  this.animateLineChart = function(stationName){
+      that.stationName = stationName;
+
+      that.path.datum(that.dataSet[stationName])
+                    .transition().duration(500).ease("linear")
+                    .attr("d",  that.line);
+                    
+      that._drawTitle(that.stationName);
+
+      that.shadow.datum(that.dataSet[stationName])
+        .transition().duration(500).ease("linear")
+        .attr("d", that.area);
+  }
+
+  this._dataProcess = function(data){
     data.forEach(function(d,i){
       if(that.stationsData[d.name]==undefined)
       {
@@ -89,7 +106,9 @@ var simpleLineChart = function(container,data,stationName, setting){
 
   }
 
-  this.drawSvg = function(){
+
+
+  this._drawSvg = function(){
       var margin = {top: 20, right: 20, bottom: 30, left: 50};
       that.width = that.width - margin.left - margin.right;
       that.height = that.height - margin.top - margin.bottom;
@@ -102,8 +121,12 @@ var simpleLineChart = function(container,data,stationName, setting){
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
   }
 
+  this._drawTitle = function(){
+    this.titleContainer.attr("class","title_lineChart")
+      .text(that.stationName);
+  }
 
-  this.drawLine = function(data){
+  this._drawLine = function(data){
       var x = d3.time.scale()
         .domain([new Date(2012, 0, 1), new Date(2012, 11, 31)])
         .range([0, that.width]);
@@ -162,15 +185,7 @@ var simpleLineChart = function(container,data,stationName, setting){
           .attr("d", that.line);
   }
 
-  this.animateLineChart = function(stationName){
-      that.path.datum(that.dataSet[stationName])
-                    .transition().duration(500).ease("linear")
-                    .attr("d",  that.line);
 
-      that.shadow.datum(that.dataSet[stationName])
-        .transition().duration(500).ease("linear")
-        .attr("d", that.area);
-  }
 
 
 }

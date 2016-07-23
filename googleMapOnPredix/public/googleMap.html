@@ -39,7 +39,7 @@
 	</nav>
 	
 	<div class="mybackgroundHeader myhidden"></div>
-	<!-- <center><div class="loader"></div></center> -->
+<!-- 	<center><div class="loader"></div></center> -->
 	
 
 		<div class="container_2">
@@ -103,6 +103,7 @@
     var randDataGenerated = [];
     d3.tsv("../resources/data/data.tsv", function(error, data) {
         if (error) throw error;
+
 
         data.forEach(function(d){
         		randDataGenerated.push({"name":d.name,"lat":d.lat,"lng":d.lng,"cause":d.cause,"month":d.month,"numOfCustomerAffected":parseInt(d.numOfCustomerAffected)});
