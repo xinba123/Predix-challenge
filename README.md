@@ -2,6 +2,7 @@
 
 For Preix Challenge
 
+<<<<<<< HEAD
 
 =======
 
@@ -20,6 +21,8 @@ Or you can Fork this project
 More information can be seen [here](https://gist.github.com/Chaser324/ce0505fbed06b947d962).
 
 =======
+>>>>>>> 92b2656c0346fcefc039413f695320d958941969
+=======
 
 Running
 -------
@@ -37,4 +40,7 @@ Running
     http-server
 
 The default configuration of http-server will serve the exampes on [http://localhost:8080](http://localhost:8080).
+<<<<<<< HEAD
 
+=======
+>>>>>>> 92b2656c0346fcefc039413f695320d958941969
