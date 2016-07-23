@@ -5,19 +5,21 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
     "use strict";
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Constants
+// Properties
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 	this.canvas = canvas || { width:500, height:500};
-    
+	this.containerDiv = d3.select(containerDiv); 
+
+ 	this.canvas = canvas || { width:this.containerDiv.node().getBoundingClientRect().width,
+ 							 height:this.containerDiv.node().getBoundingClientRect().width};
+
+    this.aspect = this.canvas.width / this.canvas.height;
+
 	this.color = d3.scale.category20();
 
 	this.radius = Math.min(this.canvas.width, this.canvas.height) / 2;
 
     var that = this;
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Properties
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	try{
 		this.domContainerDiv = containerDiv || function(){throw "container is not set."}();
 		this.rawData = data || function(){throw "data is not set."}();
@@ -26,7 +28,7 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		console.log(err);
 	}
 
-    this.containerDiv = d3.select(containerDiv);    //User-provided DOM element that contains the DigViewer interface
+       //User-provided DOM element that contains the pieViewer interface
     this.subContainerDiv = this.containerDiv.append("div");     //To remove all content without removing the main DIV
     this.tooltip = this.containerDiv.append('div').attr('class', 'pietooltip');
 
@@ -87,6 +89,30 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		that._change(name);
         
  	}
+
+ 	this.onSizeChange = function(){
+		var targetWidth = that.containerDiv.node().getBoundingClientRect().width;
+		that.containerDiv.attr("width", targetWidth);
+		that.containerDiv.attr("height", targetWidth / that.aspect);
+
+		that.radius = Math.min(targetWidth, this.canvas.height) / 2;
+
+		that.subContainerDiv.remove();
+		that.tooltip.remove();
+        that.subContainerDiv = that.containerDiv.append("div");
+        
+        this.arc = d3.svg.arc()
+		    .outerRadius(this.radius - 10)
+		    .innerRadius(this.radius - 70);
+
+
+		this.labelArc = d3.svg.arc()
+		    .outerRadius(this.radius - 40)
+		    .innerRadius(this.radius - 40);
+
+		that._drawSvg();
+		that._drawPieChart();
+	}
 
 
 //******************************************************************************
@@ -342,4 +368,6 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		$(this).attr("class","");
 		that.tooltip.style('display', 'none');
 	}
+
+
 }

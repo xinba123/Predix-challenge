@@ -78,7 +78,7 @@
 
     var column = "name";
 
-    var canvas = { width: 472, height: 472};
+    /*var canvas = { width: 472, height: 472};*/
 
     var catrgories = {property:"cause",type: [
 		"Condition Deterioration",
@@ -110,13 +110,20 @@
 			}
 		});
 
-        pieChart = new pieChartViewer($("#pieChartContainer")[0], canvas ,randDataGenerated , column, stationName, catrgories);
+        pieChart = new pieChartViewer($("#pieChartContainer")[0], null ,randDataGenerated , column, stationName, catrgories);
 
         //tabViewer = new TABViewer($("tableContainer")[0], {}, randDataGenerated, name);
 
-        var setting = {"width":800,"height":400} ;
+        /*var setting = {"width":800,"height":400};*/
 
-        lineChart = new simpleLineChart($("#lineChartContainer")[0], randDataGenerated, stationName, setting);
+        lineChart = new simpleLineChart($("#lineChartContainer")[0], randDataGenerated, stationName);
+
+        d3.select(window)
+    		.on("resize", function() {
+    			pieChart.onSizeChange();
+    			lineChart.onSizeChange();
+    	});
+
 
     });
 

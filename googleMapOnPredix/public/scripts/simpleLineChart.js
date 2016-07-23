@@ -1,28 +1,48 @@
 
 var simpleLineChart = function(container,data,stationName, setting){
 
+  'use strict';
 
   this.container = d3.select(container);
   this.data = data;
 
-  that = this;
+  
   this.svg;
 
   this.stationsData = {};
   this.stationsSummary = [];
   this.dataSet = [];
 
-  this.width = setting.width;
-  this.height = setting.height;
-  
+  this.setting = setting || [];
+
+  this.width = this.setting.width || this.container.node().getBoundingClientRect().width;
+  this.height = this.setting.height || this.container.node().getBoundingClientRect().height;
+  this.aspect = this.width / this.height;
+
   this.stationName = stationName;
 
   this.timeRange = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
   this.path;
   this.line;
+  this.shadow;
+  this.area;
 
   var parseDate = d3.time.format("%b").parse;
+  var that = this;
+
+  this.onSizeChange = function(){
+    
+      var targetWidth = that.container.node().getBoundingClientRect().width;
+      that.container.attr("width", targetWidth);
+      that.container.attr("height", targetWidth / that.aspect);
+      that.width = targetWidth;
+      that.height =  targetWidth / that.aspect;
+
+      that.container.select("svg").remove();
+      that.drawSvg();
+      that.drawLine(that.stationName);
+  }
 
 
 /*  this.timeRange = [0,1,2,3,4,5,6,7,8,9,10,11];*/
@@ -67,7 +87,6 @@ var simpleLineChart = function(container,data,stationName, setting){
 
     }
 
-
   }
 
   this.drawSvg = function(){
@@ -104,8 +123,13 @@ var simpleLineChart = function(container,data,stationName, setting){
           .scale(y)
           .orient("left");
 
+      that.area = d3.svg.area()
+          .x(function(d) { return x(d.time); })
+          .y0(that.height)
+          .y1(function(d) { return y(d.numOfCustomerAffected); });
+
       that.line = d3.svg.line()
-        .x(function(d) { console.log(d);return x(d.time); })
+        .x(function(d) { return x(d.time); })
         .y(function(d) { return y(d.numOfCustomerAffected); });
 
 
@@ -127,6 +151,10 @@ var simpleLineChart = function(container,data,stationName, setting){
           .style("text-anchor", "end")
           .text("Number of customer affected");
 
+      that.shadow = that.svg.append("path")
+        .datum(that.dataSet[data])
+        .attr("class", "area")
+        .attr("d", that.area);
 
       that.path = that.svg.append("path")
           .datum(that.dataSet[data])
@@ -139,6 +167,9 @@ var simpleLineChart = function(container,data,stationName, setting){
                     .transition().duration(500).ease("linear")
                     .attr("d",  that.line);
 
+      that.shadow.datum(that.dataSet[stationName])
+        .transition().duration(500).ease("linear")
+        .attr("d", that.area);
   }
 
 
