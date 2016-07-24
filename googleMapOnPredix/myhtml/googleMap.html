@@ -5,6 +5,7 @@
 	<title>Melbourne Outage Analysis</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
 	<link rel="stylesheet" href="../stylesheets/leaflet.css" />
 	<link rel="stylesheet" href="../stylesheets/style.css" />
 	<link rel="stylesheet" href="../stylesheets/predix.css" />
@@ -37,27 +38,30 @@
   		</div>
 	</nav>
 	
+	<div class="mybackgroundHeader myhidden"></div>
 
 <!-- 	<center><div class="loader"></div></center> -->
 	<div class="container_2">
-	<div class="row" style="padding: 0; margin: 0;">
-  		<div class="col-sm-8" style="padding: 0; margin: 0;">
-			<div id="map"></div>
+		<div class="row">
+			<div id="map" class="myhidden"></div>
 		</div>
-  		<div class="col-sm-4" style="padding: 0; margin: 0;">
-			<div id="pieChartContainer"></div>
-			
-		</div>
-	</div>
 	</div>
 
-	<div class="container_3">
-	<div class="row" style="padding: 0; margin: 0;">
-  		<div class="col-sm-12" style="padding: 0; margin: 0;">
-			<div id="lineChartContainer"></div>
+
+		<div class="container_2">
+			<div class="row">
+
+		  		<div class="col-md-8" >
+					<div id="lineChartContainer"></div>
+				</div>
+
+		  		<div class="col-md-4" >
+					<div id="pieChartContainer"></div>
+				</div>
+
+			</div>
 		</div>
-	</div>
-	</div>
+
 		<!-- <div id="tableContainer" style="position: relative;"></div> -->
 		
 </body>
