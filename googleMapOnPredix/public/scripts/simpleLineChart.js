@@ -1,5 +1,5 @@
 
-var simpleLineChart = function(container,data,stationName, setting){
+var simpleLineChart = function(container,data,stationName,setting,aspect){
 
   'use strict';
 
@@ -16,10 +16,10 @@ var simpleLineChart = function(container,data,stationName, setting){
 
   this.setting = setting || [];
 
-
+  this.aspect = aspect;
   this.width = this.setting.width || this.container.node().getBoundingClientRect().width;
-  this.height = this.setting.height || this.width/2;
-  this.aspect = this.width / this.height;
+  this.height = this.setting.height || this.width/this.aspect;
+  
 
   this.stationName = stationName;
 
