@@ -8,10 +8,12 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 // Properties
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	this.containerDiv = d3.select(containerDiv); 
-	this.size = this.containerDiv.node().getBoundingClientRect().width;
 
- 	this.canvas = canvas || { width:this.size,
- 							 height:this.size};
+	this.width = this.containerDiv.node().getBoundingClientRect().width;
+	this.height = this.containerDiv.node().getBoundingClientRect().height;
+
+ 	this.canvas = canvas || { width:this.width,
+ 							 height:this.height};
 
     this.aspect = this.canvas.width / this.canvas.height;
 
@@ -109,8 +111,8 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		that.containerDiv.attr("width", targetWidth);
 		that.containerDiv.attr("height", targetWidth / that.aspect);
 
-		that.canvas.height = targetWidth;
-		that.canvas.width = targetWidth / that.aspect;
+		that.canvas.width = targetWidth;
+		that.canvas.height = targetWidth / that.aspect;
 		that.radius = Math.min(targetWidth, that.canvas.height) / 2;
 
 		that.subContainerTitle.remove();

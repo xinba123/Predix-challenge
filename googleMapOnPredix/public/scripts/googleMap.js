@@ -86,6 +86,8 @@ var googleMap = function(){
         that.children.forEach(function(d){
             d.animate(name);
         });
+
+        console.log(e);
 /*        pieChart.animatePieChart(name);
         lineChart.animateLineChart(name);*/
 
