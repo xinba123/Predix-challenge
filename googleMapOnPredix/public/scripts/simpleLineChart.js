@@ -16,8 +16,9 @@ var simpleLineChart = function(container,data,stationName, setting){
 
   this.setting = setting || [];
 
+
   this.width = this.setting.width || this.container.node().getBoundingClientRect().width;
-  this.height = this.setting.height || this.container.node().getBoundingClientRect().height;
+  this.height = this.setting.height || this.width/2;
   this.aspect = this.width / this.height;
 
   this.stationName = stationName;
@@ -46,6 +47,13 @@ var simpleLineChart = function(container,data,stationName, setting){
       that._drawLine(that.stationName);
   }
 
+  this.draw = function(){
+    that.drawLineChart();
+  }
+
+  this.animate = function(name){
+    that.animateLineChart(name);
+  }
 
 /*  this.timeRange = [0,1,2,3,4,5,6,7,8,9,10,11];*/
   this.drawLineChart = function(){
@@ -61,7 +69,7 @@ var simpleLineChart = function(container,data,stationName, setting){
       that.path.datum(that.dataSet[stationName])
                     .transition().duration(500).ease("linear")
                     .attr("d",  that.line);
-                    
+
       that._drawTitle(that.stationName);
 
       that.shadow.datum(that.dataSet[stationName])
@@ -168,11 +176,27 @@ var simpleLineChart = function(container,data,stationName, setting){
           .attr("class", "y axis")
           .call(yAxis)
         .append("text")
-          .attr("transform", "rotate(-90)")
+          //.attr("transform", "rotate(-90)")
           .attr("y", 6)
           .attr("dy", ".71em")
-          .style("text-anchor", "end")
+          .style("text-anchor", "start")
           .text("Number of customer affected");
+
+      that.svg.append("g")         
+        .attr("class", "grid")
+        .attr("transform", "translate(0," + that.height + ")")
+        .call(make_x_axis()
+            .tickSize(-that.height, 0, 0)
+            .tickFormat("")
+            );
+
+      that.svg.append("g")         
+          .attr("class", "grid")
+          .call(make_y_axis()
+              .tickSize(-that.width, 0, 0)
+              .tickFormat("")
+              );
+
 
       that.shadow = that.svg.append("path")
         .datum(that.dataSet[data])
@@ -183,9 +207,21 @@ var simpleLineChart = function(container,data,stationName, setting){
           .datum(that.dataSet[data])
           .attr("class", "line")
           .attr("d", that.line);
+
+
+      function make_x_axis() {        
+        return d3.svg.axis()
+            .scale(x)
+             .orient("bottom")
+             .ticks(12)
+      }
+
+      function make_y_axis() {        
+          return d3.svg.axis()
+              .scale(y)
+              .orient("left")
+              .ticks(20)
+      }
   }
-
-
-
 
 }

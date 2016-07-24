@@ -77,12 +77,14 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
  	this.drawPieChart = function() {
  		that._dataPreprocess();
 
+ 		that.subContainerTitle.remove();
+        that.subContainerTitle = that.containerDiv.append("div");
+
         //Remove previously drawn elements from the container DIV
         that.subContainerDiv.remove();
         that.subContainerDiv = that.containerDiv.append("div");
 
-        that.subContainerTitle.remove();
-        that.subContainerTitle = that.containerDiv.append("div");
+
 
         that._drawSvg();
         that._drawPieChart();
@@ -111,12 +113,14 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		that.canvas.width = targetWidth / that.aspect;
 		that.radius = Math.min(targetWidth, that.canvas.height) / 2;
 
+		that.subContainerTitle.remove();
+        that.subContainerTitle = that.containerDiv.append("div");
+
 		that.subContainerDiv.remove();
 		that.tooltip.remove();
         that.subContainerDiv = that.containerDiv.append("div");
 
-        that.subContainerTitle.remove();
-        that.subContainerTitle = that.containerDiv.append("div");
+
 
         this.arc = d3.svg.arc()
 		    .outerRadius(that.radius - 10)
@@ -138,6 +142,20 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
      */
 	this.getChartName = function(){
 		return that.name;
+	}
+
+
+	/**
+	*
+	*for unification purpose
+	*@public
+	*/
+	this.draw = function(){
+		that.drawPieChart();
+	}
+
+	this.animate = function(name){
+		that.animatePieChart(name);
 	}
 //******************************************************************************
 // Internal functions

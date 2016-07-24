@@ -39,25 +39,31 @@
 	</nav>
 	
 	<div class="mybackgroundHeader myhidden"></div>
+
 <!-- 	<center><div class="loader"></div></center> -->
-	
+	<div class="container_2">
+		<div class="row">
+			<div id="map" class="myhidden"></div>
+		</div>
+	</div>
+
 
 		<div class="container_2">
 			<div class="row">
 
 		  		<div class="col-md-8" >
-					<div id="map" class="myhidden"></div>
+					<div id="lineChartContainer"></div>
 				</div>
+
 		  		<div class="col-md-4" >
-
-
 					<div id="pieChartContainer"></div>
 				</div>
+
 			</div>
 		</div>
 
 		<!-- <div id="tableContainer" style="position: relative;"></div> -->
-		<div id="lineChartContainer" style="position: relative;"></div>
+		
 </body>
 </html>
 
@@ -99,6 +105,7 @@
 
     var pieChart;
     var lineChart;
+    var googleMap;
 
     var randDataGenerated = [];
     d3.tsv("../resources/data/data.tsv", function(error, data) {
@@ -108,15 +115,21 @@
         data.forEach(function(d){
         		randDataGenerated.push({"name":d.name,"lat":d.lat,"lng":d.lng,"cause":d.cause,"month":d.month,"numOfCustomerAffected":parseInt(d.numOfCustomerAffected)});
         })
-		
 	
 	    pieChart = new pieChartViewer($("#pieChartContainer")[0], null ,randDataGenerated , column, stationName, catrgories);
 
 	    //tabViewer = new TABViewer($("tableContainer")[0], {}, randDataGenerated, name);
 
-	    /*var setting = {"width":800,"height":400};*/
+	    var setting = {"width":800,"height":400};
 
 	    lineChart = new simpleLineChart($("#lineChartContainer")[0], randDataGenerated, stationName);
+
+	    googleMap = new googleMap();
+
+		googleMap.init();
+		googleMap.setChild(pieChart);
+		googleMap.setChild(lineChart);
+		googleMap.draw();
 
 	    d3.select(window)
 			.on("resize", function() {
