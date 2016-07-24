@@ -106,15 +106,17 @@
         data.forEach(function(d){
         		d.numOfCustomerAffected = parseInt(d.numOfCustomerAffected);//parse string to int
         })
-	
-	    var pieChart = new pieChartViewer($("#pieChartContainer")[0], null ,data , column, stationName, catrgories);
+		
+		var maxDiameter = 480;
+
+	    var pieChart = new pieChartViewer($("#pieChartContainer")[0], 0 ,data , column, stationName, catrgories, 0, maxDiameter);
 
 	    //tabViewer = new TABViewer($("tableContainer")[0], {}, randDataGenerated, name);
 
 	    var setting = {"width":800,"height":400};
 
 	    var aspect = 5;//width/height
-	    var lineChart = new simpleLineChart($("#lineChartContainer")[0], data, stationName, null, aspect);
+	    var lineChart = new simpleLineChart($("#lineChartContainer")[0], data, stationName, 0, aspect);
 
 	    var myGoogleMap = new googleMap();
 

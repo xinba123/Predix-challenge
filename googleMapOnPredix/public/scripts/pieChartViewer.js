@@ -1,7 +1,7 @@
 
 
 
-var pieChartViewer = function(containerDiv, canvas, data, column, name, catergories) {
+var pieChartViewer = function(containerDiv, canvas, data, column, name, catergories, aspect, maxDiameter) {
     "use strict";
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -15,11 +15,13 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
  	this.canvas = canvas || { width:this.width,
  							 height:this.height};
 
-    this.aspect = this.canvas.width / this.canvas.height;
+    this.aspect = aspect || (this.canvas.width / this.canvas.height);
 
 	this.color = d3.scale.category20();
 
 	this.radius = Math.min(this.canvas.width, this.canvas.height) / 2;
+
+	this.maxDiameter = maxDiameter;
 
 	this.cornerRadius = 10;
 	this.padAngle = 0.03;
@@ -37,9 +39,9 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 
     this.subContainerTitle = this.containerDiv.append("div");
     this.subContainerDiv = this.containerDiv.append("div");     
-    this.tooltip = this.containerDiv.append('div').attr('class', 'pietooltip');
+    //this.tooltip = this.containerDiv.append('div').attr('class', 'pietooltip');
 
-    this.tooltip.total = 0;
+    //this.tooltip.total = 0;
 
     this.name = name || {};
     this.catergories = catergories || {};
@@ -108,18 +110,26 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
      */
  	this.onSizeChange = function(){
 		var targetWidth = that.containerDiv.node().getBoundingClientRect().width;
-		that.containerDiv.attr("width", targetWidth);
-		that.containerDiv.attr("height", targetWidth / that.aspect);
+		if(maxDiameter<targetWidth){
+			that.containerDiv.attr("width", maxDiameter);
+			that.containerDiv.attr("height", maxDiameter / that.aspect);
+			that.canvas.width = maxDiameter;
+			that.canvas.height = maxDiameter / that.aspect;
+		}else{
+			that.containerDiv.attr("width", targetWidth);
+			that.containerDiv.attr("height", targetWidth / that.aspect);
+			that.canvas.width = targetWidth;
+			that.canvas.height = targetWidth / that.aspect;
+		}
+		
+		that.radius = Math.min(that.canvas.width, that.canvas.height) / 2;
 
-		that.canvas.width = targetWidth;
-		that.canvas.height = targetWidth / that.aspect;
-		that.radius = Math.min(targetWidth, that.canvas.height) / 2;
 
 		that.subContainerTitle.remove();
         that.subContainerTitle = that.containerDiv.append("div");
 
 		that.subContainerDiv.remove();
-		that.tooltip.remove();
+		//that.tooltip.remove();
         that.subContainerDiv = that.containerDiv.append("div");
 
 
@@ -223,7 +233,7 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 			that.precessedData["inf"] = [];
 			that.pieChartTitle.forEach(function(name){
 				that.precessedData["inf"].push({"name":name,"value":that.precessedData[name]["objs"].length});
-				that.tooltip.total += that.precessedData[name]["objs"].length;
+				//that.tooltip.total += that.precessedData[name]["objs"].length;
 			});
 		}
 	}
@@ -317,10 +327,10 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		    .on("mouseover", that._onMouseOver)
           	.on("mouseout", that._onMouseOut);
 
-        that.path.on('mousemove', function(d) {
+   /*     that.path.on('mousemove', function(d) {
 			  that.tooltip.style('top', (d3.event.layerY+10) + 'px')
 			    .style('left', (d3.event.layerX+10) + 'px');
-			});
+			});*/
 
 		that.label = g.append("text")
 		  .attr("class","label_pie")
@@ -333,14 +343,14 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 	      .each(function(d) { this._current = d; });//store the initial label position
 
 
-		that.tooltip.append('div')                        
+/*		that.tooltip.append('div')                        
 		  .attr('class', 'pie_label');                   
 
 		that.tooltip.append('div')                        
 		  .attr('class', 'pie_count');         
 
 		that.tooltip.append('div')                        
-		  .attr('class', 'pie_percent');   
+		  .attr('class', 'pie_percent');  */ 
 
 
 		var legend = that.svg.selectAll('.legend')
@@ -378,12 +388,12 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		//that.title.text(name);
 		that.name = name;
 	    that.path = that.path.data(that.pie(that.precessedData[name].inf)); // compute the new angles
-	    that.path.transition().duration(500).attrTween("d", arcTween); // redraw the arcs
+	    that.path.transition().duration(500).ease("linear").attrTween("d", arcTween); // redraw the arcs
 	    
 
 	    that.label = that.label.data(that.pie(that.precessedData[name].inf))
 	    	.text(function(d) {if(d.data.value>0&&that._isLarge(d)) return d.data.percentage + "%"; });
-	    that.label.transition().duration(500).attrTween("transform",labelTween);
+	    that.label.transition().duration(500).ease("linear").attrTween("transform",labelTween);
 
 		that.title.text(that.name) 	    
 
@@ -414,17 +424,17 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 
 	this._onMouseOver = function(d,i) {
 		$(this).attr("class","onHover_pieChart");
-		var percent = Math.round(1000 * d.data.value / that.tooltip.total) / 10;
+/*		var percent = Math.round(1000 * d.data.value / that.tooltip.total) / 10;
 		that.tooltip.select('.pie_label').html(d.data.cause);
 		that.tooltip.select('.pie_count').html(d.data.value); 
 		//that.tooltip.select('.pie_percent').html(percent + '%'); 
-		that.tooltip.style('display', 'block');
+		that.tooltip.style('display', 'block');*/
 
 	}
 
 	this._onMouseOut = function(){
 		$(this).attr("class","");
-		that.tooltip.style('display', 'none');
+/*		that.tooltip.style('display', 'none');*/
 	}
 
 

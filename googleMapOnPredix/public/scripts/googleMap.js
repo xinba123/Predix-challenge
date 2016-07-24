@@ -17,6 +17,28 @@ var googleMap = function(){
           }
         }
     });*/
+    this.icon = L.icon({
+        iconUrl: 'scripts\\images\\marker.png',
+        shadowUrl: 'scripts\\images\\marker-shadow.png',
+
+        iconSize:     [30, 35], // size of the icon
+        shadowSize:   [30, 30], // size of the shadow
+        iconAnchor:   [20, 64], // point of the icon which will correspond to marker's location
+        shadowAnchor: [4, 62],  // the same for the shadow
+    });
+
+    this.icon_active = L.icon({
+        iconUrl: 'scripts\\images\\marker_active.png',
+        shadowUrl: 'scripts\\images\\marker-shadow.png',
+
+        iconSize:     [30, 35], // size of the icon
+        shadowSize:   [30, 30], // size of the shadow
+        iconAnchor:   [20, 64], // point of the icon which will correspond to marker's location
+        shadowAnchor: [4, 62],  // the same for the shadow
+    });
+
+    this.currentMaker;
+
     var that = this;
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
 //methods
@@ -54,11 +76,22 @@ var googleMap = function(){
 
     this.addMarkers = function(locationsArray,map) {
 
+
+
         locationsArray.forEach(function(d,i){
-              L.marker([d.lat, d.lng],{
+            if(i == 0){
+                that.currentMaker = L.marker([d.lat, d.lng],{
+                icon:that.icon_active,
                 title:d.name,
                 id:i
-              }).addTo(map).on('click', that._OnClick);         
+              }).addTo(map).on('click', that._OnClick);
+            }else{
+              L.marker([d.lat, d.lng],{
+                icon:that.icon,
+                title:d.name,
+                id:i
+              }).addTo(map).on('click', that._OnClick);   
+            }      
         });
 
     }
@@ -66,7 +99,7 @@ var googleMap = function(){
 
     this._OnfinloadingGeoData = function(topoData){
         //lgaVicData(topoData);
-        console.log(that.children);
+        
         that.children.forEach(function(d){
             d.draw();
         });
@@ -82,12 +115,15 @@ var googleMap = function(){
 
     this._OnClick = function(e){
         var name = that.mapArray[e.target.options.id].name;
-        console.log(name);
+
         that.children.forEach(function(d){
             d.animate(name);
         });
-
         console.log(e);
+        that.currentMaker.setIcon(that.icon);
+        e.target.setIcon(that.icon_active);
+        that.currentMaker = e.target;
+        
 /*        pieChart.animatePieChart(name);
         lineChart.animateLineChart(name);*/
 
