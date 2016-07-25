@@ -1,25 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Security Starter Application</title>
-  <link rel="stylesheet" href="stylesheets/style.css"></link>
-  <link rel="stylesheet" href="stylesheets/app.css"></link>
+  <title>Outage Analysis-Victoria</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="stylesheets/stl.css"></link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
-<body>
-  <div class="header">
-  <h1>Melbourne Outage Analysis</h1>
+
+<body class="index-body">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="#">Outage Analysis-Victoria</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="login?state=secure">Outage Analysis</a></li>
+        <li><a href="#">Field Crew Dispatch</a></li>
+        <li><a href="#">Financial Forecast</a></li>
+        <li><a href="#">Asset Profile</a></li>
+            </ul> 
+      <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+        </ul>
+        </div>
+      </div>
+  </nav>
+
+  <div class="header_">
+    <h1>Outage Analysis Victoria</h1>
     <h4>Predix Challenge Team</h4>
     </div>
     
-    <div class="container">
-
-    <a  type="button" href="login?state=secure" class="login-btn">Login</a>
-    <a href="/secure" class="secure-point"></a>
-
+  <div class="container_">
+    <a type="button" href="login?state=secure" class="login_btn">Analysis</a>
   </div>
-  <div class="footer">
-    <div class="footer-logo-container">
-      <img class="footer-logo" src="/images/monogram-wdmk.png"></img>
+
+  <div class="footer_">   
+    <div class="footer-logo-container_">
+      <img class="footer-logo_Monash" src="/images/monash-logo-mono.svg"></img>
+      <img class="footer-logo_" src="/images/monogram-wdmk.png"></img>
     </div>
   </div>
 </body>

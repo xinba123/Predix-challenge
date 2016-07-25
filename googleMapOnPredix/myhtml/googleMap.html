@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html  lang="en">
 <head>
 	<title>Melbourne Outage Analysis</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
 	<link rel="stylesheet" href="../stylesheets/leaflet.css" />
 	<link rel="stylesheet" href="../stylesheets/stl.css" />
 	<link rel="stylesheet" href="../stylesheets/predix.css" />
@@ -25,40 +27,40 @@
         			<span class="icon-bar"></span>
         			<span class="icon-bar"></span> 
       			</button>
-      			<a class="navbar-brand" href="#">Outage Analysis-Victoria</a>
+      			<a class="navbar-brand" href="#">Melbourne Outage Analysis</a>
     		</div>
     		<div class="collapse navbar-collapse" id="myNavbar">
       			<ul class="nav navbar-nav">
-				<li><a href="index.html">Home</a></li>
-				<li class="active"><a href="login?state=secure">Outage Analysis</a></li>
-				<li><a href="#">Field Crew Dispatch</a></li>
-				<li><a href="#">Financial Forecast</a></li>
-				<li><a href="#">Asset Profile</a></li>
-            </ul> 
-			<ul class="nav navbar-nav navbar-right">
-      			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
-    		</ul>
+        			<li><a href="index.html">Home</a></li>
+        			<li class="active"><a href="login?state=secure">Analysis</a></li>
+      			</ul> 
     		</div>
   		</div>
 	</nav>
 	
+	<div class="mybackgroundHeader myhidden"></div>
 
 <!-- 	<center><div class="loader"></div></center> -->
 	<div class="container_2">
-	<div class="row" style="padding: 0; margin: 0;">
-  		<div class="col-sm-8" style="padding: 0; margin: 0;">
-			<div id="map"></div>
-			<h3>Customer affected over a year</h3>
-			<div id="lineChartContainer"></div>
+		<div class="row">
+			<div id="map" class="myhidden"></div>
 		</div>
-  		<div class="col-sm-4" style="padding: 0; margin: 0;">
-			<h3>Total Outages</h3>
-			<div id="pieChartContainer"></div>
-			<div id="tooltipContainer"></div>
-		</div>
-	</div>
 	</div>
 
+
+		<div class="container_2">
+			<div class="row">
+
+		  		<div class="col-md-8" >
+					<div id="lineChartContainer"></div>
+				</div>
+
+		  		<div class="col-md-4" >
+					<div id="pieChartContainer"></div>
+				</div>
+
+			</div>
+		</div>
 
 		<!-- <div id="tableContainer" style="position: relative;"></div> -->
 		
@@ -79,8 +81,11 @@
 <script type="text/javascript" src="../scripts/googleMap.js"></script> 
 
 <script charset="utf-8">
+
     var column = "name";
+
     /*var canvas = { width: 472, height: 472};*/
+
     var catrgories = {property:"cause",type: [
 		"Condition Deterioration",
 		"Electrical Overload",
@@ -92,37 +97,42 @@
 		"Human error",
 		"Other Miscellaneous"
     ]};
+
+
     var stationName = "Altona Power Station";
+
     var timeRange = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
     d3.tsv("../resources/data/data.tsv", function(error, data) {
         if (error) throw error;
+
+
         data.forEach(function(d){
         		d.numOfCustomerAffected = parseInt(d.numOfCustomerAffected);//parse string to int
         })
-		
-		var maxDiameter = 480;
-	    var pieChart = new pieChartViewer($("#pieChartContainer")[0], 0 ,data , column, stationName, catrgories, 0, maxDiameter, $("#tooltipContainer")[0]);
+	
+	    var pieChart = new pieChartViewer($("#pieChartContainer")[0], null ,data , column, stationName, catrgories);
 
-	    
-	    var htmlfortooltip_example = "<label class='pie_label'></label> accounts for <label class='pie_percentage'></label> of total outages of <label class='pie_stationName'></label> and it happens <label class='pie_count'></label> times last year, which leads to a loss of <label class='pie_totalCost'></label> ";
-	    //you can change anything inside the tooltip using this function
-	    pieChart.changeTooltip(htmlfortooltip_example);
+	    var aspect = 4;//width/height
 
+	    var lineChart = new simpleLineChart($("#lineChartContainer")[0], data, stationName, null, aspect);
 
-
-	    //tabViewer = new TABViewer($("tableContainer")[0], {}, randDataGenerated, name);
-	    var setting = {"width":800,"height":400};
-	    var aspect = 3.5;//width/height
-	    var lineChart = new simpleLineChart($("#lineChartContainer")[0], data, stationName, 0, aspect);
 	    var myGoogleMap = new googleMap();
+
 		myGoogleMap.init();
 		myGoogleMap.setChild(pieChart);
 		myGoogleMap.setChild(lineChart);
 		myGoogleMap.draw();
+
 	    d3.select(window)
 			.on("resize", function() {
 				pieChart.onSizeChange();
 				lineChart.onSizeChange();
 		});
+
 	});
+
 </script>
+
+
+
