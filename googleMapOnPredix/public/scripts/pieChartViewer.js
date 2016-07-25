@@ -455,6 +455,8 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		that.tooltip.select('.pie_label').html(station.cause);
 		that.tooltip.select('.pie_count').html(station.value); 
 		that.tooltip.select('.pie_percentage').html(station.percentage+"%");
+		that.tooltip.select('.pie_totalCost').html("$"+station.value * 100 +"K");
+		that.tooltip.select('.pie_stationName').html(that.name);
 		that.tooltip.style('display', 'block');
 
 	}

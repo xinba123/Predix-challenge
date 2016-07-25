@@ -104,9 +104,8 @@
 	    var pieChart = new pieChartViewer($("#pieChartContainer")[0], 0 ,data , column, stationName, catrgories, 0, maxDiameter, $("#tooltipContainer")[0]);
 
 	    
-	    var htmlfortooltip_example = "<label class='pie_label'></label> accounts for <label class='pie_percentage'></label> of total outages ,which leads to .... ";
+	    var htmlfortooltip_example = "<label class='pie_label'></label> accounts for <label class='pie_percentage'></label> of total outages of <label class='pie_stationName'></label> and it happens <label class='pie_count'></label> times last year, which leads to a loss of <label class='pie_totalCost'></label> ";
 	    //you can change anything inside the tooltip using this function
-
 	    pieChart.changeTooltip(htmlfortooltip_example);
 
 
