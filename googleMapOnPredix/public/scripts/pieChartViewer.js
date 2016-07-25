@@ -159,6 +159,10 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		return that.name;
 	}
 
+	this.changeTooltip = function(html){
+		console.log(html);
+		that.tooltip.html(html);
+	}
 
 	/**
 	*
@@ -345,15 +349,15 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 	      		return d.data.percentage+"%";} })
 	      .each(function(d) { this._current = d; });//store the initial label position
 
-
-		that.tooltip.append('div')                        
+/*
+		that.tooltip.append('label')                        
 		  .attr('class', 'pie_label');                   
 
-		that.tooltip.append('div')                        
+		that.tooltip.append('label')                        
 		  .attr('class', 'pie_count');         
 
-		that.tooltip.append('div')                        
-		  .attr('class', 'pie_percentage');   
+		that.tooltip.append('label')                        
+		  .attr('class', 'pie_percentage');   */
 
 
 		var legend = that.svg.selectAll('.legend')
@@ -450,7 +454,6 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		var station = that.precessedData[stationName]["inf"][7];//human error
 		that.tooltip.select('.pie_label').html(station.cause);
 		that.tooltip.select('.pie_count').html(station.value); 
-		console.log(station);
 		that.tooltip.select('.pie_percentage').html(station.percentage+"%");
 		that.tooltip.style('display', 'block');
 

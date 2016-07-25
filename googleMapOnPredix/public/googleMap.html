@@ -102,6 +102,15 @@
 		
 		var maxDiameter = 480;
 	    var pieChart = new pieChartViewer($("#pieChartContainer")[0], 0 ,data , column, stationName, catrgories, 0, maxDiameter, $("#tooltipContainer")[0]);
+
+	    
+	    var htmlfortooltip_example = "<label class='pie_label'></label> accounts for <label class='pie_percentage'></label> of total outages ,which leads to .... ";
+	    //you can change anything inside the tooltip using this function
+
+	    pieChart.changeTooltip(htmlfortooltip_example);
+
+
+
 	    //tabViewer = new TABViewer($("tableContainer")[0], {}, randDataGenerated, name);
 	    var setting = {"width":800,"height":400};
 	    var aspect = 3.5;//width/height
