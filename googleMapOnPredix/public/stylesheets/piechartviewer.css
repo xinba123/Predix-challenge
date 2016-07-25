@@ -73,13 +73,17 @@ text.active {
 
 .pietooltip {
   background: #eee;
-  box-shadow: 0 0 5px #999999;
+  //box-shadow: 0 0 5px #999999;
   color: #333;
   display: none;
   font-size: 20px;
-  position: absolute;
-  text-align: center;
+  position: relative;
+  text-align: left;
   z-index: 10;
+  margin-top: 5px;
+	padding-left: 10px;
+padding-right: 10px;
+  height:100%;
 }
 
 #pieChartContainer {
@@ -88,8 +92,7 @@ text.active {
     text-align: center;
     position: relative;
     width:100%;
-    height:420px;
-	display: block;
+    height:440px;
 }
 
 .legend {
@@ -106,4 +109,11 @@ rect {
 
 .title_pie {
   font-size: 1em;
+	margin: 0;
 }
+
+.pie_totalCost {
+	color: red;
+	font-size: 2em;
+}
+

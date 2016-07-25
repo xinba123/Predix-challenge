@@ -116,17 +116,13 @@ var googleMap = function(){
     this._OnClick = function(e){
         var name = that.mapArray[e.target.options.id].name;
 
-        that.children.forEach(function(d){
-            d.animate(name);
-        });
-        console.log(e);
         that.currentMaker.setIcon(that.icon);
         e.target.setIcon(that.icon_active);
         that.currentMaker = e.target;
-        
-/*        pieChart.animatePieChart(name);
-        lineChart.animateLineChart(name);*/
 
+        that.children.forEach(function(d){
+            d.animate(name);
+        });
     }
 
     this._getTestData = function(){
