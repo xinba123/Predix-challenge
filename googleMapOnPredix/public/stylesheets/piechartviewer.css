@@ -83,18 +83,27 @@ text.active {
 }
 
 #pieChartContainer {
-
+    background-color: white;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     text-align: center;
     position: relative;
     width:100%;
-    height:100%;
+    height:420px;
 	display: block;
 }
 
 .legend {
   font-size: 12px;
 }
+
 rect {
   stroke-width: 2;
+}
+
+.lable_pie {
+  font-size: 10px;
+}
+
+.title_pie {
+  font-size: 1em;
 }

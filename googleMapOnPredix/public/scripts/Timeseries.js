@@ -288,7 +288,7 @@ function constructMachineChartResponse(data) {
     var lineChartDemo = new Chart(ctx).Line(getMachineLineChartData_each(data.tags[i]), {
         responsive: true
       });
-      lineChartMap.set(data.tags[i].name,lineChartDemo);
+    lineChartMap.set(data.tags[i].name,lineChartDemo);
 
     }
     return lineChartMap;

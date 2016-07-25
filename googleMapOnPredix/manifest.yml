@@ -1,5 +1,5 @@
 applications:
-- name: jie131191-googlemap-app
+- name: xinba-googlemap-app
   memory: 128M
   buildpack: nodejs_buildpack
   #command:  DEBUG=express:* node app.js

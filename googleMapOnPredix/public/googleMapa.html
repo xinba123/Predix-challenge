@@ -1,0 +1,112 @@
+
+<link rel="stylesheet" href="../stylesheets/leaflet.css" />
+<link rel="stylesheet" href="../stylesheets/style.css" />
+<link rel="stylesheet" href="../stylesheets/predix.css" />
+<link rel="stylesheet" href="../stylesheets/piechartviewer.css" />
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Map</title>
+	<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+
+</head>
+	<body>
+
+		<center><div class="loader"></div></center>
+			<div id="map" class="map hidden" ></div>
+			<div id="pieChartContainer"></div>
+			<div>
+				<table id="dt">
+					<thead>
+					<tr>
+						<th>Name</th>
+						<th>Location</th>
+						<th>NumCustomer</th>
+						<th>Reason</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>a</td>
+							<td>123</td>
+							<td>100</td>
+							<td>asdasjkd</td>
+						</tr>
+						<tr>
+							<td>b</td>
+							<td>1234</td>
+							<td>1000</td>
+							<td>masdasjkd</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</body>
+</html>
+
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../scripts/leaflet.js"></script>
+<script src="https://d3js.org/topojson.v1.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://maps.google.com/maps/api/js?language=en"></script>
+<script type="text/javascript" src="../scripts/googleMapApi.js"></script>
+
+<script type="text/javascript" src="../scripts/pieChartViewer.js"></script>
+
+
+
+<script charset="utf-8">
+
+
+    var column = "name";
+
+    var canvas = { width:500, height:500};
+
+    var catrgories = {property:"cause",type: [
+		"Condition Deterioration",
+		"Electrical Overload",
+		"Wind",
+		"Cable Fault",
+		"Vehicle",
+		"Rain/Flooding",
+		"Programmed Outage",
+		"Human error",
+		"Other Miscellaneous"
+    ]};
+
+
+    var name = "Altona Power Station";
+
+    var pieChart;
+    d3.tsv("../resources/data/data.tsv", function(error, data) {
+
+        if (error) throw error;
+
+        randDataGenerated = [];
+		data.forEach(function(d,i){
+			for(var i =0; i < 30; i++){
+				randDataGenerated.push({"name":d.name,"lat":d.lat,"lng":d.lng,"cause":catrgories.type[Math.round(Math.random()*8)]});
+			}
+		});
+
+        pieChart = new pieChartViewer($("#pieChartContainer")[0], canvas ,randDataGenerated , column, name, catrgories);
+
+
+    });
+
+</script>
+
+<script type="text/javascript" src="../scripts/googleMap.js"></script>
+<script type="text/javascript" src="/scripts/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('#dt').dataTable();
+	});
+</script>
+
