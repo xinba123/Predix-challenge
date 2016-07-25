@@ -150,6 +150,7 @@ var simpleLineChart = function(container,data,stationName,setting,aspect){
           .tickSize(16, 0)
           .tickFormat(d3.time.format("%B"));
 
+      console.log(d3.time.months);
       var yAxis = d3.svg.axis()
           .scale(y)
           .orient("left");

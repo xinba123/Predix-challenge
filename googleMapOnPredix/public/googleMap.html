@@ -13,7 +13,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/tabviewer.css">
     <link rel="stylesheet" href="../stylesheets/lineChart.css">
 
 </head>
@@ -38,7 +37,7 @@
 	</nav>
 	
 
-<!-- 	<center><div class="loader"></div></center> -->
+	<center><div class="loader"></div></center>
 	<div class="container_2">
 	<div class="row" style="padding: 0; margin: 0;">
   		<div class="col-sm-8" style="padding: 0; margin: 0;">
@@ -65,10 +64,7 @@
 
 
 <script src="../scripts/leaflet.js"></script>
-<!-- <script src="../scripts/tableViewer.js" charset="utf-8"></script>
- -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://d3js.org/topojson.v1.min.js"></script>
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://maps.google.com/maps/api/js?language=en"></script>
 <script type="text/javascript" src="../scripts/googleMapApi.js"></script>
@@ -78,11 +74,11 @@
 
 <script charset="utf-8">
 
-    var column = "name";
+	var column = "name";
 
-    /*var canvas = { width: 472, height: 472};*/
+	/*var canvas = { width: 472, height: 472};*/
 
-    var catrgories = {property:"cause",type: [
+	var catrgories = {property:"cause",type: [
 		"Condition Deterioration",
 		"Electrical Overload",
 		"Wind",
@@ -92,40 +88,34 @@
 		"Programmed Outage",
 		"Human error",
 		"Other Miscellaneous"
-    ]};
+	]};
 
 
-    var stationName = "Altona Power Station";
+	var stationName = "Altona Power Station";
 
-    var timeRange = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+	var timeRange = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
-    d3.tsv("../resources/data/data.tsv", function(error, data) {
-        if (error) throw error;
+	d3.tsv("../resources/data/data.tsv", function(error, data) {
 
 
-        data.forEach(function(d){
-        		d.numOfCustomerAffected = parseInt(d.numOfCustomerAffected);//parse string to int
-        })
-		
+		data.forEach(function(d){
+				d.numOfCustomerAffected = parseInt(d.numOfCustomerAffected);//parse string to int
+		})
+		        if (error) throw error;
+
 		var maxDiameter = 480;
+		var pieChart = new pieChartViewer($("#pieChartContainer")[0], 0 ,data , column, stationName, catrgories, 0, maxDiameter);
 
-	    var pieChart = new pieChartViewer($("#pieChartContainer")[0], 0 ,data , column, stationName, catrgories, 0, maxDiameter);
+		var aspect = 5;//width/height
+		var lineChart = new simpleLineChart($("#lineChartContainer")[0], data, stationName, 0, aspect);
 
-	    //tabViewer = new TABViewer($("tableContainer")[0], {}, randDataGenerated, name);
-
-	    var setting = {"width":800,"height":400};
-
-	    var aspect = 5;//width/height
-	    var lineChart = new simpleLineChart($("#lineChartContainer")[0], data, stationName, 0, aspect);
-
-	    var myGoogleMap = new googleMap();
-
+		var myGoogleMap = new googleMap();
 		myGoogleMap.init();
 		myGoogleMap.setChild(pieChart);
 		myGoogleMap.setChild(lineChart);
 		myGoogleMap.draw();
 
-	    d3.select(window)
+		d3.select(window)
 			.on("resize", function() {
 				pieChart.onSizeChange();
 				lineChart.onSizeChange();
