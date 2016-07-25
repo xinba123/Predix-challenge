@@ -148,9 +148,8 @@ var simpleLineChart = function(container,data,stationName,setting,aspect){
           .orient("bottom")
           .ticks(d3.time.months)
           .tickSize(16, 0)
-          .tickFormat(d3.time.format("%B"));
-
-      console.log(d3.time.months);
+          .tickFormat(d3.time.format("%b"));
+          
       var yAxis = d3.svg.axis()
           .scale(y)
           .orient("left");
