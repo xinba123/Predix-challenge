@@ -77,9 +77,11 @@ text.active {
   color: #333;
   display: none;
   font-size: 20px;
-  position: absolute;
+  position: relative;
   text-align: center;
   z-index: 10;
+  margin-top: 50px;
+  height:100%;
 }
 
 #pieChartContainer {
@@ -106,3 +108,4 @@ rect {
 .title_pie {
   font-size: 1em;
 }
+

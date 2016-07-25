@@ -167,21 +167,6 @@ var simpleLineChart = function(container,data,stationName,setting,aspect){
       x.domain(d3.extent(that.dataSet[data], function(d) { return d.time; }));
       y.domain([0,100]);
 
-      that.svg.append("g")
-          .attr("class", "x axis")
-          .attr("transform", "translate(0," + that.height + ")")
-          .call(xAxis);
-
-      that.svg.append("g")
-          .attr("class", "y axis")
-          .call(yAxis)
-        .append("text")
-          //.attr("transform", "rotate(-90)")
-          .attr("y", 6)
-          .attr("dy", ".71em")
-          .style("text-anchor", "start")
-          .text("Number of customer affected");
-
       that.svg.append("g")         
         .attr("class", "grid")
         .attr("transform", "translate(0," + that.height + ")")
@@ -196,6 +181,23 @@ var simpleLineChart = function(container,data,stationName,setting,aspect){
               .tickSize(-that.width, 0, 0)
               .tickFormat("")
               );
+
+
+      that.svg.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + that.height + ")")
+          .call(xAxis);
+
+      that.svg.append("g")
+          .attr("class", "y axis")
+          .call(yAxis)
+        .append("text")
+          //.attr("transform", "rotate(-90)")
+          .attr("y", 6)
+          .attr("dy", ".71em")
+          .attr("class","yaxis_label_linechart")
+          .text("Number of customer affected");
+
 
 
       that.shadow = that.svg.append("path")

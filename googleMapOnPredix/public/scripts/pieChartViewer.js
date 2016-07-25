@@ -1,13 +1,15 @@
 
 
 
-var pieChartViewer = function(containerDiv, canvas, data, column, name, catergories, aspect, maxDiameter) {
+var pieChartViewer = function(containerDiv, canvas, data, column, name, catergories, aspect, maxDiameter, tooltipContainer) {
     "use strict";
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Properties
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	this.containerDiv = d3.select(containerDiv); 
+
+	this.tooltipContainerDiv = d3.select(tooltipContainer);
 
 	this.width = this.containerDiv.node().getBoundingClientRect().width;
 	this.height = this.containerDiv.node().getBoundingClientRect().height;
@@ -39,7 +41,7 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 
     this.subContainerTitle = this.containerDiv.append("div");
     this.subContainerDiv = this.containerDiv.append("div");     
-    //this.tooltip = this.containerDiv.append('div').attr('class', 'pietooltip');
+    this.tooltip = this.tooltipContainerDiv.append('div').attr('class', 'pietooltip');
 
     //this.tooltip.total = 0;
 
@@ -92,6 +94,7 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 
         that._drawSvg();
         that._drawPieChart();
+        that._setTooltip(that.name);
  	}
 
     /**
@@ -327,11 +330,11 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 		    .on("mouseover", that._onMouseOver)
           	.on("mouseout", that._onMouseOut);
 
-   /*     that.path.on('mousemove', function(d) {
+/*        that.path.on('mousemove', function(d) {
 			  that.tooltip.style('top', (d3.event.layerY+10) + 'px')
 			    .style('left', (d3.event.layerX+10) + 'px');
-			});*/
-
+			});
+*/
 		that.label = g.append("text")
 		  .attr("class","label_pie")
 	      .attr("transform", function(d) { return "translate(" + that.labelArc.centroid(d) + ")"; })
@@ -343,14 +346,14 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 	      .each(function(d) { this._current = d; });//store the initial label position
 
 
-/*		that.tooltip.append('div')                        
+		that.tooltip.append('div')                        
 		  .attr('class', 'pie_label');                   
 
 		that.tooltip.append('div')                        
 		  .attr('class', 'pie_count');         
 
 		that.tooltip.append('div')                        
-		  .attr('class', 'pie_percent');  */ 
+		  .attr('class', 'pie_percentage');   
 
 
 		var legend = that.svg.selectAll('.legend')
@@ -395,8 +398,9 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 	    	.text(function(d) {if(d.data.value>0&&that._isLarge(d)) return d.data.percentage + "%"; });
 	    that.label.transition().duration(500).ease("linear").attrTween("transform",labelTween);
 
-		that.title.text(that.name) 	    
+		that.title.text(that.name);
 
+		that._setTooltip(that.name);
 		// Store the displayed angles in _current.
 		// Then, interpolate from _current to the new angles.
 		// During the transition, _current is updated in-place by d3.interpolate.
@@ -424,23 +428,32 @@ var pieChartViewer = function(containerDiv, canvas, data, column, name, catergor
 
 	this._onMouseOver = function(d,i) {
 		$(this).attr("class","onHover_pieChart");
-/*		var percent = Math.round(1000 * d.data.value / that.tooltip.total) / 10;
 		that.tooltip.select('.pie_label').html(d.data.cause);
 		that.tooltip.select('.pie_count').html(d.data.value); 
-		//that.tooltip.select('.pie_percent').html(percent + '%'); 
-		that.tooltip.style('display', 'block');*/
+		that.tooltip.select('.pie_percentage').html(d.data.percentage+"%");
+		that.tooltip.style('display', 'block');
 
 	}
 
 	this._onMouseOut = function(){
 		$(this).attr("class","");
-/*		that.tooltip.style('display', 'none');*/
+		//that.tooltip.style('display', 'none');
 	}
 
 
 	this._isLarge = function(d){
 		var angle = d.endAngle - d.startAngle;
 		return (angle>Math.PI/8)?true:false;
+	}
+
+	this._setTooltip = function(stationName){
+		var station = that.precessedData[stationName]["inf"][7];//human error
+		that.tooltip.select('.pie_label').html(station.cause);
+		that.tooltip.select('.pie_count').html(station.value); 
+		console.log(station);
+		that.tooltip.select('.pie_percentage').html(station.percentage+"%");
+		that.tooltip.style('display', 'block');
+
 	}
 
 }

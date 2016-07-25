@@ -43,3 +43,8 @@
 .grid path {
       stroke-width: 0;
 }
+
+.yaxis_label_linechart{
+  text-anchor:start;
+  font-size: 1.3em;
+}
